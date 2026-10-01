@@ -1,0 +1,319 @@
+ChapterEvents(Mage7SearchArcanaeEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Turn3,3)
+TurnEventEnemy(0x0,EngineWakes,5)
+TurnEventEnemy(0x0,Turn6,6)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(0x10,TLakshmiShanley,Shanley,Lakshmi)
+CharacterEventBothWays(0x11,TXenaLakshmi,Xena,Lakshmi)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+House(0x13,Valve1,1,4) // The four conduit valves. Sealing all of them before Uzkalis falls gives the good ending.
+House(0x14,Valve2,15,3)
+House(0x15,Valve3,1,11)
+House(0x16,Valve4,15,13)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [8,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [7,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [9,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [6,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [10,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [11,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Shanley 0x00 0x00 Level(1,Ally,True) [8,22] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+ENUT 0x12 // Prevents the good ending Tact death quote.
+ENUT 0x13 // Prevents the bad ending Tact death quote.
+CAM1 [8,18]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+LOAD1 0x1 AlexisUnit
+ENUN
+MUSC Darker
+SetBackground(0x12) // The passage beneath the compound.
+Text(Mage7SearchArcanaeStartingText)
+EndConvo
+STAL 0x10
+LOAD1 0x1 EngineGuards
+ENUN
+CAM1 [4,2]
+STAL 0x20
+MUSC Cataclysm
+Text(Mage7SearchArcanaeUzkalisText)
+STAL 0x10
+CAM1 [8,18]
+Text(Mage7SearchArcanaeObjectiveText)
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEA 0x0
+CLEE 0x0
+CLEN 0x0
+ASMC RefreshAll|1
+ASMC PrepForEnd|1
+CHECK_EVENTID 0x13
+BEQ 0x0 0x0 0xC
+CHECK_EVENTID 0x14
+BEQ 0x0 0x0 0xC
+CHECK_EVENTID 0x15
+BEQ 0x0 0x0 0xC
+CHECK_EVENTID 0x16
+BEQ 0x0 0x0 0xC
+	// Every valve was sealed. The volunteers live. Good ending.
+	ENUF 0x12 // Enable Tact's good ending death quote.
+	SVAL 0xB Coords(8,20)
+	LOMA MageSearchArcanae7
+	TILECHANGE 0
+	TILECHANGE 1
+	TILECHANGE 2
+	TILECHANGE 3
+	LOAD3 0x1 EndingTact
+	LOAD2 0x1 EndingFriends
+	LOAD1 0x1 EndingUzkalis
+	ENUN
+	MUSC Treasured_Memories
+	FADU 0x5
+	STAL 0x20
+	Text(Mage7SearchArcanaeGoodEndingText)
+	STAL 0x10
+	FadeOutMusic
+	STAL 0x20
+	MUSC The_Guardian_Spirit
+	WarpIn(10,22,LoadNarrator)
+	STAL 0x20
+	Text(Mage7SearchArcanaeGoodEndingNarratorText)
+	STAL 0x08
+	MOVE 0x00 Narrator [9,22]
+	ENUN
+	StartBattle
+	NormalDamage(1,24)
+	MissedAttack(0,0)
+	CriticalHit(1,60)
+	EndAttack
+	SetBattleNumbers(21,8,0,91,24,20)
+	FIG1 0x00 Narrator 0x00
+	KillUnit(0x00)
+	DISA 0x00
+	GOTO 0x1
+LABEL 0x0
+	// Uzkalis fell before the engine was starved. Bad ending.
+	ENUF 0x13 // Enable Tact's bad ending death quote.
+	SVAL 0xB Coords(8,20)
+	LOMA MageSearchArcanae7
+	LOAD3 0x1 EndingTact
+	LOAD2 0x1 EndingFriends
+	LOAD1 0x1 EndingUzkalis
+	ENUN
+	MUSC All_Is_Lost
+	FADU 0x5
+	STAL 0x20
+	TEXTSTART
+	TEXTSHOW Mage7SearchArcanaeBadEndingText
+	TEXTEND
+		// The conduits flare.
+		SOUN 0x2D0
+		STAL 0x30
+	TEXTCONT
+	TEXTEND
+		// The engine takes them, and Uzkalis with them.
+		DISA Uzkalis
+		STAL 0x40
+	TEXTCONT
+	TEXTEND
+	REMA
+	STAL 0x10
+	FadeOutMusic
+	STAL 0x20
+	MUSC The_Guardian_Spirit
+	WarpIn(10,22,LoadNarrator)
+	STAL 0x20
+	Text(Mage7SearchArcanaeBadEndingNarratorText)
+	STAL 0x08
+	MOVE 0x00 Narrator [9,22]
+	ENUN
+	StartBattle
+	NormalDamage(1,30)
+	NormalDamage(1,30)
+	EndAttack
+	SetBattleNumbers(21,8,0,87,30,18)
+	FIG1 0x00 Narrator 0x00
+	KillUnit(0x00)
+	DISA 0x00
+	STAL 0x20
+LABEL 0x1
+ENUT 0xDE // This life ended in the Mage route's New Arcanae ending. (True ending tracker.)
+CALL MageRouteCleanup
+MoveToChapter(PrologueChapter)
+ENDA
+
+//Label Turn events
+Turn3:
+CamON
+LOAD1 0x1 Turn3Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+EngineWakes:
+CAM1 [4,2]
+STAL 0x10
+Text(Mage7SearchArcanaeEngineWakesText)
+NoFade
+EndA2
+
+Turn6:
+CamON
+LOAD1 0x1 Turn6Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TLakshmiShanley:
+MUSI
+Text(Mage7SearchArcanaeLakshmiShanleyText)
+MUNO
+NoFade
+EndA2
+
+TXenaLakshmi:
+MUSI
+Text(Mage7SearchArcanaeXenaLakshmiText)
+MUNO
+NoFade
+ENDA
+
+//Label Location events
+Valve1:
+Text(Mage7SearchArcanaeValve1Text)
+SOUN 0x00BD
+TILECHANGE 0
+NoFade
+EndA2
+
+Valve2:
+Text(Mage7SearchArcanaeValve2Text)
+SOUN 0x00BD
+TILECHANGE 1
+NoFade
+EndA2
+
+Valve3:
+Text(Mage7SearchArcanaeValve3Text)
+SOUN 0x00BD
+TILECHANGE 2
+NoFade
+EndA2
+
+Valve4:
+Text(Mage7SearchArcanaeValve4Text)
+SOUN 0x00BD
+TILECHANGE 3
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [8,21] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [7,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [9,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [6,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [10,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [11,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Shanley 0x00 0x00 Level(1,Ally,True) [8,22] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+AlexisUnit:
+UNIT Alexis AlexisClass 0x00 Level(10,NPC,True) [12,22] 0x00 0x00 0x00 0x00 [Mend,Heal] HealAlliesAI
+UNIT
+
+EngineGuards:
+UNIT Uzkalis GaidenSage Uzkalis Level(15,Enemy,True) [3,0] 0x00 0x00 0x00 0x00 [Thoron,Elixir] GuardAI
+UNIT Arcanian General Uzkalis Level(5,Enemy,True) [3,2] 0x00 0x00 0x00 0x00 [SilverLance] GuardAI
+UNIT Arcanian Sage Uzkalis Level(5,Enemy,True) [5,0] 0x00 0x00 0x00 0x00 [Elthunder] AttackInRangeAI
+UNIT Arcanian Sniper Uzkalis Level(5,Enemy,True) [15,4] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian Paladin Uzkalis Level(5,Enemy,True) [14,8] 0x00 0x00 0x00 0x00 [SteelSword,Javelin] ChaseOnceApproachedAI
+UNIT Arcanian Swordmaster Uzkalis Level(5,Enemy,True) [5,9] 0x00 0x00 0x00 0x00 [KillingEdge] NoAI
+UNIT Arcanian Druid Uzkalis Level(5,Enemy,True) [11,12] 0x00 0x00 0x00 0x00 [Luna] AttackInRangeAI
+UNIT Arcanian Bishop Uzkalis Level(5,Enemy,True) [2,13] 0x00 0x00 0x00 0x00 [Shine,Mend] AttackInRangeAI
+UNIT Arcanian GreatKnight Uzkalis Level(5,Enemy,True) [7,15] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian MageKnight Uzkalis Level(5,Enemy,True) [14,15] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT Arcanian Hero Uzkalis Level(5,Enemy,True) [3,19] 0x00 0x00 0x00 0x00 [SteelBlade] NoAI
+UNIT Arcanian Warrior Uzkalis Level(5,Enemy,True) [14,19] Drop 0x00 0x00 0x00 [SteelAxe,Elixir] NoAI
+UNIT
+
+Turn3Units:
+UNIT Arcanian Sage Uzkalis Level(5,Enemy,True) [16,0] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT Arcanian Paladin Uzkalis Level(5,Enemy,True) [16,1] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT
+
+Turn6Units:
+UNIT Arcanian Swordmaster Uzkalis Level(6,Enemy,True) [14,0] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Druid Uzkalis Level(6,Enemy,True) [15,0] 0x00 0x00 0x00 0x00 [Flux] NoAI
+UNIT
+
+//Label Ending units
+EndingTact:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [8,22] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+EndingFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [7,22] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [8,23] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+EndingUzkalis:
+UNIT Uzkalis GaidenSage Uzkalis Level(15,NPC,True) [8,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+LoadNarrator:
+UNIT Narrator NarratorClass 0x00 Level(10,Enemy,True) [10,22] 0x00 0x00 0x00 0x00 [SilverBlade] NoAI
+EndUnit

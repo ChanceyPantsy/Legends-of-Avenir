@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="3C00CE3E" tilewidth="16" tileheight="16">
+  <image source="Tilesets/3C00CE3E.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="25" height="20">
+  <properties>
+   <property name="Anims" value="_3CAnims"/>
+   <property name="ChapterID" value="MageSearchArcanae5"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="MageCompoundMap"/>
+   <property name="ObjectType" value="0x3C"/>
+   <property name="PaletteID" value="0x3D"/>
+   <property name="TileConfig" value="0x3E"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJx9lc1OU1EQx8+5N6YRExM+di5diODGd2hidWGIgRegRSMxERe+QasxwAJfwRoUChF2rKEaQ0yA6s6NCQnxA7TFB/A/uf/JGYbGpL+cj94z/5k5c+fWQghtUAZVMJ4latyf4X81js846plDjq9I1T3XNufVRoPzhmEH1DlfBM/BAPgmZ2Lauwu2jWaTa2tPfbiIOFZjYiBL2g9ACVT47BMwB66BO9SqGFtqdyGmtej/xHokD2GY7Mbkizy3Btbpp9oaBcvUKzEmif8r/NsCV/LivOZObA5ib4hcdnEpC9ifz87Gi194C97Rltre4brJu1INGbsZ1xhfggmwxPl37P8AnzHv8Lmcd9CiLZ9vfxdjWdIYxvgUzIERzlVDnmlivJ6lcznt+XyXGYP4dUoOnIbsTTmNfcx7YNTU/lVjb9BoSH2qLxKbnpX/b2Lc5HqDcxuH+HLEXF3AWAElc3frMdXvm5hisxpqZ4/aMhd/NJ89o/EbHIPJeP69Fo3lmGqpFQusnT/gLzVOedcHRtPW15HrEVXmSjX63Yu1Y2tCY+u4+rK95gXfmYbT6BrbPdIx/qu2xtYzNZKz10yQWfCoTxz75pyO9j5kbzoUvvia1zjknV8xOftfHGrT+2zr+4ar3U/gMd/Heki9t5/GXpbmGp/vm+p7mT3vEvY+htSjDo2Oz5XNt2p0+/itvr/WfhGL2rV9veb6iLwzbfA+ntXz/UJ7kI7bzNE9aojvM6Z+d11Pt71G9bzft8z3QnN0X/oCuM13ux7Sd9P3dEVr8QP4In0J61+h+D5JTT5k7WuOTpizccz/AelJCL0=
+  </data>
+ </layer>
+</map>

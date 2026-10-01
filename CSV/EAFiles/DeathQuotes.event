@@ -20,6 +20,8 @@ DeathQuote(0x00,KendrickShipCutscene,0x10,0x0) // Military Accept Retreat Help.
 DeathQuote(0x00,MilitaryAcceptRetreatHelp7,0x10,0x0)
 DeathQuote(0x00,MilitaryAcceptHold7,0x17,Military7AcceptHoldGoodEndingPlayerDeathText) // Military Accept Hold.
 DeathQuote(0x00,MilitaryAcceptHold7,0x18,Military7AcceptHoldBadEndingPlayerDeathText)
+DeathQuote(0x00,MageSearchArcanae7,0x12,Mage7SearchArcanaeGoodEndingPlayerDeathText) // Mage Investigate Arcanae.
+DeathQuote(0x00,MageSearchArcanae7,0x13,Mage7SearchArcanaeBadEndingPlayerDeathText)
 
 // Specific death quotes need to come first.
 DeathQuote(Henning,Mercenary1,0x02,Merc1HenningDeathText)
@@ -99,6 +101,11 @@ DeathQuote(BossXavus,MilitaryAcceptHold7,0x15,Military7AcceptHoldXavusDeathText)
 DeathQuote(Lakshmi,Mage1,0x02,Mage1LakshmiDeathText)
 DeathQuote(Halleck,MageSearch3,0x02,Mage3SearchHalleckDeathText)
 DeathQuote(Sean,MageSearch4,0x02,Mage4SearchSeanDeathText)
+DeathQuote(Blaine,MageSearchArcanae5,0x02,Mage5SearchArcanaeBlaineDeathText)
+DeathQuote(Gerald,MageSearchArcanae6,0x02,Mage6SearchArcanaeGeraldDeathText)
+DeathQuote(Shanley,MageSearchArcanae6,0x00,ShanleyDeathText)
+DeathQuote(Shanley,MageSearchArcanae7,0x00,ShanleyDeathText)
+DeathQuote(Uzkalis,MageSearchArcanae7,0x02,Mage7SearchArcanaeUzkalisDeathText)
 DeathQuote(Lakshmi,MageSearch2,0x65,LakshmiGameOverDeathText) // Losing Lakshmi ends the Investigate route.
 DeathQuote(Lakshmi,MageSearch3,0x65,LakshmiGameOverDeathText)
 DeathQuote(Lakshmi,MageSearch4,0x65,LakshmiGameOverDeathText)
@@ -167,6 +174,7 @@ DeathQuote(Remus,AllChapters,0x00,RemusDeathText)
 DeathQuote(Rex,AllChapters,0x00,RexDeathText)
 DeathQuote(Jurgen,AllChapters,0x00,JurgenDeathText)
 DeathQuote(Ajax,AllChapters,0x00,AjaxDeathText)
+DeathQuote(Alexis,AllChapters,0x00,AlexisDeathText)
 DeathQuote(Lakshmi,AllChapters,0x00,LakshmiDeathText)
 DeathQuote(0x00,AllChapters,0x65,PlayerDeathText)
 

@@ -1,0 +1,235 @@
+ChapterEvents(Mage6SearchArcanaeEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventPlayer(0x0,ShanleyArrives,3)
+TurnEventEnemy(0x0,Turn4,4)
+TurnEventEnemy(0x0,Turn6,6)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x10,TLakshmiShanley,Lakshmi,Shanley)
+CharacterEvent(0x11,TXenaAlexis,Xena,Alexis)
+CharacterEvent(0x12,TLakshmiAlexis,Lakshmi,Alexis)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+House(0x13,NorthHouse,7,11)
+House(0x14,MiddleHouse,6,17)
+House(0x15,SWHouse,2,21)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [3,18] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [4,18] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [2,18] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [5,19] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [3,19] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [4,19] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+CAM1 [5,15]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+LOAD1 0x1 Clinic
+ENUN
+TILECHANGE 7 // The south house and the southeast house have already been emptied.
+TILECHANGE 9
+MUSC Town_of_Winds_and_Ruins
+SetBackground(0x05) // The Outer Ring.
+Text(Mage6SearchArcanaeStartingText)
+EndConvo
+STAL 0x10
+LOAD1 0x1 GeraldSquad
+ENUN
+CAM1 [9,5]
+STAL 0x20
+MUSC Darker
+TEXTSTART
+TEXTSHOW Mage6SearchArcanaeGeraldText
+TEXTEND
+	MUSC Emergency
+	STAL 0x10
+TEXTCONT
+TEXTEND
+REMA
+STAL 0x10
+CAM1 [5,15]
+Text(Mage6SearchArcanaeObjectiveText)
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+TurnAlly(Shanley)
+MUSC A_Tragic_Decision
+SetBackground(0x05)
+TEXTSTART
+TEXTSHOW Mage6SearchArcanaeEndingText
+TEXTEND
+	STAL 0x30
+TEXTCONT
+TEXTEND
+REMA
+MoveToChapter(MageSearchArcanae7)
+NoFade
+ENDA
+
+//Label Turn events
+ShanleyArrives:
+CAM1 [9,2]
+LOAD1 0x1 ShanleyUnit
+ENUN
+STAL 0x10
+Text(Mage6SearchArcanaeShanleyArrivesText)
+NoFade
+EndA2
+
+Turn4:
+CamON
+LOAD1 0x1 Turn4Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn6:
+CamON
+LOAD1 0x1 Turn6Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TLakshmiShanley:
+MUSI
+Text(Mage6SearchArcanaeLakshmiShanleyText)
+MUNO
+TurnAlly(Shanley)
+NoFade
+EndA2
+
+TXenaAlexis:
+MUSI
+Text(Mage6SearchArcanaeXenaAlexisText)
+MUNO
+NoFade
+EndA2
+
+TLakshmiAlexis:
+MUSI
+Text(Mage6SearchArcanaeLakshmiAlexisText)
+MUNO
+NoFade
+ENDA
+
+//Label Location events
+NorthHouse:
+MUSI
+Text(0x01,Mage6SearchArcanaeHouse1Text)
+GiveItem(SteelBlade,0xFFFF)
+TileChange(7,11)
+MUNO
+NoFade
+EndA2
+
+MiddleHouse:
+MUSI
+Text(0x01,Mage6SearchArcanaeHouse2Text)
+GiveItem(Elixir,0xFFFF)
+TileChange(6,17)
+MUNO
+NoFade
+EndA2
+
+SWHouse:
+MUSI
+Text(0x01,Mage6SearchArcanaeHouse3Text)
+GiveItem(EnergyRing,0xFFFF)
+TileChange(2,21)
+MUNO
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [3,18] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [4,18] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [2,18] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [5,19] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [3,19] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [4,19] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+Clinic:
+UNIT Alexis AlexisClass 0x00 Level(10,NPC,True) [16,15] 0x00 0x00 0x00 0x00 [Mend,Heal] HealAlliesAI
+UNIT
+
+GeraldSquad:
+UNIT Gerald Mage Gerald Level(15,Enemy,True) [9,5] Drop 0x00 0x00 0x00 [Elfire,Vulnerary] GuardAI
+UNIT Arcanian Soldier Gerald Level(10,Enemy,True) [7,4] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Knight Gerald Level(10,Enemy,True) [11,4] 0x00 0x00 0x00 0x00 [IronLance] GuardAI
+UNIT Arcanian Mage Gerald Level(10,Enemy,True) [6,6] 0x00 0x00 0x00 0x00 [Elfire] AttackInRangeAI
+UNIT Arcanian Archer Gerald Level(10,Enemy,True) [12,6] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian Fighter Gerald Level(10,Enemy,True) [3,9] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Mercenary Gerald Level(10,Enemy,True) [12,9] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Myrmidon Gerald Level(10,Enemy,True) [9,13] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Arcanian Shaman Gerald Level(10,Enemy,True) [14,14] 0x00 0x00 0x00 0x00 [Flux] AttackInRangeAI
+UNIT Arcanian Cavalier Gerald Level(10,Enemy,True) [16,9] 0x00 0x00 0x00 0x00 [SteelSword] ChaseOnceApproachedAI
+UNIT Arcanian Soldier Gerald Level(9,Enemy,True) [17,12] 0x00 0x00 0x00 0x00 [Javelin] NoAI
+UNIT Arcanian Monk Gerald Level(9,Enemy,True) [8,7] 0x00 0x00 0x00 0x00 [Lightning] AttackInRangeAI
+UNIT Arcanian Fighter Gerald Level(10,Enemy,True) [12,18] Drop 0x00 0x00 0x00 [IronAxe,DoorKey] NoAI
+UNIT
+
+ShanleyUnit:
+UNIT Shanley Sage Shanley Level(8,NPC,True) [9,1] 0x00 0x00 0x00 0x00 [Thunder,Elthunder] AttackInRangeAI
+UNIT
+
+Turn4Units:
+UNIT Arcanian Cavalier Gerald Level(10,Enemy,True) [8,0] 0x00 0x00 0x00 0x00 [IronLance,Javelin] NoAI
+UNIT Arcanian Mercenary Gerald Level(10,Enemy,True) [10,0] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT
+
+Turn6Units:
+UNIT Arcanian Knight Gerald Level(11,Enemy,True) [9,0] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Mage Gerald Level(10,Enemy,True) [8,0] 0x00 0x00 0x00 0x00 [Thunder] NoAI
+EndUnit

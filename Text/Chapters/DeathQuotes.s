@@ -229,3 +229,15 @@ expect me to thank you.[A][X]
 [FarRight][LoadLakshmi]
 Is this... as far as I get?[....][NL]
 Mother... I'm sorry...[CloseEyes][A][X]
+
+## AlexisDeathText
+[FarRight][LoadAlexis]
+I can't heal anyone[NL]
+from the ground...[....] Forgive[A][NL]
+me. I have to fall back.[A][X]
+
+## ShanleyDeathText
+[FarRight][LoadShanley]
+Not yet... I still have[NL]
+amends to make...[....][A][NL]
+Pull me back, quickly...[A][X]

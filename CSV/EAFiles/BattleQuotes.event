@@ -92,6 +92,14 @@ SpecifiedBattleConvo(0x00,Halleck,MageSearch3,0x14,Mage3SearchTactHalleckBattleT
 UnspecifiedBattleConvo(Halleck,MageSearch3,0x15,Mage3SearchHalleckBattleText)
 SpecifiedBattleConvo(Lakshmi,Sean,MageSearch4,0x15,Mage4SearchLakshmiSeanBattleText)
 UnspecifiedBattleConvo(Sean,MageSearch4,0x16,Mage4SearchSeanBattleText)
+SpecifiedBattleConvo(Lakshmi,Blaine,MageSearchArcanae5,0x12,Mage5SearchArcanaeLakshmiBlaineBattleText)
+UnspecifiedBattleConvo(Blaine,MageSearchArcanae5,0x13,Mage5SearchArcanaeBlaineBattleText)
+SpecifiedBattleConvo(Lakshmi,Gerald,MageSearchArcanae6,0x16,Mage6SearchArcanaeLakshmiGeraldBattleText)
+UnspecifiedBattleConvo(Gerald,MageSearchArcanae6,0x17,Mage6SearchArcanaeGeraldBattleText)
+SpecifiedBattleConvo(Lakshmi,Uzkalis,MageSearchArcanae7,0x17,Mage7SearchArcanaeLakshmiUzkalisBattleText)
+SpecifiedBattleConvo(Xena,Uzkalis,MageSearchArcanae7,0x18,Mage7SearchArcanaeXenaUzkalisBattleText)
+SpecifiedBattleConvo(0x00,Uzkalis,MageSearchArcanae7,0x19,Mage7SearchArcanaeTactUzkalisBattleText)
+UnspecifiedBattleConvo(Uzkalis,MageSearchArcanae7,0x1A,Mage7SearchArcanaeUzkalisBattleText)
 
 // This terminator deviates from vanilla because I changed the battle quote getter function.
 BYTE 0xF0 0xF0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

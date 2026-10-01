@@ -155,6 +155,7 @@ ENDB
 	}
 #endif
 #ifndef __NO_MAGE__
+	#include "Mage/MageCommon.event" // Not scoped: its labels are shared by every Mage ending.
 	{
 	#include "Mage/Mage1.event"
 	}
@@ -169,6 +170,15 @@ ENDB
 	}
 	{
 	#include "Mage/Mage4Search.event"
+	}
+	{
+	#include "Mage/Mage5SearchArcanae.event"
+	}
+	{
+	#include "Mage/Mage6SearchArcanae.event"
+	}
+	{
+	#include "Mage/Mage7SearchArcanae.event"
 	}
 #endif
 
