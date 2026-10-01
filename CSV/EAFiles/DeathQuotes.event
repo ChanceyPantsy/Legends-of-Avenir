@@ -26,6 +26,8 @@ DeathQuote(0x00,MageSearchEfil7,0x12,Mage7SearchEfilGoodEndingPlayerDeathText) /
 DeathQuote(0x00,MageSearchEfil7,0x13,Mage7SearchEfilBadEndingPlayerDeathText)
 DeathQuote(0x00,MageLeaveRevenge7,0x1A,Mage7LeaveRevengeGoodEndingPlayerDeathText) // Mage Return Revenge.
 DeathQuote(0x00,MageLeaveRevenge7,0x1B,Mage7LeaveRevengeBadEndingPlayerDeathText)
+DeathQuote(0x00,MageLeaveRefugeMuriel7,0x12,Mage7LeaveRefugeMurielGoodEndingPlayerDeathText) // Mage Return Muriel.
+DeathQuote(0x00,MageLeaveRefugeMuriel7,0x13,Mage7LeaveRefugeMurielBadEndingPlayerDeathText)
 
 // Specific death quotes need to come first.
 DeathQuote(Henning,Mercenary1,0x02,Merc1HenningDeathText)
@@ -117,6 +119,11 @@ DeathQuote(Val,MageLeaveRevenge4,0x13,Mage4LeaveRevengeValYieldText) // Captured
 DeathQuote(Helmer,MageLeaveRevenge4,0x14,Mage4LeaveRevengeHelmerYieldText)
 DeathQuote(Dunlas,MageLeaveRevenge6,0x02,Mage6LeaveRevengeDunlasDeathText)
 DeathQuote(Clint,MageLeaveRevenge7,0x02,Mage7LeaveRevengeClintDeathText)
+DeathQuote(Mason,MageLeaveRefuge4,0x02,Mage4LeaveRefugeMasonDeathText)
+DeathQuote(Richter,MageLeaveRefugeMuriel5,0x02,Mage5LeaveRefugeMurielRichterDeathText)
+DeathQuote(Lakshmi,MageLeaveRefugeMuriel6,0x15,Mage6LeaveRefugeMurielLakshmiDeathText)
+DeathQuote(Muriel,MageLeaveRefugeMuriel7,0x14,Mage7LeaveRefugeMurielMurielDeathText) // Losing Muriel here leads to the bad ending.
+DeathQuote(BossXavus,MageLeaveRefugeMuriel7,0x02,Mage7LeaveRefugeMurielXavusDeathText)
 DeathQuote(Lakshmi,MageSearchEfil7,0x14,Mage7SearchEfilLakshmiDeathText) // Flag 0x14 marks the bad ending.
 DeathQuote(Lakshmi,MageSearch2,0x65,LakshmiGameOverDeathText) // Losing Lakshmi ends the Investigate route.
 DeathQuote(Lakshmi,MageSearch3,0x65,LakshmiGameOverDeathText)
@@ -135,6 +142,8 @@ DeathQuote(Clara,MageLeaveRefuge4,0x65,ClaraGameOverDeathText)
 DeathQuote(Clara,MageLeaveRefugeMuriel5,0x65,ClaraGameOverDeathText)
 DeathQuote(Clara,MageLeaveRefugeMuriel6,0x65,ClaraGameOverDeathText)
 DeathQuote(Clara,MageLeaveRefugeMuriel7,0x65,ClaraGameOverDeathText)
+DeathQuote(Muriel,MageLeaveRefugeMuriel5,0x65,MurielGameOverDeathText) // Muriel must survive while her city is at stake.
+DeathQuote(Muriel,MageLeaveRefugeMuriel6,0x65,MurielGameOverDeathText)
 DeathQuote(Xena,Mage1,0x65,XenaDeathText) // Losing Xena ends the Mage route (and her echo in the True route).
 DeathQuote(Xena,MageLeave2,0x65,XenaDeathText)
 DeathQuote(Xena,MageSearch2,0x65,XenaDeathText)

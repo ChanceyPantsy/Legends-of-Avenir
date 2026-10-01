@@ -116,6 +116,15 @@ UnspecifiedBattleConvo(Dunlas,MageLeaveRevenge6,0x14,Mage6LeaveRevengeDunlasBatt
 SpecifiedBattleConvo(Zaheva,Clint,MageLeaveRevenge7,0x1C,Mage7LeaveRevengeZahevaClintBattleText)
 SpecifiedBattleConvo(Val,Clint,MageLeaveRevenge7,0x1D,Mage7LeaveRevengeValClintBattleText)
 UnspecifiedBattleConvo(Clint,MageLeaveRevenge7,0x1E,Mage7LeaveRevengeClintBattleText)
+SpecifiedBattleConvo(Kendrick,Mason,MageLeaveRefuge4,0x15,Mage4LeaveRefugeKendrickMasonBattleText)
+UnspecifiedBattleConvo(Mason,MageLeaveRefuge4,0x16,Mage4LeaveRefugeMasonBattleText)
+SpecifiedBattleConvo(Muriel,Richter,MageLeaveRefugeMuriel5,0x16,Mage5LeaveRefugeMurielMurielRichterBattleText)
+UnspecifiedBattleConvo(Richter,MageLeaveRefugeMuriel5,0x17,Mage5LeaveRefugeMurielRichterBattleText)
+SpecifiedBattleConvo(Xena,Lakshmi,MageLeaveRefugeMuriel6,0x16,Mage6LeaveRefugeMurielXenaLakshmiBattleText)
+UnspecifiedBattleConvo(Lakshmi,MageLeaveRefugeMuriel6,0x17,Mage6LeaveRefugeMurielLakshmiBattleText)
+SpecifiedBattleConvo(Muriel,BossXavus,MageLeaveRefugeMuriel7,0x16,Mage7LeaveRefugeMurielMurielXavusBattleText)
+SpecifiedBattleConvo(Xena,BossXavus,MageLeaveRefugeMuriel7,0x17,Mage7LeaveRefugeMurielXenaXavusBattleText)
+UnspecifiedBattleConvo(BossXavus,MageLeaveRefugeMuriel7,0x18,Mage7LeaveRefugeMurielXavusBattleText)
 
 // This terminator deviates from vanilla because I changed the battle quote getter function.
 BYTE 0xF0 0xF0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

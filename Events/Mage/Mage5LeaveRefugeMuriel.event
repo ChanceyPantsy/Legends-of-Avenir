@@ -1,0 +1,218 @@
+ChapterEvents(Mage5LeaveRefugeMurielEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Turn3,3)
+TurnEventEnemy(0x0,Turn6,6)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x10,TClaraMuriel,Clara,Muriel)
+CharacterEvent(0x11,TXenaMuriel,Xena,Muriel)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+House(0x12,Warehouse1,9,2)
+House(0x13,Warehouse2,20,2)
+House(0x14,Warehouse3,20,9)
+House(0x15,Warehouse4,9,15)
+Armory(ArmoryList,7,9)
+Vendor(ShopList,19,14)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [5,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [4,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [6,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [5,17] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [4,17] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [6,17] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+MUSC Rest_of_the_Heart
+SetBackground(0x07) // A quiet beach south of the harbor.
+Text(Mage5LeaveRefugeMurielStartingText)
+EndConvo
+STAL 0x10
+CAM1 [5,15]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+LOAD1 0x1 MurielUnit
+ENUN
+LOAD1 0x1 HarborGuard
+ENUN
+STAL 0x10
+CAM1 [3,6]
+STAL 0x10
+MUSC Tension
+Text(Mage5LeaveRefugeMurielRichterText)
+STAL 0x10
+CAM1 [5,15]
+Text(Mage5LeaveRefugeMurielObjectiveText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+MUSC Treasured_Memories
+SetBackground(0x07) // The harbor at dawn.
+Text(Mage5LeaveRefugeMurielEndingText)
+MoveToChapter(MageLeaveRefugeMuriel6)
+NoFade
+ENDA
+
+//Label Turn events
+Turn3:
+CamON
+LOAD1 0x1 Turn3Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn6:
+CamON
+LOAD1 0x1 Turn6Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TClaraMuriel:
+MUSI
+Text(Mage5LeaveRefugeMurielClaraMurielText)
+MUNO
+NoFade
+EndA2
+
+TXenaMuriel:
+MUSI
+Text(Mage5LeaveRefugeMurielXenaMurielText)
+MUNO
+NoFade
+ENDA
+
+//Label Location events
+Warehouse1:
+MUSI
+Text(0x01,Mage5LeaveRefugeMurielWarehouse1Text)
+GiveItem(Elixir,0xFFFF)
+TileChange(9,2)
+MUNO
+NoFade
+EndA2
+
+Warehouse2:
+MUSI
+Text(0x01,Mage5LeaveRefugeMurielWarehouse2Text)
+GiveItem(SilverLance,0xFFFF)
+TileChange(20,2)
+MUNO
+NoFade
+EndA2
+
+Warehouse3:
+MUSI
+Text(0x01,Mage5LeaveRefugeMurielWarehouse3Text)
+GiveItem(Elwind,0xFFFF)
+TileChange(20,9)
+MUNO
+NoFade
+EndA2
+
+Warehouse4:
+MUSI
+Text(0x01,Mage5LeaveRefugeMurielWarehouse4Text)
+GiveItem(Restore,0xFFFF)
+TileChange(9,15)
+MUNO
+NoFade
+ENDA
+
+//Label Shops
+ArmoryList:
+SHLI SteelSword SteelBlade SteelLance Javelin SteelAxe HandAxe SteelBow
+ALIGN 4
+
+ShopList:
+SHLI Vulnerary Elixir Elfire Elwind Elthunder Flux Luna Shine Mend Physic
+ALIGN 4
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [5,16] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [4,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [6,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [5,17] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [4,17] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [6,17] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+MurielUnit:
+UNIT Muriel MurielSage 0x00 Level(10,NPC,True) [8,16] 0x00 0x00 0x00 0x00 [Elwind,Physic] AttackInRangeAI
+UNIT
+
+HarborGuard:
+UNIT Richter Hero Richter Level(9,Enemy,True) [2,6] 0x00 0x00 0x00 0x00 [SilverSword,HandAxe] GuardAI
+UNIT Arcanian General Richter Level(7,Enemy,True) [3,6] 0x00 0x00 0x00 0x00 [SteelLance] GuardAI
+UNIT Haedrican Sniper Richter Level(6,Enemy,True) [4,4] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian Sage Richter Level(6,Enemy,True) [3,8] 0x00 0x00 0x00 0x00 [Elfire] AttackInRangeAI
+UNIT Haedrican Warrior Richter Level(6,Enemy,True) [12,6] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Haedrican Mercenary Richter Level(7,Enemy,True) [15,4] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Paladin Richter Level(6,Enemy,True) [17,10] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Haedrican Hero Richter Level(5,Enemy,True) [21,5] 0x00 0x00 0x00 0x00 [SteelBlade] NoAI
+UNIT Arcanian MageKnight Richter Level(5,Enemy,True) [11,11] 0x00 0x00 0x00 0x00 [Elthunder] NoAI
+UNIT Haedrican Berserker Richter Level(5,Enemy,True) [16,15] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Bishop Richter Level(5,Enemy,True) [12,2] 0x00 0x00 0x00 0x00 [Shine,Mend] AttackInRangeAI
+UNIT Haedrican Fighter Richter Level(7,Enemy,True) [22,12] Drop 0x00 0x00 0x00 [SteelAxe,Vulnerary] NoAI
+UNIT
+
+Turn3Units:
+UNIT Arcanian Cavalier Richter Level(6,Enemy,True) [13,0] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Cavalier Richter Level(6,Enemy,True) [14,0] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT
+
+Turn6Units:
+UNIT Haedrican Warrior Richter Level(7,Enemy,True) [23,6] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Sage Richter Level(6,Enemy,True) [23,7] 0x00 0x00 0x00 0x00 [Elthunder] NoAI
+UNIT

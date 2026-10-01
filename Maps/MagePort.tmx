@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="0E007210" tilewidth="16" tileheight="16">
+  <image source="../../Tools/Tiled/Tiled Inserter/Tilesets/Tilesets/0E007210.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="24" height="18">
+  <properties>
+   <property name="Anims" value="_0EAnims"/>
+   <property name="ChapterID" value="MageLeaveRefugeMuriel5"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="MagePortChanges"/>
+   <property name="MapID" value="MagePortMap"/>
+   <property name="ObjectType" value="0x0E"/>
+   <property name="PaletteID" value="0x0F"/>
+   <property name="TileConfig" value="0x10"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJx9lb9OG0EQxmfvlAbTpLYiRSnjwiVtBB1+gLSRkihW8gbpEARQ4AnobAxJ5KewAcexU/gVbMlAIALayE2+0c5o9+bWFD/t7b9vZ2dm5xaOqJoTDYloIyNaAXPneYLvuitTw3iX0nO8hxlJ/zlYyBkTCvPv0H8PfoCP4FNe1BgldFtY0wbHebDtleiv5WEdtzvofwG/wFdwEO1RG6x+D2v64Ey0HmDvmyX6qqH9G8H6QfvqU13bwJxD+4+8/iIr6lsGWPcbnJC36xJ8S8TgGmNTMANb5PVf5+W7Mg9UtnMXY+vO7+1ScQ3DefJS4vMH7IEm2I909X6ssZIV97MPRpJDfP8DKvuTqci81WfdF87Psf6mnGf9cUrhDql4MRPjn6fOvwHe10F7Ak7lvFbkD43HBfm7qO4H6DRBDdyi/zcL8a3KGYcSn3PMXYBB5s/ksdgfNlbMHjT2QQNUwGoe9DU/7yT2qqdtHNNl+qm3HOcn+/hG8mMm56huW/w9lRxNvQHN23swlzWsz7Zz3nYi3T4YS86z/WPx94SKdcTGe90Ff15RsP9ZXtbSvbbWWNs5L1r4boO3WbDxJ/gs9UFzaCK6qfq2rB6wfg9zfbCdeT9oHhwZfbXtsfqWst9FTMX2umgrVVPjbL2L/fPdxFHjMjC+jfUXiRxb9g8ZSi7Z92D5D/w0s14=
+  </data>
+ </layer>
+ <layer name="Warehouse1" width="24" height="18">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="9"/>
+   <property name="Y" value="2"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBj+QHGgHTAKRsEoGAWjgOoAAMgcACI=
+  </data>
+ </layer>
+ <layer name="Warehouse2" width="24" height="18">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="1"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="20"/>
+   <property name="Y" value="2"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFyEBxoB0wCkbBKBgFo4AoAADCcAAi
+  </data>
+ </layer>
+ <layer name="Warehouse3" width="24" height="18">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="2"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="20"/>
+   <property name="Y" value="9"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDBWgONAOGAWjYBABAGvQACI=
+  </data>
+ </layer>
+ <layer name="Warehouse4" width="24" height="18">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="3"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="9"/>
+   <property name="Y" value="15"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMFSB4kA7YAABACc8ACI=
+  </data>
+ </layer>
+</map>

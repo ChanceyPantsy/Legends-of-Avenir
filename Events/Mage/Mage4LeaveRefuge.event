@@ -1,0 +1,252 @@
+ChapterEvents(Mage4LeaveRefugeEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Turn3,3)
+TurnEventEnemy(0x0,Turn6,6)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x10,TXenaKendrick,Xena,Kendrick)
+CharacterEvent(0x10,TTactKendrick,0x00,Kendrick)
+CharacterEvent(0x10,TClaraKendrick,Clara,Kendrick)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+House(0x11,House1,4,2)
+House(0x12,House2,19,2)
+House(0x13,House3,16,9)
+House(0x14,House4,4,14)
+Vendor(ShopList,14,2)
+Armory(ArmoryList,3,9)
+Armory(ArmoryList2,14,14)
+Vendor(ShopList2,19,14)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [1,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [0,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [1,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [0,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [2,6] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+MUSC Town_of_Winds_and_Ruins
+SetBackground(0x05) // The market streets of Bacrun.
+Text(Mage4LeaveRefugeStartingText)
+EndConvo
+STAL 0x10
+CAM1 [2,5]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+ENUN
+LOAD1 0x1 KendrickUnit
+LOAD1 0x1 Hunters
+ENUN
+STAL 0x10
+CAM1 [18,5]
+STAL 0x10
+MUSC Tension
+Text(Mage4LeaveRefugeMasonText)
+STAL 0x10
+CAM1 [12,3]
+STAL 0x10
+Text(Mage4LeaveRefugeKendrickText)
+STAL 0x10
+CAM1 [2,5]
+Text(Mage4LeaveRefugeObjectiveText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+TurnAlly(Kendrick) // If no one spoke to him, he still brings the passports.
+MUSC Rest_of_the_Heart
+SetBackground(0x09) // A quiet inn.
+Text(Mage4LeaveRefugeEndingText)
+STAL 0x20
+ASMC CallMage4LeaveRefugeMenu|1
+STAL 0x20
+BNE 0x0 0x0 0xC
+	// Accept Muriel's offer.
+	Text(Mage4LeaveRefugeChoseMurielText)
+	MoveToChapter(MageLeaveRefugeMuriel5)
+	GOTO 0x1
+LABEL 0x0
+	// Go back for Mistlain.
+	Text(Mage4LeaveRefugeChoseMistlainText)
+	MoveToChapter(MageLeaveRefugeMistlain5)
+LABEL 0x1
+NoFade
+ENDA
+
+//Label Turn events
+Turn3:
+CamON
+LOAD1 0x1 Turn3Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn6:
+CamON
+LOAD1 0x1 Turn6Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TXenaKendrick:
+MUSI
+Text(Mage4LeaveRefugeXenaKendrickText)
+MUNO
+TurnAlly(Kendrick)
+NoFade
+EndA2
+
+TTactKendrick:
+MUSI
+Text(Mage4LeaveRefugeTactKendrickText)
+MUNO
+TurnAlly(Kendrick)
+NoFade
+EndA2
+
+TClaraKendrick:
+MUSI
+Text(Mage4LeaveRefugeClaraKendrickText)
+MUNO
+TurnAlly(Kendrick)
+NoFade
+ENDA
+
+//Label Location events
+House1:
+MUSI
+Text(0x01,Mage4LeaveRefugeHouse1Text)
+GiveItem(Elixir,0xFFFF)
+TileChange(4,2)
+MUNO
+NoFade
+EndA2
+
+House2:
+MUSI
+Text(0x01,Mage4LeaveRefugeHouse2Text)
+TileChange(19,2)
+MUNO
+NoFade
+EndA2
+
+House3:
+MUSI
+Text(0x01,Mage4LeaveRefugeHouse3Text)
+GiveItem(Elthunder,0xFFFF)
+TileChange(16,9)
+MUNO
+NoFade
+EndA2
+
+House4:
+MUSI
+Text(0x01,Mage4LeaveRefugeHouse4Text)
+GiveItem(Talisman,0xFFFF)
+TileChange(4,14)
+MUNO
+NoFade
+ENDA
+
+//Label Shops
+ShopList:
+SHLI Vulnerary Elixir Fire Thunder Wind Flux Lightning Heal Mend
+ALIGN 4
+
+ArmoryList:
+SHLI IronSword SteelSword IronLance SteelLance IronAxe SteelAxe HandAxe IronBow
+ALIGN 4
+
+ArmoryList2:
+SHLI SteelSword KillingEdge Javelin Halberd SteelAxe Hammer SteelBow
+ALIGN 4
+
+ShopList2:
+SHLI Elfire Elwind Elthunder Luna Shine Physic DoorKey ChestKey_5
+ALIGN 4
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [1,5] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [0,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [1,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [0,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [2,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+KendrickUnit:
+UNIT Kendrick Pirate Kendrick Level(8,NPC,True) [13,3] 0x00 0x00 0x00 0x00 [SteelAxe,HandAxe,Vulnerary] DoNothing
+UNIT
+
+Hunters:
+UNIT Mason Ranger Mason Level(8,Enemy,True) [20,6] 0x00 0x00 0x00 0x00 [SteelSword,SteelBow] GuardAI
+UNIT Bacrunian Knight Mason Level(6,Enemy,True) [19,7] 0x00 0x00 0x00 0x00 [SteelLance] GuardAI
+UNIT Bacrunian Archer Mason Level(6,Enemy,True) [19,4] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Bacrunian Mercenary Mason Level(6,Enemy,True) [15,6] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Bacrunian Fighter Mason Level(6,Enemy,True) [11,5] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Bacrunian Cavalier Mason Level(6,Enemy,True) [9,8] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Bacrunian Myrmidon Mason Level(6,Enemy,True) [7,3] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Bacrunian Mage Mason Level(6,Enemy,True) [12,11] Drop 0x00 0x00 0x00 [Fire,Vulnerary] NoAI
+UNIT Bacrunian Brigand Mason Level(6,Enemy,True) [6,10] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Bacrunian Archer Mason Level(5,Enemy,True) [17,12] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
+UNIT Bacrunian Shaman Mason Level(6,Enemy,True) [15,16] 0x00 0x00 0x00 0x00 [Flux] NoAI
+UNIT
+
+Turn3Units:
+UNIT Bacrunian Cavalier Mason Level(6,Enemy,True) [9,0] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Bacrunian Fighter Mason Level(6,Enemy,True) [10,0] 0x00 0x00 0x00 0x00 [HandAxe] NoAI
+UNIT
+
+Turn6Units:
+UNIT Bacrunian Mercenary Mason Level(7,Enemy,True) [9,17] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Bacrunian Archer Mason Level(6,Enemy,True) [10,17] 0x00 0x00 0x00 0x00 [SteelBow] NoAI
+UNIT

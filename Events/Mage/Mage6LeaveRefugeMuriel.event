@@ -1,0 +1,253 @@
+ChapterEvents(Mage6LeaveRefugeMurielEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Wave2,2)
+TurnEventEnemy(0x0,Wave4,4)
+TurnEventEnemy(0x0,Wave6,6)
+TurnEventEnemy(0x0,Wave8,8)
+TurnEventEnemy(0x0,Wave10,10)
+TurnEventEnemy(0x0,EndingScene,11) // Hold the harbor for eleven turns.
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x13,TXenaLakshmi,Xena,Lakshmi)
+CharacterEvent(0x14,TTactLakshmi,0x00,Lakshmi)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+House(0x10,House1,8,2)
+House(0x11,House2,15,9)
+House(0x12,House3,12,12)
+Armory(ArmoryList,16,12)
+Vendor(ShopList,16,15)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [16,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [15,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [14,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [16,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [16,4] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [15,6] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+MUSC Rest_of_the_Heart
+SetBackground(0x0A) // Muriel's tower.
+Text(Mage6LeaveRefugeMurielStartingText)
+EndConvo
+STAL 0x10
+CAM1 [15,5]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+LOAD1 0x1 MurielUnit
+ENUN
+STAL 0x10
+CAM1 [4,12]
+LOAD1 0x1 LakshmiFleet
+ENUN
+STAL 0x10
+MUSC Tension
+Text(Mage6LeaveRefugeMurielFleetText)
+STAL 0x10
+CAM1 [15,5]
+Text(Mage6LeaveRefugeMurielObjectiveText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+MUSC Victory_March
+SetBackground(0x07) // The harbor, as Cesarian ships arrive.
+Text(Mage6LeaveRefugeMurielEndingText)
+MoveToChapter(MageLeaveRefugeMuriel7)
+NoFade
+ENDA
+
+//Label Turn events
+Wave2:
+CamON
+LOAD1 0x1 Wave2Units
+ENUN
+CamOFF
+Text(Mage6LeaveRefugeMurielReinforcementsText)
+NoFade
+EndA2
+
+Wave4:
+CamON
+LOAD1 0x1 Wave4Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Wave6:
+CamON
+LOAD1 0x1 Wave6Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Wave8:
+CamON
+LOAD1 0x1 Wave8Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Wave10:
+CamON
+LOAD1 0x1 Wave10Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+//Label Character events
+TXenaLakshmi:
+MUSI
+Text(Mage6LeaveRefugeMurielXenaLakshmiText)
+MUNO
+TurnAlly(Lakshmi)
+NoFade
+EndA2
+
+TTactLakshmi:
+MUSI
+Text(Mage6LeaveRefugeMurielTactLakshmiText)
+MUNO
+NoFade
+EndA2
+
+//Label Location events
+House1:
+MUSI
+Text(0x01,Mage6LeaveRefugeMurielHouse1Text)
+GiveItem(Elixir,0xFFFF)
+TileChange(8,2)
+MUNO
+NoFade
+EndA2
+
+House2:
+MUSI
+Text(0x01,Mage6LeaveRefugeMurielHouse2Text)
+GiveItem(Speedwings,0xFFFF)
+TileChange(15,9)
+MUNO
+NoFade
+EndA2
+
+House3:
+MUSI
+Text(0x01,Mage6LeaveRefugeMurielHouse3Text)
+GiveItem(PureWater,0xFFFF)
+TileChange(12,12)
+MUNO
+NoFade
+ENDA
+
+//Label Shops
+ArmoryList:
+SHLI SteelSword SilverSword SteelLance SilverLance SteelAxe SteelBow Javelin
+ALIGN 4
+
+ShopList:
+SHLI Vulnerary Elixir Elfire Elwind Elthunder Luna Shine Physic Fortify
+ALIGN 4
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [16,5] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [15,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [14,5] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [16,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [16,4] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [15,6] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+MurielUnit:
+UNIT Muriel MurielSage 0x00 Level(12,NPC,True) [17,5] 0x00 0x00 0x00 0x00 [Elwind,Physic] AttackInRangeAI
+UNIT
+
+LakshmiFleet:
+UNIT Lakshmi Druid_F Lakshmi Level(4,Enemy,True) [4,12] 0x00 0x00 0x00 0x00 [Luna,Flux] NoAI
+UNIT Arcanian Cavalier Lakshmi Level(7,Enemy,True) [1,4] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Fighter Lakshmi Level(7,Enemy,True) [0,6] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Mage Lakshmi Level(7,Enemy,True) [2,9] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT Arcanian Soldier Lakshmi Level(7,Enemy,True) [6,11] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Archer Lakshmi Level(7,Enemy,True) [5,13] 0x00 0x00 0x00 0x00 [SteelBow] NoAI
+UNIT Arcanian Knight Lakshmi Level(7,Enemy,True) [7,14] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Myrmidon Lakshmi Level(7,Enemy,True) [3,2] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Mercenary Lakshmi Level(7,Enemy,True) [8,8] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT
+
+Wave2Units:
+UNIT Arcanian Fighter Lakshmi Level(7,Enemy,True) [4,15] 0x00 0x00 0x00 0x00 [HandAxe] NoAI
+UNIT Arcanian Shaman Lakshmi Level(7,Enemy,True) [5,16] 0x00 0x00 0x00 0x00 [Flux] NoAI
+UNIT Arcanian Cavalier Lakshmi Level(7,Enemy,True) [0,4] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT
+
+Wave4Units:
+UNIT Arcanian Mercenary Lakshmi Level(8,Enemy,True) [4,13] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Mage Lakshmi Level(8,Enemy,True) [5,16] 0x00 0x00 0x00 0x00 [Thunder] NoAI
+UNIT Arcanian Soldier Lakshmi Level(8,Enemy,True) [0,7] 0x00 0x00 0x00 0x00 [Javelin] NoAI
+UNIT
+
+Wave6Units:
+UNIT Arcanian MageKnight Lakshmi Level(5,Enemy,True) [0,4] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT Arcanian Warrior Lakshmi Level(5,Enemy,True) [4,15] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Archer Lakshmi Level(8,Enemy,True) [4,13] 0x00 0x00 0x00 0x00 [SteelBow] NoAI
+UNIT
+
+Wave8Units:
+UNIT Arcanian Paladin Lakshmi Level(5,Enemy,True) [0,5] 0x00 0x00 0x00 0x00 [SteelLance,Javelin] NoAI
+UNIT Arcanian Sage Lakshmi Level(5,Enemy,True) [5,16] 0x00 0x00 0x00 0x00 [Elthunder] NoAI
+UNIT Arcanian Hero Lakshmi Level(5,Enemy,True) [4,15] 0x00 0x00 0x00 0x00 [SteelBlade] NoAI
+UNIT
+
+Wave10Units:
+UNIT Arcanian Swordmaster Lakshmi Level(5,Enemy,True) [0,6] 0x00 0x00 0x00 0x00 [KillingEdge] NoAI
+UNIT Arcanian General Lakshmi Level(5,Enemy,True) [4,13] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT

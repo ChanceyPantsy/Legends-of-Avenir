@@ -276,7 +276,7 @@ for 11 turns.[X]
 
 ## Mage7LeaveRefugeMurielStatusText
 Defeat Xavus.[NL]
-Muriel must survive.[X]
+Protect Muriel.[X]
 
 ## Mage5LeaveRefugeMistlainStatusText
 Seize the old gate.[X]

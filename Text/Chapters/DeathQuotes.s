@@ -235,6 +235,11 @@ I see Clint's face again...[CloseEyes][A][X]
 Lady Muriel... I'm sorry...[....][NL]
 Your letters... never...[CloseEyes][A][X]
 
+## MurielGameOverDeathText
+[FarRight][LoadMuriel]
+The wind...[....] is so still...[NL]
+Clara... forgive me...[CloseEyes][A][X]
+
 ## LakshmiGameOverDeathText
 [FarRight][LoadLakshmi]
 Is this... as far as I get?[....][NL]
