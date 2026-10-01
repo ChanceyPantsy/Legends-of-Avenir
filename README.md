@@ -1,9 +1,19 @@
 # Legends of Avenir
 Legends of Avenir is a fan-made fully-fledged GBA Fire Emblem game. This buildfile is the source for building the game from a clean, English FE8. Written by 1st_Lieutenant_Noguchi and coded by Snakey1. Build notes are at the bottom of this document.
 
-Although most FE games are more or less linear (with the exception of the occasional route split) Legends of Avenir is unique in that it is entirely composed of route splits! Each "route" is seven chapters long and contains fully custom maps, events, characters, gameplay mechanics, story, and more. Begin your journey in the prologue by choosing your name, gender, and a starting class for your Tactician, and begin making choices. There are over 70 planned chapters, though the project is still in development.
+Although most FE games are more or less linear (with the exception of the occasional route split) Legends of Avenir is unique in that it is entirely composed of route splits! Each "route" is seven chapters long and contains fully custom maps, events, characters, gameplay mechanics, story, and more. Begin your journey in the prologue by choosing your name, gender, and a starting class for your Tactician, and begin making choices. Three starting paths branch into fifteen different endings, and seeing all of them unlocks a final True ending.
 
 The continent of Avenir is a wholly new continent of gameplay and comes with its own lore, nations, and history to unveil. Just playing one of the many routes available will only reveal a fraction of what is to be learned.
+
+## Routes
+* **Mercenary** (start in Haedric): five endings.
+* **Military** (start in Cesaria): five endings.
+* **Mage** (start in Arcanae): five endings. After the first chapter, Tact and Xena either investigate the crystal they found in the Draterus ruins or return to the capital, and each of those paths splits again:
+  * *Investigate*: go with Lakshmi to Uzkalis (New Arcanae ending), or seek out Efil (Light ending).
+  * *Return*: stand with Zaheva against Duke Clint (Revenge ending), or keep running to Bacrun and then join Muriel's Free Port (Wind ending) or go back for Mistlain (Flame ending).
+* **True ending**: once all fifteen endings have been seen (either the good or the bad version of each), the Prologue changes. Tact remembers every life, walks through them one last time with old friends, and faces the Guardian Spirit.
+
+The Mage route and the True ending were completed in 2026, building on the story, characters and lore the original team had already written.
 
 For more information on Legends of Avenir, visit our official FEU post: https://feuniverse.us/t/fe8-fire-emblem-legends-of-avenir/3275
 

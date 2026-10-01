@@ -90,7 +90,7 @@ CHECK_EVENTID 0xDD
 BEQ 0x11 0x0 0xC
 CHECK_EVENTID 0xDE
 BEQ 0x11 0x0 0xC
-	ENUT 0x30 // This Prologue leads to the True route.
+	ENUT 0xCF // This Prologue leads to the True route. (Cleared again before True 1 starts.)
 	Text(PrologueTrueStartingText)
 	GOTO 0x12
 LABEL 0x10
@@ -152,7 +152,7 @@ BNE 0x6 0x6 0xC
 LABEL 0x6
 TEXTEND
 #ifndef __NO_MAGE__
-CHECK_EVENTID 0x30
+CHECK_EVENTID 0xCF
 BEQ 0x13 0x0 0xC
 	TEXTSHOW2 PrologueTrueCreatorText
 	GOTO 0x14
@@ -171,9 +171,10 @@ ASMC CallCharacterCreator|1 // This fades in and out on its own.
 EVBIT_T 0x8 // Tell the event engine we're faded in.
 
 #ifndef __NO_MAGE__
-CHECK_EVENTID 0x30
+CHECK_EVENTID 0xCF
 BEQ 0x15 0x0 0xC
 	// The True route skips the world map: every road has been walked already.
+	ENUF 0xCF
 	MoveToChapter(True1)
 	NoFade
 	ENDA

@@ -1,3 +1,19 @@
+v3.0 - The Mage route and the True ending
+The Mage route is finished and enabled in both the public and private releases. It adds 21 chapters after Mage 2 and five endings:
+  Investigate, then Go with Lakshmi: The Sealed Archive, The Faithful, Crossroads, The Thunder's Court, The Outer Ring, The Pura Engine (New Arcanae ending)
+  Investigate, then Seek out Efil: Deep Desert, Temple of Kilthel, What the Light Remembers (Light ending)
+  Return, then Stand with Zaheva: Fugitives, The Hunter's Trail, The Duke's Manor, Beneath the Capital, What Remains (Revenge ending)
+  Return, then Keep running, then Accept Muriel's offer: City of Coin, The Free Port, Wind and Flame, Eye of the Storm (Wind ending)
+  Return, then Keep running, then Go back for Mistlain: Ashes of the Old City, The Fire Tower, Embers (Flame ending)
+Every Mage 7 has a good and a bad ending, decided by what happens in that chapter (stopping the Pura Engine, bringing Lakshmi home, freeing Clint's prisoners, keeping Muriel alive, getting Mistlain out of the city)
+New: the True ending. Finish all fifteen route endings (either variant counts) and the Prologue changes. Walk through Tact's three lives again with friends from each of them, then face the Guardian Spirit in his own realm and choose which life to keep
+Every route ending is now remembered in a permanent flag (0xD0-0xDE), and finishing the True route sets 0xDF
+New maps: Mage Archive, Mage Oasis, Mage Crossroads, Mage Compound, Mage Outer Ring, Mage Engine, Mage Deep Desert, Mage Forest Road, Mage Hunter's Trail, Mage Market, Mage Port, and the True Realm. Several other Mage and True chapters reuse existing maps, some in new palettes
+The previously unused BigBattleground map is now the battlefield of Eye of the Storm
+Mistlain and Alexis have playable stats
+Losing Xena ends the game in every Mage chapter. Lakshmi (on the Investigate route, while she travels with the party), Zaheva (while Clint hunts her), Clara (while she carries Muriel's letters), Muriel (Free Port and Wind and Flame) and Mistlain (The Fire Tower) are likewise required where the story depends on them
+Development sided: chapter event data now has its own pointer table (ChapterEvents), so new chapters no longer need free map IDs
+
 v2.2 hotfixes
 Fixed Elanil and Finoc's rejoin in Mercenary 5 Cesaria
 Fixed promotion from the unit menu decrementing the top item of the unit's inventory

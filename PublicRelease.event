@@ -1,4 +1,3 @@
 
 #define __PUBLIC__
-#define __NO_MAGE__
 #include Ultrafile.event

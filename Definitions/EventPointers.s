@@ -50,7 +50,7 @@ MageOuterRingMap
 MageEngineMap
 MageDeepDesertMap
 MageForestRoadMap
-MageGateMap
+FortressMap
 AegrisMap
 PortSelsingMap
 KilthelTempleMap
@@ -58,10 +58,10 @@ HaedricHideoutMap
 HaedricCastleMap
 HaedricCityMap
 MageHuntersTrailMap
-MageUndercityMap
+LakeyMap
 LavaMap
 LotsOfRoomsMap
-MageLaboratoryMap
+LowerTempleMap
 MayorsVillageMap
 MountainsMap
 MountainyLakeMap
@@ -73,10 +73,10 @@ MagePortMap
 SkirmishMap
 SmallRuinMap
 TrainingFortressMap
-MageHarborMap
+UndergroundRuinMap
 UndergroundMap
-MageBattlefieldMap
-MageOutskirtsMap
+VenefrontLavaMap
+WalledTownMap
 ShizonDefenseMap
 ShizonShrineMap
 LeavingShizonMap
@@ -232,9 +232,7 @@ Military6AcceptHoldEvents
 Military7AcceptHoldEvents
 
 Mage1Events
-MageUndercityChanges
+SpareEventPointer1
 Mage2LeaveEvents
-MageLaboratoryChanges
 MageMarketChanges
 MagePortChanges
-MageOutskirtsChanges
