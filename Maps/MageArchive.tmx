@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="18" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="6C006D6E" tilewidth="16" tileheight="16">
+  <image source="Tilesets/6C006D6E.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="18">
+  <properties>
+   <property name="Anims" value="_6CAnims"/>
+   <property name="ChapterID" value="MageSearch2"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="MageArchiveChanges"/>
+   <property name="MapID" value="MageArchiveMap"/>
+   <property name="ObjectType" value="0x6C"/>
+   <property name="PaletteID" value="0x6D"/>
+   <property name="TileConfig" value="0x6E"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJyVk80NwjAMhaNWKj93FkBq6QKdgTNDwIUTQ4BQuXQJOFRI5QRDBAk2yQo4whYPK6Hi8Emu02e/OEmWGpMBBdERDpgRV+JGLCAeKFagPRMXoiYeRENsIA4h/e7Ek7DESfk5Km8xdE3JSa0t+N5DvAvsX5B8GdlHqbQjqItaietI3qm6+h+vO4Bea2OefdyyruXvNXgcqzpaa1lnoS/OIdR3TuSsEQrO93luWNtC74J7xs4da+bpt2d9t/35DBk5d7m3XpuxDt+FrE8SY6bm7UXmI/d2mYbfhaxXyWdepfL/61041rqIto+KPXd/anFOwgsOnqrR
+  </data>
+ </layer>
+ <layer name="SanctumGate" width="15" height="18">
+  <properties>
+   <property name="Height" value="2"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="3"/>
+   <property name="X" value="4"/>
+   <property name="Y" value="4"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBjZgIuZgWEDEHMyk653AlDPe2YIPQpGwUgCAMlSAuU=
+  </data>
+ </layer>
+ <layer name="NorthChest" width="15" height="18">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="1"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="12"/>
+   <property name="Y" value="13"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUkAOYBtoBAwgABjAAAw==
+  </data>
+ </layer>
+ <layer name="SouthChest" width="15" height="18">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="2"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="12"/>
+   <property name="Y" value="16"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjBTARCVzAATIAAM=
+  </data>
+ </layer>
+</map>

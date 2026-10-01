@@ -206,3 +206,26 @@ I may fall... But the Lion Brigade will not. I'm just another soldier...[X]
 [BattleText]
 [FarRight][LoadMuriel]
 I can't fall here... I can't... Push any more. Must I withdraw?[X]
+
+## XenaDeathText
+[FarRight][LoadXena]
+[Tact]... I'm sorry...[....][NL]
+I should have kept you[A][NL]
+far away from all of this...[CloseEyes][A][X]
+
+## AjaxDeathText
+[FarRight][LoadAjax]
+Agh... I can still walk.[....][NL]
+I'm falling back. Don't you[A][NL]
+dare come after me, [Tact].[A][X]
+
+## LakshmiDeathText
+[FarRight][LoadLakshmi]
+Tch... I'm no use like this.[....][NL]
+I'm pulling back. Don't[A][NL]
+expect me to thank you.[A][X]
+
+## LakshmiGameOverDeathText
+[FarRight][LoadLakshmi]
+Is this... as far as I get?[....][NL]
+Mother... I'm sorry...[CloseEyes][A][X]
