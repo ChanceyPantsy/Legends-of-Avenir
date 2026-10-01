@@ -240,6 +240,11 @@ Your letters... never...[CloseEyes][A][X]
 The wind...[....] is so still...[NL]
 Clara... forgive me...[CloseEyes][A][X]
 
+## MistlainGameOverDeathText
+[FarRight][LoadMistlain]
+Two hundred years...[....] and I[NL]
+never... said I was sorry...[CloseEyes][A][X]
+
 ## LakshmiGameOverDeathText
 [FarRight][LoadLakshmi]
 Is this... as far as I get?[....][NL]

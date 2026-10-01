@@ -190,6 +190,15 @@ ENDB
 	#include "Mage/Mage7LeaveRefugeMuriel.event"
 	}
 	{
+	#include "Mage/Mage5LeaveRefugeMistlain.event"
+	}
+	{
+	#include "Mage/Mage6LeaveRefugeMistlain.event"
+	}
+	{
+	#include "Mage/Mage7LeaveRefugeMistlain.event"
+	}
+	{
 	#include "Mage/Mage2Search.event"
 	}
 	{

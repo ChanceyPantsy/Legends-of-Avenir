@@ -1,0 +1,220 @@
+ChapterEvents(Mage5LeaveRefugeMistlainEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Turn3,3)
+TurnEventEnemy(0x0,Turn5,5)
+TurnEventEnemy(0x0,Turn7,7)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+Seize(0x3,EndingScene,9,0)
+House(0x11,NorthHouse,7,11)
+House(0x12,MiddleHouse,6,17)
+House(0x13,SWHouse,2,21)
+House(0x14,SouthHouse,11,21)
+House(0x15,SEHouse,17,20)
+Armory(ArmoryList,12,17)
+Vendor(ShopList,16,15)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [15,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [14,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [16,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [15,20] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [14,20] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [13,21] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+MUSC Rest_of_the_Heart
+SetBackground(0x04) // The Outer Ring after curfew.
+Text(Mage5LeaveRefugeMistlainStartingText)
+EndConvo
+STAL 0x10
+CAM1 [15,19]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+ENUN
+LOAD1 0x1 CurfewPatrol
+ENUN
+STAL 0x10
+MUSC Tension
+Text(Mage5LeaveRefugeMistlainPatrolText)
+STAL 0x10
+CAM1 [9,2]
+STAL 0x20
+CAM1 [15,19]
+Text(Mage5LeaveRefugeMistlainObjectiveText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+MUSC Anchoret
+SetBackground(0x24) // The old gate.
+Text(Mage5LeaveRefugeMistlainEndingText)
+MoveToChapter(MageLeaveRefugeMistlain6)
+NoFade
+ENDA
+
+//Label Turn events
+Turn3:
+CamON
+LOAD1 0x1 Turn3Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn5:
+CamON
+LOAD1 0x1 Turn5Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn7:
+CamON
+LOAD1 0x1 Turn7Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Location events
+NorthHouse:
+MUSI
+Text(0x01,Mage5LeaveRefugeMistlainHouse1Text)
+GiveItem(Elixir,0xFFFF)
+TileChange(7,11)
+MUNO
+NoFade
+EndA2
+
+MiddleHouse:
+MUSI
+Text(0x01,Mage5LeaveRefugeMistlainHouse2Text)
+GiveItem(Nosferatu,0xFFFF)
+TileChange(6,17)
+MUNO
+NoFade
+EndA2
+
+SWHouse:
+MUSI
+Text(0x01,Mage5LeaveRefugeMistlainHouse3Text)
+GiveItem(Vulnerary,0xFFFF)
+TileChange(2,21)
+MUNO
+NoFade
+EndA2
+
+SouthHouse:
+MUSI
+Text(0x01,Mage5LeaveRefugeMistlainHouse4Text)
+GiveItem(Talisman,0xFFFF)
+TileChange(11,21)
+MUNO
+NoFade
+EndA2
+
+SEHouse:
+MUSI
+Text(0x01,Mage5LeaveRefugeMistlainHouse5Text)
+GiveItem(PureWater,0xFFFF)
+TileChange(17,20)
+MUNO
+NoFade
+ENDA
+
+//Label Shops
+ArmoryList:
+SHLI SteelSword KillingEdge SteelLance Javelin SteelAxe HandAxe SteelBow
+ALIGN 4
+
+ShopList:
+SHLI Vulnerary Elixir Elfire Elwind Elthunder Flux Luna Shine Mend Physic
+ALIGN 4
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [15,21] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [14,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [16,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [15,20] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [14,20] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [13,21] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+CurfewPatrol:
+UNIT Arcanian General 0x00 Level(7,Enemy,True) [9,0] 0x00 0x00 0x00 0x00 [SilverLance,HandAxe] GuardAI
+UNIT Arcanian Sniper 0x00 Level(5,Enemy,True) [3,1] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian Sage 0x00 Level(5,Enemy,True) [15,1] 0x00 0x00 0x00 0x00 [Elthunder] AttackInRangeAI
+UNIT Arcanian Knight 0x00 Level(7,Enemy,True) [2,4] 0x00 0x00 0x00 0x00 [SteelLance] GuardAI
+UNIT Arcanian Knight 0x00 Level(7,Enemy,True) [16,4] 0x00 0x00 0x00 0x00 [SteelLance] GuardAI
+UNIT Arcanian Mercenary 0x00 Level(7,Enemy,True) [8,5] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Mage 0x00 Level(7,Enemy,True) [11,8] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT Arcanian Cavalier 0x00 Level(7,Enemy,True) [4,9] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Fighter 0x00 Level(7,Enemy,True) [14,10] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Myrmidon 0x00 Level(7,Enemy,True) [9,13] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Archer 0x00 Level(6,Enemy,True) [3,15] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian Shaman 0x00 Level(7,Enemy,True) [10,18] Drop 0x00 0x00 0x00 [Flux,Vulnerary] NoAI
+UNIT
+
+Turn3Units:
+UNIT Arcanian Cavalier 0x00 Level(7,Enemy,True) [0,7] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Soldier 0x00 Level(7,Enemy,True) [18,9] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT
+
+Turn5Units:
+UNIT Arcanian MageKnight 0x00 Level(4,Enemy,True) [0,8] 0x00 0x00 0x00 0x00 [Elthunder] NoAI
+UNIT Arcanian Mercenary 0x00 Level(7,Enemy,True) [18,11] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT
+
+Turn7Units:
+UNIT Arcanian Paladin 0x00 Level(4,Enemy,True) [0,9] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Sage 0x00 Level(4,Enemy,True) [18,7] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT
