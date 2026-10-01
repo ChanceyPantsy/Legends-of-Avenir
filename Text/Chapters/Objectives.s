@@ -244,7 +244,7 @@ Defeat Uzkalis.[X]
 Cross the desert.[X]
 
 ## Mage6SearchEfilStatusText
-Reach Efil.[X]
+Defeat Daniel.[X]
 
 ## Mage7SearchEfilStatusText
 Defeat Mistlain.[X]

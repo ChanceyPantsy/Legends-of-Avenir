@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="28" height="15" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="42004344" tilewidth="16" tileheight="16">
+  <image source="Tilesets/42004344.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="28" height="15">
+  <properties>
+   <property name="Anims" value="_42Anims"/>
+   <property name="ChapterID" value="MageSearchEfil5"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="MageDeepDesertMap"/>
+   <property name="ObjectType" value="0x42"/>
+   <property name="PaletteID" value="0x43"/>
+   <property name="TileConfig" value="0x44"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJydU8ERwjAMc5sNvQjHJlyGKLyzAQ8+/ZVN2IDkLrmmQnaAhy6tY7uy5KZJJGakitidkdwp5LFcrGN9+/gjY62nV2fx85AqZ4wvGVfyLQ+N4zLg4WmAeXcR2YLIqeIZ9jvkaHnTv5/D0SemncWFcUbfCwrfwutGatTppYNvIZ8+1u/HPzvQtGZ7xPaD6cB4No9QC9ZHnX6WJ5jH/hVLM28Oj6c1q9e36cD66PQ5f/ECuY+eEahBOV/zkcM2fzcDxtA3lot5lmflf7mEXR9W6+n96660GNsTrG0+sBn6PE8DSwd17iyf35ldCBY=
+  </data>
+ </layer>
+</map>

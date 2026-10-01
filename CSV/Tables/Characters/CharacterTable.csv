@@ -69,8 +69,8 @@ Zaheva,ZahevaNameText,ZahevaDescText,Zaheva,SpellswordF,ZahevaMug,0x0,WindAff,,1
 Adeline,AdelineNameText,AdelineDescText,Adeline,Archer_F,AdelineMug,0x0,WaterAff,,1,6,4,1,4,4,2,2,5,4,0,0,0,Crank,0,0,0,0,75,35,10,45,40,15,20,30,AdelineSkillList|IsPointer,0x0,AdelineEscapeText,,0x0,0x0,0x0,0x0,0x0,,,,0x0,0x0,0x0
 Remus,RemusNameText,RemusDescText,Remus,Soldier,RemusMug,0x0,AnimaAff,,1,8,4,0,4,4,3,1,4,2,0,Crank,0,0,0,0,0,0,90,35,5,40,40,25,20,25,RemusSkillList|IsPointer,0x0,RemusEscapeText,,0x0,0x0,0x0,0x0,0x0,,,,0x0,0x0,0x0
 Ajax,AjaxNameText,AjaxDescText,Ajax,Shaman,AjaxMug,0x0,FireAff,,1,8,3,5,5,3,6,4,4,2,0,0,0,0,0,0,0,Crank,95,30,50,40,25,40,40,35,AjaxSkillList|IsPointer,0x0,AjaxEscapeText,,0x0,0x0,0x0,IsArcanian,0x0,,,,0x0,0x0,0x0
-Mistlain,MistlainNameText,MistlainDescText,Mistlain,MistlainClass,MistlainMug,0x0,FireAff,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MistlainSkillList|IsPointer,0x0,0x0,,0x0,0x0,0x0,IsArcanian,0x0,,,,0x0,0x0,0x0
-Alexis,AlexisNameText,AlexisDescText,Alexis,AlexisClass,AlexisMug,0x0,LightAff,,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,AlexisSkillList|IsPointer,0x0,0x0,,0x0,0x0,0x0,IsArcanian,0x0,,,,,,
+Mistlain,MistlainNameText,MistlainDescText,Mistlain,MistlainClass,MistlainMug,0x0,FireAff,,1,18,2,12,10,6,4,12,5,3,0,0,0,0,0,Arank,0,0,60,10,55,40,30,15,50,25,MistlainSkillList|IsPointer,0x0,0x0,,0x0,0x0,0x0,IsArcanian,0x0,,,,0x0,0x0,0x0
+Alexis,AlexisNameText,AlexisDescText,Alexis,AlexisClass,AlexisMug,0x0,LightAff,,1,10,0,9,8,7,2,12,10,1,0,0,0,0,Arank,0,Arank,0,55,5,50,40,40,10,55,50,AlexisSkillList|IsPointer,0x0,0x0,,0x0,0x0,0x0,IsArcanian,0x0,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Henning,HenningNameText,HenningDescText,Henning,Fighter,HenningMug,0x0,FireAff,,1,2,1,0,0,1,1,0,1,2,0,0,0,0,0,0,0,0,80,30,0,25,20,15,5,30,0,0x0,0x0,,0x0,IsBoss,0x0,0x0,0x0,,,,0x0,0x0,0x0
 Gerwick,GerwickNameText,GerwickDescText,Gerwick,Pirate,GerwickMug,0x0,WaterAff,,1,3,3,0,2,2,3,1,3,3,0,0,Crank,0,0,0,0,0,90,40,5,25,25,15,10,35,0,0x0,0x0,,0x0,IsBoss,0x0,0x0,0x0,,,,0x0,0x0,0x0

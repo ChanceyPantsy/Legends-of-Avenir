@@ -180,6 +180,15 @@ ENDB
 	{
 	#include "Mage/Mage7SearchArcanae.event"
 	}
+	{
+	#include "Mage/Mage5SearchEfil.event"
+	}
+	{
+	#include "Mage/Mage6SearchEfil.event"
+	}
+	{
+	#include "Mage/Mage7SearchEfil.event"
+	}
 #endif
 
 #include "Sassy.event"
