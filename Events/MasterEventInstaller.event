@@ -199,6 +199,18 @@ ENDB
 	#include "Mage/Mage7LeaveRefugeMistlain.event"
 	}
 	{
+	#include "True/True1.event"
+	}
+	{
+	#include "True/True2.event"
+	}
+	{
+	#include "True/True3.event"
+	}
+	{
+	#include "True/True4.event"
+	}
+	{
 	#include "Mage/Mage2Search.event"
 	}
 	{

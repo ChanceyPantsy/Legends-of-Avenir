@@ -228,6 +228,7 @@ DISA Adeline
 DISA Remus
 DISA Yvette
 DISA Xylia
+ENUT 0xD7 // This life ended in the Military route's Retreat (Leave) ending. (True ending tracker.)
 MoveToChapter(PrologueChapter)
 EndA2
 
@@ -302,6 +303,7 @@ BNE 0x0 0x0 0xC
 	DISA Remus
 	DISA Yvette
 	DISA Xylia
+	ENUT 0xD7 // This life ended in the Military route's Retreat (Leave) ending. (True ending tracker.)
 	MoveToChapter(PrologueChapter)
 LABEL 0x0
 NoFade

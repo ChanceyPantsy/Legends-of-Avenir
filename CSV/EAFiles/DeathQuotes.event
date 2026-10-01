@@ -129,6 +129,10 @@ DeathQuote(BossXavus,MageLeaveRefugeMuriel7,0x02,Mage7LeaveRefugeMurielXavusDeat
 DeathQuote(Lakshmi,MageLeaveRefugeMistlain6,0x02,Mage6LeaveRefugeMistlainLakshmiYieldText) // She yields and leaves the tower.
 DeathQuote(Mistlain,MageLeaveRefugeMistlain7,0x14,Mage7LeaveRefugeMistlainMistlainDeathText) // Losing him here leads to the bad ending.
 DeathQuote(Uzkalis,MageLeaveRefugeMistlain7,0x16,Mage7LeaveRefugeMistlainUzkalisRetreatText) // He retreats; not a game over here.
+DeathQuote(Henning,True1,0x02,True1HenningDeathText) // True route echoes.
+DeathQuote(Dunlas,True2,0x13,True2DunlasDeathText)
+DeathQuote(Kilthel,True3,0x02,True3KilthelDeathText)
+DeathQuote(Narrator,True4,0x02,True4NarratorDefeatText)
 DeathQuote(Lakshmi,MageSearchEfil7,0x14,Mage7SearchEfilLakshmiDeathText) // Flag 0x14 marks the bad ending.
 DeathQuote(Lakshmi,MageSearch2,0x65,LakshmiGameOverDeathText) // Losing Lakshmi ends the Investigate route.
 DeathQuote(Lakshmi,MageSearch3,0x65,LakshmiGameOverDeathText)

@@ -130,6 +130,13 @@ UnspecifiedBattleConvo(Lakshmi,MageLeaveRefugeMistlain6,0x14,Mage6LeaveRefugeMis
 SpecifiedBattleConvo(Mistlain,Uzkalis,MageLeaveRefugeMistlain7,0x17,Mage7LeaveRefugeMistlainMistlainUzkalisBattleText)
 SpecifiedBattleConvo(Xena,Uzkalis,MageLeaveRefugeMistlain7,0x18,Mage7LeaveRefugeMistlainXenaUzkalisBattleText)
 UnspecifiedBattleConvo(Uzkalis,MageLeaveRefugeMistlain7,0x19,Mage7LeaveRefugeMistlainUzkalisBattleText)
+UnspecifiedBattleConvo(Henning,True1,0x13,True1HenningBattleText)
+UnspecifiedBattleConvo(Dunlas,True2,0x14,True2DunlasBattleText)
+UnspecifiedBattleConvo(Kilthel,True3,0x13,True3KilthelBattleText)
+SpecifiedBattleConvo(0x00,Narrator,True4,0x13,True4TactNarratorBattleText)
+SpecifiedBattleConvo(Efil,Narrator,True4,0x14,True4EfilNarratorBattleText)
+SpecifiedBattleConvo(Xena,Narrator,True4,0x15,True4XenaNarratorBattleText)
+UnspecifiedBattleConvo(Narrator,True4,0x16,True4NarratorBattleText)
 
 // This terminator deviates from vanilla because I changed the battle quote getter function.
 BYTE 0xF0 0xF0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

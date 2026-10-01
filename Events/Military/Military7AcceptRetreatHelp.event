@@ -224,6 +224,7 @@ DISA Remus
 DISA Yvette
 DISA Kendrick
 DISA Rex
+ENUT 0xD8 // This life ended in the Military route's Retreat (Help) ending. (True ending tracker.)
 MoveToChapter(PrologueChapter)
 NoFade
 EndA2

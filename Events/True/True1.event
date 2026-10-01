@@ -1,0 +1,140 @@
+ChapterEvents(True1Events,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Turn3,3)
+TurnEventEnemy(0x0,Turn5,5)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+CAM1 [12,12]
+LOAD3 0x1 PlayerLoading1
+ENUN
+MUSC The_Guardian_Spirit
+SetBackground(0x35) // The realm between lives.
+Text(True1StartingText)
+EndConvo
+STAL 0x20
+MUSC Treasured_Memories
+WarpIn(12,12,HaedricEchoes) // Echoes of every Haedrician friend Tact ever made.
+STAL 0x10
+Text(True1EchoesText)
+STAL 0x10
+LOAD1 0x1 HenningEchoes
+ENUN
+CAM1 [9,2]
+STAL 0x10
+MUSC Darker
+Text(True1BanditsText)
+STAL 0x10
+CAM1 [12,12]
+Text(True1ObjectiveText)
+STAL 0x10
+MUSC Fields_of_Avenir
+NoFade
+ENDA
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+MUSC Treasured_Memories
+SetBackground(0x1B) // The fields of Haedric, fading.
+Text(True1EndingText)
+MoveToChapter(True2)
+NoFade
+ENDA
+
+//Label Turn events
+Turn3:
+CamON
+LOAD1 0x1 Turn3Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn5:
+CamON
+LOAD1 0x1 Turn5Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [12,13] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+HaedricEchoes:
+UNIT Arc Fighter 0x00 Level(6,Ally,True) [11,12] 0x00 0x00 0x00 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Luke Monk 0x00 Level(6,Ally,True) [13,12] 0x00 0x00 0x00 0x00 [Lightning,Vulnerary] NoAI
+UNIT Vicar Warrior 0x00 Level(3,Ally,True) [12,11] 0x00 0x00 0x00 0x00 [SteelAxe,SteelBow] NoAI
+UNIT Walter Archer 0x00 Level(6,Ally,True) [13,14] 0x00 0x00 0x00 0x00 [SteelBow,Vulnerary] NoAI
+UNIT Baret Soldier 0x00 Level(6,Ally,True) [11,14] 0x00 0x00 0x00 0x00 [SteelLance,Javelin] NoAI
+UNIT
+
+HenningEchoes:
+UNIT Henning Fighter Henning Level(8,Enemy,True) [10,1] 0x00 0x00 0x00 0x00 [SteelAxe,HandAxe] GuardAI
+UNIT Guardian Brigand Henning Level(4,Enemy,True) [6,5] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Guardian Fighter Henning Level(4,Enemy,True) [3,7] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Guardian Archer Henning Level(4,Enemy,True) [7,2] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
+UNIT Guardian Mercenary Henning Level(4,Enemy,True) [12,4] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Guardian Myrmidon Henning Level(4,Enemy,True) [13,7] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Guardian Brigand Henning Level(4,Enemy,True) [4,12] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Guardian Fighter Henning Level(4,Enemy,True) [10,8] 0x00 0x00 0x00 0x00 [HandAxe] NoAI
+UNIT Guardian Archer Henning Level(4,Enemy,True) [9,4] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
+UNIT
+
+Turn3Units:
+UNIT Guardian Brigand Henning Level(5,Enemy,True) [0,4] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Guardian Brigand Henning Level(5,Enemy,True) [0,6] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT
+
+Turn5Units:
+UNIT Guardian Mercenary Henning Level(5,Enemy,True) [14,0] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Guardian Fighter Henning Level(5,Enemy,True) [0,5] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT

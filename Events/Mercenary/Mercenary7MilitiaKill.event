@@ -210,6 +210,7 @@ ENUF 0x6A
 ENUF 0x6B
 ENUF 0x6C
 ENUF 0x6D
+ENUT 0xD0 // This life ended in the Mercenary route's Militia Kill ending. (True ending tracker.)
 MoveToChapter(PrologueChapter)
 ENDA
 

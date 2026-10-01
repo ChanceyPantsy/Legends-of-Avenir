@@ -232,3 +232,32 @@ for your character.[X]
 
 ## DoneDescText
 Finalize your character![X]
+
+## PrologueTrueStartingText
+[ConversationText]
+[Right][LoadNarrator]
+Well, well, well. Who do we have here in my realm? A lost soul... looking for another-
+[FarFarLeft]...chance at life. I know. You've said that before.
+[Right]...I beg your pardon?
+[FarFarLeft]Fifteen times. A mercenary in Haedric. A soldier in Cesaria. A student in Arcanae. Fifteen lives, and every time, you were waiting at the end of them.
+[Right]That isn't possible. I wiped you clean. Every single time.
+[FarFarLeft]Hard to get all of them, isn't it? Memory's a finicky thing.
+[Right]...Don't quote me to myself.[CloseSpeech]
+[Right]Hold still...[....][....][....] Hm. Hm![CloseSpeech]
+[FarFarLeft]It won't work. Fifteen lives. There's no room left to forget.
+[Right]...Fine. FINE. You want to remember so badly? Then remember. Walk through those lives one more time, and see if you still like what you find. I'll be waiting at the end. As always.
+[Right]But first. What did you call yourself, all those times?[X]
+
+## PrologueTrueCreatorText
+[ConversationText]
+[CloseSpeech]
+[Right]
+Now. You've been a mercenary, a soldier, and a mage. This time, choose the shape you'll fight in. Choose carefully. Where you're going, the past fights back.[X]
+
+## ProloguePostTrueText
+[ConversationText]
+[Right][LoadNarrator]
+Oh. It's you.[CloseSpeech]
+[Right]Don't look at me like that. You broke the wheel, remember? No more resets. No more wiping. I keep my promises now. Efil would never let me hear the end of it otherwise.
+[Right]But you're welcome to visit, if you like. Pick a life, any life, and live it to the end. I'll only watch. I promise.
+[Right]Now then. What shall I call you this time?[X]

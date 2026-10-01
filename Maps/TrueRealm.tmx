@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="21" height="16" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="8800898A" tilewidth="16" tileheight="16">
+  <image source="Tilesets/8800898A.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="21" height="16">
+  <properties>
+   <property name="Anims" value="_88Anims"/>
+   <property name="ChapterID" value="True4"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="TrueRealmMap"/>
+   <property name="ObjectType" value="0x88"/>
+   <property name="PaletteID" value="0x89"/>
+   <property name="TileConfig" value="0x8A"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzTZWJg4GBgYGCjEtYFmpfNyMDQAWR3M1BmNsyMLKB5HkC8AsheTaGZMDO8geYlMVDXzCSGUTNHzRz8Zm4dImZ+BeJvVMC/kcykNgYAnE9Mcw==
+  </data>
+ </layer>
+</map>

@@ -269,6 +269,7 @@ ENUF 0x6A
 ENUF 0x6B
 ENUF 0x6C
 ENUF 0x6D
+ENUT 0xD4 // This life ended in the Mercenary route's Disband ending. (True ending tracker.)
 MoveToChapter(PrologueChapter)
 ENDA
 

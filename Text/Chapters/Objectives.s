@@ -299,7 +299,7 @@ echoes.[X]
 
 ## True3StatusText
 Defeat the echo[NL]
-of Clint.[X]
+of Kilthel.[X]
 
 ## True4StatusText
 Defeat the[NL]

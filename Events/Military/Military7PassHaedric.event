@@ -241,6 +241,7 @@ DISA Christina
 DISA Forrest
 DISA Clara
 DISA Muriel
+ENUT 0xD5 // This life ended in the Military route's Pass (Haedric) ending. (True ending tracker.)
 MoveToChapter(PrologueChapter)
 ENDA
 
