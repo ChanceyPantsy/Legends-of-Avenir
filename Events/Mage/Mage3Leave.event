@@ -52,9 +52,54 @@ EndUnit
 //Label BeginingScene
 BeginningScene:
 CAM1 [3,9]
+// Leave 2 ends when Tact escapes, and escaped units start the next chapter hidden and undeployed,
+// which LOAD3/LOAD2 skip. There's no prep screen here to redeploy them, so do it by hand.
+REVEAL 0x00
+SVAL 0x1 0x1 // SET_STATE with 1 clears the undeployed bit.
+SET_STATE 0x00
+CHECK_ALIVE Xena
+BEQ 0x20 0x0 0xC
+	REVEAL Xena
+	SVAL 0x1 0x1
+	SET_STATE Xena
+LABEL 0x20
+CHECK_ALIVE Zaheva
+BEQ 0x21 0x0 0xC
+	REVEAL Zaheva
+	SVAL 0x1 0x1
+	SET_STATE Zaheva
+LABEL 0x21
+CHECK_ALIVE Ajax
+BEQ 0x22 0x0 0xC
+	REVEAL Ajax
+	SVAL 0x1 0x1
+	SET_STATE Ajax
+LABEL 0x22
 LOAD3 0x1 PlayerLoading1
 LOAD2 0x1 ChapterFriends
 ENUN
+// They also keep their escape marker, which hides them again once loaded. Reset them to plain, visible units.
+SVAL 0x1 0x00
+SVAL 0x2 0x0
+ASMC SetUnitState|1 // Sets the whole state word to slot 0x2.
+CHECK_ALIVE Xena
+BEQ 0x23 0x0 0xC
+	SVAL 0x1 Xena
+	SVAL 0x2 0x0
+	ASMC SetUnitState|1
+LABEL 0x23
+CHECK_ALIVE Zaheva
+BEQ 0x24 0x0 0xC
+	SVAL 0x1 Zaheva
+	SVAL 0x2 0x0
+	ASMC SetUnitState|1
+LABEL 0x24
+CHECK_ALIVE Ajax
+BEQ 0x25 0x0 0xC
+	SVAL 0x1 Ajax
+	SVAL 0x2 0x0
+	ASMC SetUnitState|1
+LABEL 0x25
 MUSC Rest_of_the_Heart
 SetBackground(0x1D) // The forest road.
 Text(Mage3LeaveStartingText)
@@ -101,7 +146,7 @@ ENDA
 
 //Label Turn events
 ClaraArrives:
-CAM1 [9,2]
+CAM1 [2,6]
 LOAD1 0x1 ClaraUnit
 ENUN
 STAL 0x10
@@ -110,7 +155,7 @@ NoFade
 EndA2
 
 Pursuers:
-CAM1 [9,2]
+CAM1 [1,4]
 LOAD1 0x1 PursuerUnits
 ENUN
 STAL 0x10
@@ -188,12 +233,12 @@ UNIT Arcanian Shaman Lakshmi Level(4,Enemy,True) [13,11] 0x00 0x00 0x00 0x00 [Fl
 UNIT
 
 ClaraUnit:
-UNIT Clara Troubadour 0x00 Level(6,NPC,True) [9,0] 0x00 0x00 0x1 REDA6R3 [Heal,Vulnerary] DoNothing
+UNIT Clara Troubadour 0x00 Level(6,NPC,True) [0,6] 0x00 0x00 0x1 REDA3R7 [Heal,Vulnerary] DoNothing // She runs in beside the party and shelters in the fort, so they can reach her before the soldiers do.
 UNIT
 
 PursuerUnits:
-UNIT Arcanian Cavalier Lakshmi Level(4,Enemy,True) [9,0] 0x00 0x00 0x00 0x00 [IronLance] NoAI
-UNIT Arcanian Archer Lakshmi Level(3,Enemy,True) [11,0] 0x00 0x00 0x00 0x00 [IronBow] NoAI
+UNIT Arcanian Cavalier Lakshmi Level(4,Enemy,True) [0,4] 0x00 0x00 0x00 0x00 [IronLance] NoAI // Hard on Clara's heels.
+UNIT Arcanian Archer Lakshmi Level(3,Enemy,True) [0,3] 0x00 0x00 0x00 0x00 [IronBow] NoAI
 UNIT
 
 Turn5Units:
