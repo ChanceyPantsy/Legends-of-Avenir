@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="22" height="16" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="01003803" tilewidth="16" tileheight="16">
+  <image source="Tilesets/01003803.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="22" height="16">
+  <properties>
+   <property name="Anims" value="_01Anims"/>
+   <property name="ChapterID" value="MageLeave3"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="MageForestRoadMap"/>
+   <property name="ObjectType" value="0x01"/>
+   <property name="PaletteID" value="0x38"/>
+   <property name="TileConfig" value="0x03"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxtVMFtwzAMpKsBHHSHoO2jfWQFFWi/zgo20H7TjiBPkBWcDJB6iPpXNEu0n+5QEuZBJyMPQqQo3pEUpSaIJJklqtRut243am9DqT+q3kleo58fXD/pmfPVfL6lvdpxEMt70M230/VtwXVQ+VbMMeQ8I3GbL8plPtRje4hvyBdJkvO/h5ynYacFj9k9xQ0eN4bck4HE+D6I33CADxlIr7130LHf09pJmfc65B7YmU+VSXLPYTMmcJgfPWzJt6a7qCuRVUX5qb5XObsfOF80Ix3hHmnGkOe1xm9cttVs74kHeVjsrirrSqQjb8NEfEfx92rfLHimC3VNUs434lHrr9tPKs/k752fOTYLHbwsyHVwrBeVV5pF1M4z0LkOMfvOsZDjj8wrZgRzhLfA9WEuI802eP5UbhXzoSrnBX8C3gZyaqV8Wyt6t/zGbO/gOIniMJ81xfF9J4/ZE46dQV3wj6G8P/wLjG15o+/oA/8VJ+o7MHEW79Qw4Od/BTOOngx0XxbzD674ivk=
+  </data>
+ </layer>
+</map>

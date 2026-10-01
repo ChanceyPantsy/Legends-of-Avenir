@@ -225,6 +225,16 @@ Tch... I'm no use like this.[....][NL]
 I'm pulling back. Don't[A][NL]
 expect me to thank you.[A][X]
 
+## ZahevaGameOverDeathText
+[FarRight][LoadZaheva]
+Not yet...[....] Not before[NL]
+I see Clint's face again...[CloseEyes][A][X]
+
+## ClaraGameOverDeathText
+[FarRight][LoadClara]
+Lady Muriel... I'm sorry...[....][NL]
+Your letters... never...[CloseEyes][A][X]
+
 ## LakshmiGameOverDeathText
 [FarRight][LoadLakshmi]
 Is this... as far as I get?[....][NL]

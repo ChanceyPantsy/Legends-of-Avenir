@@ -24,6 +24,8 @@ DeathQuote(0x00,MageSearchArcanae7,0x12,Mage7SearchArcanaeGoodEndingPlayerDeathT
 DeathQuote(0x00,MageSearchArcanae7,0x13,Mage7SearchArcanaeBadEndingPlayerDeathText)
 DeathQuote(0x00,MageSearchEfil7,0x12,Mage7SearchEfilGoodEndingPlayerDeathText) // Mage Investigate Efil.
 DeathQuote(0x00,MageSearchEfil7,0x13,Mage7SearchEfilBadEndingPlayerDeathText)
+DeathQuote(0x00,MageLeaveRevenge7,0x1A,Mage7LeaveRevengeGoodEndingPlayerDeathText) // Mage Return Revenge.
+DeathQuote(0x00,MageLeaveRevenge7,0x1B,Mage7LeaveRevengeBadEndingPlayerDeathText)
 
 // Specific death quotes need to come first.
 DeathQuote(Henning,Mercenary1,0x02,Merc1HenningDeathText)
@@ -110,6 +112,11 @@ DeathQuote(Shanley,MageSearchArcanae7,0x00,ShanleyDeathText)
 DeathQuote(Uzkalis,MageSearchArcanae7,0x02,Mage7SearchArcanaeUzkalisDeathText)
 DeathQuote(Daniel,MageSearchEfil6,0x02,Mage6SearchEfilDanielDeathText)
 DeathQuote(Mistlain,MageSearchEfil7,0x02,Mage7SearchEfilMistlainDeathText)
+DeathQuote(Lakshmi,MageLeave3,0x02,Mage3LeaveLakshmiRetreatText) // She retreats; she returns later in the route.
+DeathQuote(Val,MageLeaveRevenge4,0x13,Mage4LeaveRevengeValYieldText) // Captured, not killed.
+DeathQuote(Helmer,MageLeaveRevenge4,0x14,Mage4LeaveRevengeHelmerYieldText)
+DeathQuote(Dunlas,MageLeaveRevenge6,0x02,Mage6LeaveRevengeDunlasDeathText)
+DeathQuote(Clint,MageLeaveRevenge7,0x02,Mage7LeaveRevengeClintDeathText)
 DeathQuote(Lakshmi,MageSearchEfil7,0x14,Mage7SearchEfilLakshmiDeathText) // Flag 0x14 marks the bad ending.
 DeathQuote(Lakshmi,MageSearch2,0x65,LakshmiGameOverDeathText) // Losing Lakshmi ends the Investigate route.
 DeathQuote(Lakshmi,MageSearch3,0x65,LakshmiGameOverDeathText)
@@ -117,6 +124,17 @@ DeathQuote(Lakshmi,MageSearch4,0x65,LakshmiGameOverDeathText)
 DeathQuote(Lakshmi,MageSearchArcanae5,0x65,LakshmiGameOverDeathText)
 DeathQuote(Lakshmi,MageSearchArcanae6,0x65,LakshmiGameOverDeathText)
 DeathQuote(Lakshmi,MageSearchArcanae7,0x65,LakshmiGameOverDeathText)
+DeathQuote(Zaheva,MageLeave2,0x65,ZahevaGameOverDeathText) // Zaheva must survive while Clint hunts her.
+DeathQuote(Zaheva,MageLeave3,0x65,ZahevaGameOverDeathText)
+DeathQuote(Zaheva,MageLeaveRevenge4,0x65,ZahevaGameOverDeathText)
+DeathQuote(Zaheva,MageLeaveRevenge5,0x65,ZahevaGameOverDeathText)
+DeathQuote(Zaheva,MageLeaveRevenge6,0x65,ZahevaGameOverDeathText)
+DeathQuote(Zaheva,MageLeaveRevenge7,0x65,ZahevaGameOverDeathText)
+DeathQuote(Clara,MageLeave3,0x65,ClaraGameOverDeathText) // Clara carries Muriel's letters, and her offer.
+DeathQuote(Clara,MageLeaveRefuge4,0x65,ClaraGameOverDeathText)
+DeathQuote(Clara,MageLeaveRefugeMuriel5,0x65,ClaraGameOverDeathText)
+DeathQuote(Clara,MageLeaveRefugeMuriel6,0x65,ClaraGameOverDeathText)
+DeathQuote(Clara,MageLeaveRefugeMuriel7,0x65,ClaraGameOverDeathText)
 DeathQuote(Xena,Mage1,0x65,XenaDeathText) // Losing Xena ends the Mage route (and her echo in the True route).
 DeathQuote(Xena,MageLeave2,0x65,XenaDeathText)
 DeathQuote(Xena,MageSearch2,0x65,XenaDeathText)

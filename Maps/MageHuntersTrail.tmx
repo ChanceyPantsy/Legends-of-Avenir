@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="18" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="01004C03" tilewidth="16" tileheight="16">
+  <image source="Tilesets/01004C03.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="18">
+  <properties>
+   <property name="Anims" value="_01Anims"/>
+   <property name="ChapterID" value="MageLeaveRevenge4"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="MageHuntersTrailMap"/>
+   <property name="ObjectType" value="0x01"/>
+   <property name="PaletteID" value="0x4C"/>
+   <property name="TileConfig" value="0x03"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxdlF1KXEEQhat7QEhworiDJIgo8cUl5A54SSI4uoTboMS4iHBdgTsIIYTkQRC3EDCB/OAsIpMXE3UFnkqdomvm4dB9u7u+PtVdfYuILA1EerQFmkJ/oBH0Hmoon9f+CbSbRZ5Bx9Bj6DkYw2xx5wNjxrgSOF3YU9tbsjapj0nkOhnTOc7sg6cxvvfm5v8i7hEYr8g6Ju8MeoH+V3q5otcR81HWBfmqbajl/H623JS5E3hr6J+myhyF9hdb9aTtAXTI3CNzEfoNxpNsTOUtJ8vpClpJJh2fBL7v1bA9y8ZcpD5h/U/Gxdj1sId6uRTzPwr9IvUsh4Gnd7IWYj9gzbVU3v982S9zffWpvO9gvRPjjbNxlLmQ6r1OydS8t6i9uf5EZmvhJlvrdbvKe/HzjnUdz8/l332oK5/rWC+r9NlJrRONe4uxC8w/HMxymzmVELfMWvsXatB93SQ7n61s47pumu3N+T4lxDXM2eM7qki9Q7+/FXK03rahbxi7S7P15Oca36mfo+b6JVmc1uttqn5/QC2Yr7Mxe6n+m+C1Z+3EXFt62sizfl+i/4D/GPU+HtS3H89VW/8nfeZb93fVhr6Ov+EbniTL74R5FnrUt1ToTdc+5f4tfUWPB/wvXPI8zkPtKLMLtT/k3v5fUuZR5rtCu06ur9P5e+mTk60=
+  </data>
+ </layer>
+</map>

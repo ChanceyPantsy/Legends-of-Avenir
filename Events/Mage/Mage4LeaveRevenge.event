@@ -1,0 +1,162 @@
+ChapterEvents(Mage4LeaveRevengeEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventPlayer(0x0,ClintAppears,3)
+TurnEventEnemy(0x0,Turn4,4)
+TurnEventEnemy(0x0,Turn6,6)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [16,9] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [15,9] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [14,8] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [16,10] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [18,10] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+CAM1 [15,9]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+ENUN
+MUSC Rest_of_the_Heart
+SetBackground(0x1F) // The mountain pass at dusk.
+Text(Mage4LeaveRevengeStartingText)
+EndConvo
+STAL 0x10
+CAM1 [5,7]
+LOAD1 0x1 Hunters
+ENUN
+STAL 0x10
+MUSC Darker
+Text(Mage4LeaveRevengeHuntersText)
+STAL 0x10
+CAM1 [15,9]
+Text(Mage4LeaveRevengeObjectiveText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+MUSC Anchoret
+SetBackground(0x1F) // The pass, after the fighting.
+Text(Mage4LeaveRevengeEndingText)
+MoveToChapter(MageLeaveRevenge5)
+NoFade
+ENDA
+
+//Label Turn events
+ClintAppears:
+CAM1 [3,7]
+LOAD1 0x1 ClintUnit
+ENUN
+STAL 0x10
+MUSC Dark_Clouds_Gather
+Text(Mage4LeaveRevengeClintText)
+STAL 0x08
+MOVE 0x00 Clint [0,7]
+ENUN
+DISA Clint
+STAL 0x10
+CAM1 [15,9]
+Text(Mage4LeaveRevengeClintGoneText)
+NoFade
+EndA2
+
+Turn4:
+CamON
+LOAD1 0x1 Turn4Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn6:
+CamON
+LOAD1 0x1 Turn6Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [16,9] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [15,9] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [14,8] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [16,10] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [18,10] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+Hunters:
+UNIT Val Shaman_F Val Level(7,Enemy,True) [5,6] 0x00 0x00 0x00 0x00 [Flux,Vulnerary] AttackInRangeAI
+UNIT Helmer Soldier Val Level(8,Enemy,True) [6,8] 0x00 0x00 0x00 0x00 [SteelLance,Javelin] AttackInRangeAI
+UNIT Hunter Archer Val Level(5,Enemy,True) [8,4] 0x00 0x00 0x00 0x00 [IronBow] NoAI
+UNIT Hunter Cavalier Val Level(5,Enemy,True) [9,7] 0x00 0x00 0x00 0x00 [IronLance] NoAI
+UNIT Hunter Mercenary Val Level(6,Enemy,True) [10,9] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Hunter Fighter Val Level(6,Enemy,True) [7,10] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Hunter Myrmidon Val Level(6,Enemy,True) [11,6] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Hunter Archer Val Level(5,Enemy,True) [3,7] Drop 0x00 0x00 0x00 [IronBow,Vulnerary] AttackInRangeAI
+UNIT Hunter Brigand Val Level(6,Enemy,True) [4,12] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Hunter Shaman Val Level(5,Enemy,True) [2,4] 0x00 0x00 0x00 0x00 [Flux] AttackInRangeAI
+UNIT Hunter Mage Val Level(5,Enemy,True) [6,14] Drop 0x00 0x00 0x00 [Fire,Elixir] AttackInRangeAI
+UNIT
+
+ClintUnit:
+UNIT Clint DreadFighter Clint Level(10,Enemy,True) [0,7] 0x00 0x00 0x1 REDA2R7 [SilverSword] NoAI
+UNIT
+
+Turn4Units:
+UNIT Hunter Cavalier Val Level(6,Enemy,True) [0,4] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Hunter Mercenary Val Level(6,Enemy,True) [0,8] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT
+
+Turn6Units:
+UNIT Hunter Fighter Val Level(6,Enemy,True) [0,10] 0x00 0x00 0x00 0x00 [HandAxe] NoAI
+UNIT Hunter Archer Val Level(6,Enemy,True) [0,5] 0x00 0x00 0x00 0x00 [SteelBow] NoAI
+UNIT

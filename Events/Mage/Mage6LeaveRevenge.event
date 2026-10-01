@@ -1,0 +1,184 @@
+ChapterEvents(Mage6LeaveRevengeEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventPlayer(0x0,AryaThinks,2)
+TurnEventEnemy(0x0,Turn4,4)
+TurnEventEnemy(0x0,Turn7,7)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x10,TZahevaArya,Zaheva,Arya)
+CharacterEvent(0x10,TTactArya,0x00,Arya)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+Chest(Elixir,16,8)
+Chest(Thoron,18,8)
+Chest(Luna,14,19)
+Chest(SilverSword,16,19)
+Chest(Physic,18,19)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [2,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [1,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [3,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [0,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [4,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Val 0x00 0x00 Level(1,Ally,True) [3,15] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Helmer 0x00 0x00 Level(1,Ally,True) [4,15] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+MUSC Darker
+SetBackground(0x17) // Mistlain's old passages.
+Text(Mage6LeaveRevengeStartingText)
+EndConvo
+STAL 0x10
+CAM1 [2,15]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+ENUN
+LOAD1 0x1 LabGuard
+ENUN
+STAL 0x10
+CAM1 [5,10]
+STAL 0x10
+Text(Mage6LeaveRevengeCellsText)
+STAL 0x10
+CAM1 [17,2]
+STAL 0x10
+MUSC Tension
+Text(Mage6LeaveRevengeDunlasText)
+STAL 0x10
+CAM1 [2,15]
+Text(Mage6LeaveRevengeObjectiveText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+MUSC Treasured_Memories
+SetBackground(0x17) // The empty cells.
+Text(Mage6LeaveRevengeEndingText)
+MoveToChapter(MageLeaveRevenge7)
+NoFade
+ENDA
+
+//Label Turn events
+AryaThinks:
+CAM1 [13,9]
+STAL 0x10
+Text(Mage6LeaveRevengeAryaHereText)
+NoFade
+EndA2
+
+Turn4:
+CamON
+LOAD1 0x1 Turn4Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn7:
+CamON
+LOAD1 0x1 Turn7Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TZahevaArya:
+MUSI
+Text(Mage6LeaveRevengeZahevaAryaText)
+MUNO
+TurnAlly(Arya)
+NoFade
+EndA2
+
+TTactArya:
+MUSI
+Text(Mage6LeaveRevengeTactAryaText)
+MUNO
+TurnAlly(Arya)
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [2,16] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [1,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [3,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Ajax 0x00 0x00 Level(1,Ally,True) [0,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Clara 0x00 0x00 Level(1,Ally,True) [4,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Val 0x00 0x00 Level(1,Ally,True) [3,15] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Helmer 0x00 0x00 Level(1,Ally,True) [4,15] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+LabGuard:
+UNIT Dunlas Halberdier Dunlas Level(8,Enemy,True) [18,1] 0x00 0x00 0x00 0x00 [Spear,Elixir] GuardAI
+UNIT Arcanian Sage Dunlas Level(6,Enemy,True) [16,3] 0x00 0x00 0x00 0x00 [Elthunder] AttackInRangeAI
+UNIT Arcanian General Dunlas Level(6,Enemy,True) [18,3] 0x00 0x00 0x00 0x00 [SteelLance] GuardAI
+UNIT Arcanian Sniper Dunlas Level(5,Enemy,True) [7,1] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian MageKnight Dunlas Level(5,Enemy,True) [11,2] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT Arcanian Mercenary Dunlas Level(7,Enemy,True) [5,6] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Hunter Fighter Dunlas Level(7,Enemy,True) [10,7] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Shaman Dunlas Level(6,Enemy,True) [5,9] 0x00 0x00 0x00 0x00 [Flux] AttackInRangeAI
+UNIT Arcanian Knight Dunlas Level(7,Enemy,True) [4,12] 0x00 0x00 0x00 0x00 [SteelLance] GuardAI
+UNIT Arya Myrmidon_F Dunlas Level(6,Enemy,True) [13,9] 0x00 0x00 0x00 0x00 [SteelSword,Vulnerary] AttackInRangeAI
+UNIT Hunter Myrmidon Dunlas Level(7,Enemy,True) [15,11] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Archer Dunlas Level(6,Enemy,True) [18,9] 0x00 0x00 0x00 0x00 [SteelBow] AttackInRangeAI
+UNIT Arcanian Monk Dunlas Level(6,Enemy,True) [17,17] Drop 0x00 0x00 0x00 [Lightning,ChestKey_5] NoAI
+UNIT Arcanian Fighter Dunlas Level(7,Enemy,True) [13,15] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT
+
+Turn4Units:
+UNIT Arcanian Cavalier Dunlas Level(6,Enemy,True) [0,0] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
+UNIT Arcanian Cavalier Dunlas Level(6,Enemy,True) [0,2] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT
+
+Turn7Units:
+UNIT Hunter Mercenary Dunlas Level(7,Enemy,True) [0,6] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Arcanian Mage Dunlas Level(6,Enemy,True) [1,6] 0x00 0x00 0x00 0x00 [Elfire] NoAI
+UNIT
