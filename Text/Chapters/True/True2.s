@@ -8,10 +8,10 @@ Cesaria next. Loyalty, discipline, oaths. You swore so many oaths in my realm, l
 [MidLeft][LoadJasper][MidRight][LoadPlayer]
 Private [Tact]! No, Corporal? Cadet? I can't keep track. You've been all of them, haven't you?
 [MidRight]Jasper. Derek. You remember?[CloseSpeech]
-[FarFarLeft][LoadDerek]
+[FarLeft][LoadDerek]
 I remember swearing the oath next to you in this courtyard. Over and over. Each time you looked a little more tired.
 [MidRight]It never got easier.[CloseSpeech]
-[FarFarRight][LoadYvette]
+[FarRight][LoadYvette]
 Then let's make this the last time. Cesarian soldiers don't leave their own behind, and you were one of ours. However many times it took.[X]
 
 ## True2DunlasText
@@ -43,6 +43,6 @@ I remember... a wall...[....] three taps...[X]
 [MidLeft][LoadJasper][MidRight][LoadPlayer]
 The fortress is fading too.
 [MidRight]Two memories down.[CloseSpeech]
-[FarFarLeft][LoadDerek]
+[FarLeft][LoadDerek]
 Then we march to the third. Haedric's lot are already waiting at the gate. Can't let mercenaries show up Cesaria.
 [MidLeft]For the Empire, and for you, [Tact]. Let's go.[X]

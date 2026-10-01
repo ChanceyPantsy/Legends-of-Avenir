@@ -78,7 +78,10 @@ ENDA
 EndingScene:
 FADI 0x5
 CLEE 0x0
-TurnAlly(Kendrick) // In case he was never recruited, he still leaves the desert with the party.
+CHECK_ALIVE Kendrick
+BEQ 0x20 0x0 0xC // He fell back, or never arrived; he catches up with the party in the next chapter.
+	TurnAlly(Kendrick) // In case he was never recruited, he still leaves the desert with the party.
+LABEL 0x20
 MUSC Treasured_Memories
 SetBackground(0x1B) // The desert's edge at dawn.
 Text(Mage3SearchEndingText)

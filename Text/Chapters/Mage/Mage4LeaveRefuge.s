@@ -4,15 +4,15 @@
 Welcome to Bacrun. If it can be bought, it's for sale here. If it can't be bought, it's for sale twice.
 [MidRight]It's so... loud.
 [MidLeft]That's the sound of money changing hands. You get used to it.[CloseSpeech]
-[FarFarLeft][LoadZaheva]
+[FarLeft][LoadZaheva]
 Xena. Look at the wall.
 [MidRight]...That's my face.
-[FarFarLeft]"Wanted: Xena of Arcanae, for crimes against the Thunder Magus. Five thousand gold, alive." It's a good likeness.
+[FarLeft]"Wanted: Xena of Arcanae, for crimes against the Thunder Magus. Five thousand gold, alive." It's a good likeness.
 [MidRight]Five thousand...[CloseSpeech]
-[FarFarRight][LoadClara]
+[FarRight][LoadClara]
 Don't worry! Lady Muriel has a friend in this market. He can get passports for anyone, she says. Even people with posters.
 [MidLeft]What sort of friend?
-[FarFarRight]The sort she pays very well. His name is Kendrick.[X]
+[FarRight]The sort she pays very well. His name is Kendrick.[X]
 
 ## Mage4LeaveRefugeMasonText
 [ConversationText]
@@ -115,22 +115,22 @@ Five thousand gold...[....] Heh...[....] figures...[X]
 And here we are. Five passports, freshly inked, guaranteed to fool any border guard who can't read very well.
 [MidRight]Thank you, Kendrick. Truly.
 [MidLeft]Don't thank me, thank Muriel. She pays my bills.[CloseSpeech]
-[FarFarLeft][LoadClara]
+[FarLeft][LoadClara]
 Master Xena, there's something else. One of Lady Muriel's letters is for you.
 [MidRight]For me?
-[FarFarLeft]She wrote it months ago. She said if Mistlain ever cast you out, I should find you and give it to you.[CloseSpeech]
+[FarLeft]She wrote it months ago. She said if Mistlain ever cast you out, I should find you and give it to you.[CloseSpeech]
 [MidRight]"Xena. If you are reading this, then that old coward has finally shown you who he is. Come to Port Selsing. There are students here who need a teacher who thinks for herself, and a city that needs scholars who aren't afraid of the Magi. You would be welcome. Muriel."
 [MidLeft]That's quite the offer. Of course, Port Selsing's in a spot of trouble lately. New Arcanian officials, slave markets on the docks. But if anyone can fix it, it's Muriel.[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 And Mistlain? Any news from the capital?
 [MidLeft]Oh, you haven't heard? Uzkalis locked him up in his own tower. The Grand Magus who sold you out to keep the peace is now the prisoner of the man he sold you to.
 [MidRight]...He's imprisoned?
 [MidLeft]In chains, the rumors say. Uzkalis doesn't trust a man who'd betray his own people. Can't say I blame him.[CloseSpeech]
 [MidRight]...
-[FarFarLeft][ClearFace][LoadPlayer]
+[FarLeft][ClearFace][LoadPlayer]
 Teacher?
 [MidRight]He handed us to Uzkalis to be executed, [Tact]. I should feel nothing for him.
-[FarFarLeft]But you do.
+[FarLeft]But you do.
 [MidRight]He took me in when no other Magus would. He let me study whatever I wanted for twenty years. He was a coward, and a selfish old man, and he was... my patron.[CloseSpeech]
 [MidRight][Tact]. I can't decide this one. Muriel's city, or Mistlain's tower. You choose.[X]
 
@@ -145,9 +145,9 @@ Go back for Mistlain.[X]
 [MidLeft][LoadPlayer][MidRight][LoadXena]
 Let's go to Port Selsing, Teacher. Muriel wants you there. And it sounds like her people need help.
 [MidRight]...Yes. Mistlain made his choice. I'll make mine.[CloseSpeech]
-[FarFarLeft][LoadKendrick]
+[FarLeft][LoadKendrick]
 Port Selsing it is! I know a ship that's leaving tonight. The captain owes me money.
-[FarFarRight][LoadClara]
+[FarRight][LoadClara]
 Lady Muriel will be so happy![X]
 
 ## Mage4LeaveRefugeChoseMistlainText
@@ -157,7 +157,12 @@ We should go back for him, Teacher.
 [MidRight][Tact]...
 [MidLeft]He did something terrible. But if we leave him there, we're no better than he was when he left us.
 [MidRight]...You're a better student than I deserve.[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 Back into the capital. With our faces on every wall.
-[FarFarLeft][LoadKendrick]
+[FarLeft][LoadKendrick]
 I'll come too. A jailbreak in the capital? That's the kind of story that sells drinks for years.[X]
+
+## Mage4LeaveRefugeKendrickRetreatText
+[BattleText]
+[FarRight][LoadKendrick]
+That's my cue to disappear...[....] Don't worry, you'll still get your passports. I always find my way back.[X]

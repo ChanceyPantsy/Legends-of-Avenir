@@ -64,7 +64,7 @@ Hold still.
 [MidRight]I'm handing a weapon to someone who doesn't want to die down here. Am I wrong?
 [MidLeft]... Don't mistake this for loyalty, Teacher.
 [MidRight]I wouldn't dream of it.[CloseSpeech]
-[FarFarRight][LoadPlayer]
+[FarRight][LoadPlayer]
 Teacher! The sound came from the top of the statue. The chamber up there is open now!
 [MidRight]Then that's where the Sateenkaari kept whatever they were protecting. Stay together, both of you. We're getting to that chamber.[X]
 
@@ -93,10 +93,10 @@ You're casting faster than you used to.
 
 ## Mage2SearchPrismText
 [ConversationText]
-[MidLeft][LoadPlayer][MidRight][LoadXena][FarFarRight][LoadLakshmi]
+[MidLeft][LoadPlayer][MidRight][LoadXena][FarRight][LoadLakshmi]
 It's beautiful...
 [MidRight]A crystal... No. It's light, given a shape. I've never seen anything like it.
-[FarFarRight]That's it? All this way for a glass ornament?
+[FarRight]That's it? All this way for a glass ornament?
 [MidRight]Don't let the size fool you, Lakshmi. Can't you feel it? The air around it is thick with Vene.
 [MidLeft]It's humming... Like it's calling out to me.
 [MidRight][Tact], wait-[X]
@@ -126,16 +126,16 @@ Again, lost soul?[....] My, my. You're a stubborn one.[X]
 [Tact]! [Tact], can you hear me?
 [MidLeft]Teacher...? I saw... a city. And people I've never met. They knew me.
 [MidRight]You've been out cold for nearly an hour. Your hand wouldn't let go of that crystal.[CloseSpeech]
-[FarFarRight][LoadLakshmi]
+[FarRight][LoadLakshmi]
 It chose you.
 [MidRight]Lakshmi?
-[FarFarRight]Look at it. It was as dull as glass until [Tact] touched it. Now it won't stop glowing. Every text in Uzkalis' library says artifacts like this answer to the hand they recognize.
+[FarRight]Look at it. It was as dull as glass until [Tact] touched it. Now it won't stop glowing. Every text in Uzkalis' library says artifacts like this answer to the hand they recognize.
 [MidLeft]Recognize? I've never been here before in my life.
-[FarFarRight]Then you'd better figure out what it saw in you.
+[FarRight]Then you'd better figure out what it saw in you.
 [MidRight]Whatever the reason, we're not leaving it here. We'll take it back to Arcanae and study it properly.
-[FarFarRight]No. It belongs to Uzkalis. He's the only Grand Magus who would use it for anything besides his own amusement.
+[FarRight]No. It belongs to Uzkalis. He's the only Grand Magus who would use it for anything besides his own amusement.
 [MidRight]You're hardly in a position to make demands.
-[FarFarRight]And you're three days from water with a student who just fainted. Uzkalis' scouts mapped every safe route across this desert. I know them. You don't.
+[FarRight]And you're three days from water with a student who just fainted. Uzkalis' scouts mapped every safe route across this desert. I know them. You don't.
 [MidRight]... We'll settle this when we're out of the sand. Can you walk, [Tact]?
 [MidLeft]I think so. Teacher... that voice at the very end. It laughed at me. Like it already knew me.
 [MidRight]Visions are strange things. Rest first. Questions later.[X]

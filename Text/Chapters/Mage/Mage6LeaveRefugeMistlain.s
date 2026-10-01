@@ -4,10 +4,10 @@
 The servants' stair. I used to stand guard at the bottom of it, every third night, for five years.
 [MidRight]And now you're breaking in.
 [MidLeft]Life's funny that way.[CloseSpeech]
-[FarFarRight][LoadZaheva]
+[FarRight][LoadZaheva]
 Where would they keep him?
 [MidLeft]The old treasury, on the second floor. It's the only room in the tower with a lock Mistlain didn't design himself. Uzkalis would appreciate the irony.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher. Are you ready for this?
 [MidRight]No. But I'm ready to stop pretending I don't care.[X]
 
@@ -69,9 +69,9 @@ The guards have fled. And Lakshmi...
 [MidLeft]...Can you walk?
 [MidRight]Slowly. These chains were designed by a man who studied me for a decade. Thankfully, I studied him for a century.[CloseSpeech]
 [MidRight]There. Free. Or as free as an old man can be in a city that wants him dead.[CloseSpeech]
-[FarFarLeft][LoadAjax]
+[FarLeft][LoadAjax]
 My lord. Uzkalis will know by now. His men will be at the tower gate within the hour.
 [MidRight]Ajax. You came too? After everything?
-[FarFarLeft]I swore an oath to protect this tower's master. I never said which one.[CloseSpeech]
+[FarLeft]I swore an oath to protect this tower's master. I never said which one.[CloseSpeech]
 [MidRight]Then we leave the way the river does. Over the old bridge, and out of the city. I can still hold a tome, Xena. Whatever happens on that bridge, let me be useful for once.
 [MidLeft]...Let's go, my lord. All of us.[X]

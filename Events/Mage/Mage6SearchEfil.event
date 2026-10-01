@@ -114,7 +114,15 @@ GotoPrepScreen
 EndingScene:
 FADI 0x5
 CLEE 0x0
-TurnAlly(Efil) // Efil travels with the party from here on.
+CHECK_ALIVE Efil
+BNE 0x20 0x0 0xC
+	LOAD1 0x1 EfilHere // The fight ended before he arrived.
+	ENUN
+LABEL 0x20
+CHECK_ALIVE Efil
+BEQ 0x21 0x0 0xC // Changing a unit that is not on the map would hang the event.
+	TurnAlly(Efil) // Efil travels with the party from here on.
+LABEL 0x21
 MUSC Anchoret
 SetBackground(0x2E) // The temple's inner halls.
 Text(Mage6SearchEfilEndingText)

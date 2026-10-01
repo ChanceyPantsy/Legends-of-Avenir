@@ -59,6 +59,12 @@ EndUnit
 //Label BeginingScene
 BeginningScene:
 CAM1 [6,6]
+// Check before LOAD2: for anyone missing from the party it loads a stand-in that vanishes when the turn starts.
+CHECK_ALIVE Kendrick
+BNE 0x20 0x0 0xC
+	LOAD1 0x1 KendrickRejoins // He fell back in the desert, and catches up here.
+	ENUN
+LABEL 0x20
 LOAD3 0x1 PlayerLoading1
 LOAD2 0x1 ChapterFriends
 ENUN
@@ -115,8 +121,15 @@ GotoPrepScreen
 EndingScene:
 FADI 0x5
 CLEE 0x0
-TurnAlly(Zaheva) // They stay with the party whichever road is chosen.
-TurnAlly(Ajax)
+// They stay with the party whichever road is chosen. If either fell back, they rejoin in the next chapter.
+CHECK_ALIVE Zaheva
+BEQ 0x20 0x0 0xC // Changing a unit that is not on the map would hang the event.
+	TurnAlly(Zaheva)
+LABEL 0x20
+CHECK_ALIVE Ajax
+BEQ 0x21 0x0 0xC // Changing a unit that is not on the map would hang the event.
+	TurnAlly(Ajax)
+LABEL 0x21
 MUSC Rest_of_the_Heart
 SetBackground(0x05)
 Text(Mage4SearchEndingText)
@@ -270,3 +283,10 @@ Turn5Units:
 UNIT Arcanian Fighter Sean Level(7,Enemy,True) [19,9] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
 UNIT Arcanian Archer Sean Level(6,Enemy,True) [19,5] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
 EndUnit
+
+// Fresh copies for party members who fell back in an earlier chapter before they could join.
+ALIGN 4
+KendrickRejoins:
+UNIT Kendrick Pirate Kendrick Level(7,Ally,True) [4,7] 0x00 0x00 0x00 0x00 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT
+

@@ -63,6 +63,12 @@ BeginningScene:
 ENUT 0x12 // Prevents the good ending Tact death quote.
 ENUT 0x13 // Prevents the bad ending Tact death quote.
 CAM1 [8,18]
+// Check before LOAD2: for anyone missing from the party it loads a stand-in that vanishes when the turn starts.
+CHECK_ALIVE Shanley
+BNE 0x9 0x0 0xC // He's alive and in the party.
+	LOAD1 0x1 ShanleyReturns // He fell back wounded in the Outer Ring ("Pull me back, quickly..."), and catches up here.
+	ENUN
+LABEL 0x9
 LOAD3 0x1 PlayerLoading1
 LOAD2 0x1 ChapterFriends
 LOAD1 0x1 AlexisUnit
@@ -269,6 +275,10 @@ UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [6,21] 0x00 0x00 0x00 0x00 [0] NoAI
 UNIT Zaheva 0x00 0x00 Level(1,Ally,True) [10,21] 0x00 0x00 0x00 0x00 [0] NoAI
 UNIT Ajax 0x00 0x00 Level(1,Ally,True) [11,21] 0x00 0x00 0x00 0x00 [0] NoAI
 UNIT Shanley 0x00 0x00 Level(1,Ally,True) [8,22] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+ShanleyReturns:
+UNIT Shanley Sage Shanley Level(8,Ally,True) [8,22] 0x00 0x00 0x00 0x00 [Thunder,Elthunder] NoAI
 UNIT
 
 AlexisUnit:

@@ -29,7 +29,7 @@ END_MAIN
 
 //Label LocationBasedEvents
 LocationBasedEvents:
-Seize(0x3,EndingScene,3,1)
+LOCA 0x3 EndingScene [3,1] 0x19 // "Arrive" (EscapeArrive hack): any unit can end the chapter here. Vanilla Seize only works for the lord character IDs 0x01/0x0F, which is not every Tact.
 DOOR 0x11 [8,4] 0x12
 DOOR 0x12 [14,4] 0x12
 House(0x15,ClintRecords,11,1) // Clint's notes on his subjects.
@@ -149,7 +149,10 @@ BEQ 0x0 0x0 0xC
 	Text(Mage5LeaveRevengeZahevaValText)
 	MUNO
 	TurnAlly(Val)
-	TurnAlly(Helmer)
+	CHECK_ALIVE Helmer
+	BEQ 0x20 0x0 0xC // Changing a unit that is not on the map would hang the event.
+		TurnAlly(Helmer)
+	LABEL 0x20
 	ENUT 0x17 // Val and Helmer joined.
 	GOTO 0x1
 LABEL 0x0
@@ -166,7 +169,10 @@ BEQ 0x0 0x0 0xC
 	Text(Mage5LeaveRevengeXenaValText)
 	MUNO
 	TurnAlly(Val)
-	TurnAlly(Helmer)
+	CHECK_ALIVE Helmer
+	BEQ 0x20 0x0 0xC // Changing a unit that is not on the map would hang the event.
+		TurnAlly(Helmer)
+	LABEL 0x20
 	ENUT 0x17
 	GOTO 0x1
 LABEL 0x0

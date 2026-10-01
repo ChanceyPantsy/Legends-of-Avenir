@@ -4,10 +4,10 @@
 Twelve ships, flying New Arcanian colors. They'll land on the south beach within the hour.
 [MidRight]Can we hold the port against that many?
 [MidLeft]Not forever. But we don't need forever. I sent word to Cesaria the night we took the harbor back. The Tiger Brigade has ships at Port Rondo, three days' sail from here.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Three days? We've had two.
 [MidLeft]Then we need to hold for one more. Until the tide turns tomorrow evening, if the winds favor us. And the winds usually favor me.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher... Are you alright? You've been quiet since we heard about Lakshmi.
 [MidRight]I'm thinking about what I'll say to her. And what I'll do if she won't listen.[X]
 
@@ -79,16 +79,16 @@ Teacher...[....] I wanted...[....] to come home...[X]
 [ConversationText]
 [MidLeft][LoadMuriel][MidRight][LoadXena]
 Sails on the horizon. Cesarian sails.[CloseSpeech]
-[FarFarRight][LoadLux]
+[FarRight][LoadLux]
 Lady Muriel! Vice-Captain Lux of the Tiger Brigade, at your service. Sorry we're late. The winds weren't kind.
 [MidLeft]The winds were exactly as kind as they needed to be, Vice-Captain. Welcome to the Free Port.
-[FarFarRight]Looks like you didn't need much help. The New Arcanians are running back to their boats.
+[FarRight]Looks like you didn't need much help. The New Arcanians are running back to their boats.
 [MidRight]We needed you more than you know.[CloseSpeech]
-[FarFarRight]I'm afraid it's not over. Our scouts spotted an army marching on the coast road. Guardians, hundreds of them. And at their head, Xavus himself.
+[FarRight]I'm afraid it's not over. Our scouts spotted an army marching on the coast road. Guardians, hundreds of them. And at their head, Xavus himself.
 [MidLeft]...So he's coming in person.
-[FarFarRight]The Tiger Brigade will meet him in the field. Will you fight with us, Lady Muriel?
+[FarRight]The Tiger Brigade will meet him in the field. Will you fight with us, Lady Muriel?
 [MidLeft]I've spent this whole war trying not to choose a side. Xavus chose for me when he took my city.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher...
 [MidRight]We'll fight too, [Tact]. Muriel gave us a home. It's time we defended it.[X]
 

@@ -93,7 +93,10 @@ GotoPrepScreen
 EndingScene:
 FADI 0x5
 CLEE 0x0
-TurnAlly(Kendrick) // If no one spoke to him, he still brings the passports.
+CHECK_ALIVE Kendrick
+BEQ 0x20 0x0 0xC // He fell back; he catches up with the party in the next chapter.
+	TurnAlly(Kendrick) // If no one spoke to him, he still brings the passports.
+LABEL 0x20
 MUSC Rest_of_the_Heart
 SetBackground(0x09) // A quiet inn.
 Text(Mage4LeaveRefugeEndingText)

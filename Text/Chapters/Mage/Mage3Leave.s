@@ -4,15 +4,15 @@
 We'll stay on the forest road until it forks south. Bacrun's border towns are three days from there, if the weather holds.
 [MidRight]And if it doesn't?
 [MidLeft]Four days, and we'll be wetter.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher, you haven't eaten since we left the city.
 [MidRight]I'm not hungry, [Tact].
-[FarFarLeft]You said that yesterday too.
+[FarLeft]You said that yesterday too.
 [MidRight]... Twenty years. I gave that man twenty years of my life, and he gave me to Uzkalis like a gift basket.[CloseSpeech]
-[FarFarRight][LoadZaheva]
+[FarRight][LoadZaheva]
 Then stop giving him more of it. Mistlain isn't here. We are.
 [MidRight]...You're right. I'm sorry.
-[FarFarRight]Don't apologize. Walk.[X]
+[FarRight]Don't apologize. Walk.[X]
 
 ## Mage3LeaveLakshmiText
 [ConversationText]
@@ -108,23 +108,23 @@ You won't outrun him. No one does.[X]
 [MidLeft][LoadXena][MidRight][LoadAjax]
 They're retreating. Is everyone alright?
 [MidRight]Bruised, but breathing. Zaheva?[CloseSpeech]
-[FarFarRight][LoadZaheva]
+[FarRight][LoadZaheva]
 ...
 [MidRight]Zaheva. You heard what she said.
-[FarFarRight]Duke Clint.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarRight]Duke Clint.[CloseSpeech]
+[FarLeft][LoadPlayer]
 Who is Duke Clint?
 [MidLeft]One of the most powerful nobles in Arcanae. And one of Uzkalis' closest allies. He has a reputation for... research.
-[FarFarRight]He was my teacher.[CloseSpeech]
+[FarRight]He was my teacher.[CloseSpeech]
 [MidLeft]Your teacher? But you're a swordswoman.
-[FarFarRight]I am now. I wasn't, once. I wanted to be a mage more than anything. I couldn't master the tomes, and Clint said he could fix that. He found a way to turn the Inge in a person into Vene.
+[FarRight]I am now. I wasn't, once. I wanted to be a mage more than anything. I couldn't master the tomes, and Clint said he could fix that. He found a way to turn the Inge in a person into Vene.
 [MidLeft]That's... that isn't possible. That would tear a body apart.
-[FarFarRight]It nearly did. I spent a year learning how to walk again. Then I picked up a sword, because I could never hold a tome without shaking.[CloseSpeech]
+[FarRight]It nearly did. I spent a year learning how to walk again. Then I picked up a sword, because I could never hold a tome without shaking.[CloseSpeech]
 [MidRight]That's the revenge she told you about.
-[FarFarRight]He's coming for us. For me. I've spent years trying to find him, and now he's going to walk right into my hands.
+[FarRight]He's coming for us. For me. I've spent years trying to find him, and now he's going to walk right into my hands.
 [MidLeft]Zaheva, we can't fight one of Uzkalis' allies with five people! We need to get to Bacrun!
-[FarFarRight]Then go. I'm not running from him again.[CloseSpeech]
-[FarFarLeft][Tact]...[....] What do we do?[X]
+[FarRight]Then go. I'm not running from him again.[CloseSpeech]
+[FarLeft][Tact]...[....] What do we do?[X]
 
 ## Mage3LeaveStandWithZahevaText
 Stand with Zaheva.[X]
@@ -138,7 +138,7 @@ Keep running.[X]
 Zaheva. You helped us when you didn't have to. We won't leave you to face him alone.
 [MidRight]...You don't know what you're agreeing to.
 [MidLeft]Then you'll have to teach me.[CloseSpeech]
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 [Tact]...[....] Alright. If we're going to stop running, let's at least choose where we fight.
 [MidRight]Clint sends his hunters ahead of him. They'll be in the hills by tomorrow. We'll be waiting.[X]
 
@@ -149,5 +149,5 @@ Zaheva, please. If Clint is as dangerous as you say, then fighting him now is ex
 [MidRight]...
 [MidLeft]Come with us to Bacrun. We'll find a way to face him on our terms, not his.
 [MidRight]...Fine. But if he catches us on the road, I won't run.[CloseSpeech]
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 Thank you, Zaheva. Let's keep moving. Bacrun is still a long way off.[X]

@@ -4,32 +4,32 @@
 This is it. The Outer Ring. Everyone the towers don't want to look at, all living in the shadow of the inner wall.
 [MidRight]It's... quiet.
 [MidLeft]... It's never quiet. There should be children everywhere, and merchants yelling, and somebody's goat loose in the street.[CloseSpeech]
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 Half these doors are boarded up.[CloseSpeech]
-[FarFarRight][LoadVillagerOldWoman]
+[FarRight][LoadVillagerOldWoman]
 Lakshmi? Lakshmi, is that you, girl?
 [MidLeft]Auntie Reva! What happened here? Where is everyone?
-[FarFarRight]Volunteers, they call them. Sergeant Gerald's men come every few days with a list. For the Thunder Magus' great work, they say.
+[FarRight]Volunteers, they call them. Sergeant Gerald's men come every few days with a list. For the Thunder Magus' great work, they say.
 [MidLeft]That's... no. Lord Uzkalis asked for volunteers. People who wanted to help.
-[FarFarRight]Nobody who goes comes back, child. Your mother went with them three days ago. She said it was so the children could have their schools.
+[FarRight]Nobody who goes comes back, child. Your mother went with them three days ago. She said it was so the children could have their schools.
 [MidLeft]...
-[FarFarLeft]Lakshmi...
+[FarLeft]Lakshmi...
 [MidLeft]It's a mistake. It has to be a mistake. Gerald's misread his orders, that's all. I'll go and talk to him.[X]
 
 ## Mage6SearchArcanaeGeraldText
 [ConversationText]
 [MidLeft][LoadGerald]
 Next group! Lord Uzkalis' great work needs every pair of hands it can get. Don't make me ask twice.[CloseSpeech]
-[FarFarRight][LoadVillagerOldMan]
+[FarRight][LoadVillagerOldMan]
 My grandson is eight years old!
 [MidLeft]Then he'll be the youngest hero of the new Arcanae. Move![CloseSpeech]
 [Events]
-[FarFarLeft][LoadLakshmi]
+[FarLeft][LoadLakshmi]
 Sergeant Gerald! What is the meaning of this?
 [MidLeft]Well, well. Lord Uzkalis' favorite little scholar. Don't tell me you didn't know.
-[FarFarLeft]Know what? These people are being dragged from their homes!
+[FarLeft]Know what? These people are being dragged from their homes!
 [MidLeft]They're being given a purpose. More than the Outer Ring ever gave them. And look who you've brought me. The bearer, in the flesh.
-[FarFarLeft]... What?
+[FarLeft]... What?
 [MidLeft]Lord Uzkalis' orders were very clear. The crystal only answers to one pair of hands, and the engine needs those hands to wake up. Men! Take the bearer alive. Kill the rest.[X]
 
 ## Mage6SearchArcanaeObjectiveText
@@ -38,7 +38,7 @@ Sergeant Gerald! What is the meaning of this?
 Lakshmi. Are you alright?
 [MidRight]... No. But I will be when Gerald is on the ground. Help me, Teacher. Please.
 [MidLeft]You don't have to ask.[CloseSpeech]
-[FarFarRight][LoadPlayer]
+[FarRight][LoadPlayer]
 There's someone at the clinic by the east road, tending the wounded. She's waving us over!
 [MidLeft]Then let's keep Gerald's men away from that clinic, too.[X]
 
@@ -127,12 +127,12 @@ Lakshmi? What did you find?
 [MidRight]That's my mother, Teacher. He wrote my mother down like a sack of grain.
 [MidLeft]Lakshmi. I'm so sorry.
 [MidRight]He promised us schools. He walked these streets himself and promised every family here that their children would read. And all along he was counting what we'd yield.[CloseSpeech]
-[FarFarRight][LoadShanley]
+[FarRight][LoadShanley]
 The engine is in the ruins beneath the compound. An old Vathrylian font, from long before Arcanae. Lord Uzkalis means to start it in two days, once the bearer is in his hands.
 [MidRight]Then we go in before he can.[CloseSpeech]
-[FarFarLeft][LoadAlexis]
+[FarLeft][LoadAlexis]
 I'll come with you. I don't fight, but whoever you find down there will need a healer the moment they're free.[CloseSpeech]
-[FarFarRight][ClearFace]
-[FarFarLeft][ClearFace]
+[FarRight][ClearFace]
+[FarLeft][ClearFace]
 [MidLeft]... Lakshmi. Back at the crossroads, you told me Uzkalis was the only Magus trying to stop the world from dying.
 [MidRight]He might still be. And I don't care anymore. I chose Uzkalis because he chose my people. He doesn't get to un-choose them. I'm choosing them now.[X]

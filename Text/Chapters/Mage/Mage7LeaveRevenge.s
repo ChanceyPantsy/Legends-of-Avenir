@@ -4,7 +4,7 @@
 The inner laboratory. The vats are still here. He used to say the green made him feel calm.
 [MidRight]And the prisoners?
 [MidLeft]He keeps them in blocks, sealed off from each other. Three of them, if nothing's changed.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Then we find the blocks and get everyone out.[X]
 
 ## Mage7LeaveRevengeClintText
@@ -91,13 +91,13 @@ My work...[....] so close...[....] Seven...[....] you were...[....] supposed to 
 He's dead.
 [MidRight]He is. And look, Zaheva. Look behind you.[CloseSpeech]
 [MidLeft]...They're all out. Every block.[CloseSpeech]
-[FarFarLeft][LoadClara]
+[FarLeft][LoadClara]
 There are so many of them. Children, mostly. Some of them can barely stand, but they're alive!
 [MidLeft]...They're free.[CloseSpeech]
 [MidLeft]I spent ten years thinking I wanted to see him dead. I thought it would feel like something.
 [MidRight]And?
 [MidLeft]It doesn't. This does. Them, walking out of here. I think this is what I wanted all along.[CloseSpeech]
-[FarFarRight][LoadPlayer]
+[FarRight][LoadPlayer]
 Then let's take them home. All of them.
 [MidLeft]...Yes. Let's go home.[X]
 
@@ -107,11 +107,11 @@ Then let's take them home. All of them.
 He's dead.
 [MidRight]Zaheva...
 [MidLeft]He's dead, and I don't feel anything. Ten years, and I don't feel anything at all.[CloseSpeech]
-[FarFarLeft][LoadClara]
+[FarLeft][LoadClara]
 We... we couldn't reach all of them. I'm so sorry...
 [MidLeft]...[CloseSpeech]
 [MidLeft]I wanted revenge. I got it. And it's just an empty room full of green light.[CloseSpeech]
-[FarFarRight][LoadPlayer]
+[FarRight][LoadPlayer]
 Zaheva, it isn't your fault.
 [MidLeft]No. It's his. And he's gone, and they're still gone too. Revenge doesn't bring anyone back, [Tact]. It just ends.[X]
 

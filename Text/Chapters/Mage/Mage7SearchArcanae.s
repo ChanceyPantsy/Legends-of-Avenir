@@ -4,9 +4,9 @@
 This passage runs beneath the whole compound. Lord Uzkalis' scholars found it two years ago, and he sealed it off the same day.
 [MidRight]Vathrylian stonework again. The same as the vault in Draterus.
 [MidLeft]He calls it the Font. He says the Vathrylians drew power from this place long before Arcanae existed.[CloseSpeech]
-[FarFarLeft][LoadAlexis]
+[FarLeft][LoadAlexis]
 And now he's drawing it from people.[CloseSpeech]
-[FarFarRight][LoadLakshmi]
+[FarRight][LoadLakshmi]
 ... Let's keep moving.[X]
 
 ## Mage7SearchArcanaeUzkalisText
@@ -18,10 +18,10 @@ Where is my mother?
 [MidLeft]Here, Lakshmi. All of them are here, bound to the conduits. They aren't dead. They're giving. When the engine wakes, their strength will become the land's.
 [MidRight]You lied to us. You walked the Outer Ring and promised us schools.
 [MidLeft]I promised the Outer Ring a future. I never said it would cost nothing.[CloseSpeech]
-[FarFarRight][LoadXena]
+[FarRight][LoadXena]
 It costs them everything.
 [MidLeft]The desert will take all of us, Xena. A few hundred lives for the whole of Arcanae. Vathryl would have given anything for that bargain. Ask the crystal. It remembers.
-[FarFarRight]The crystal showed us a man who burned his own land to feed his ambitions. It didn't show me a savior.
+[FarRight]The crystal showed us a man who burned his own land to feed his ambitions. It didn't show me a savior.
 [MidLeft]Then you weren't looking closely enough. Guards! Bring me the bearer. Alive.[X]
 
 ## Mage7SearchArcanaeObjectiveText
@@ -114,19 +114,19 @@ No... the engine... was so close...[X]
 [MidLeft][LoadXena][MidRight][LoadPlayer]
 The engine's gone quiet...
 [MidRight]Listen. Voices. Coming from the conduits.[CloseSpeech]
-[FarFarLeft][LoadAlexis]
+[FarLeft][LoadAlexis]
 They're alive. Weak, but alive, every one of them. Quickly, bring them out into the light!
-[FarFarRight][LoadLakshmi]Mother? Mother!
-[FarFarLeft][ClearFace][LoadVillagerWoman]... Lakshmi? Is that you, my girl?
-[FarFarRight]I'm here. I'm here. I'm so sorry. I brought him the crystal, I helped him-
-[FarFarLeft]Hush. You came for us. That's what I'll remember.[CloseSpeech]
-[FarFarLeft][ClearFace]
-[FarFarRight][ClearFace]
+[FarRight][LoadLakshmi]Mother? Mother!
+[FarLeft][ClearFace][LoadVillagerWoman]... Lakshmi? Is that you, my girl?
+[FarRight]I'm here. I'm here. I'm so sorry. I brought him the crystal, I helped him-
+[FarLeft]Hush. You came for us. That's what I'll remember.[CloseSpeech]
+[FarLeft][ClearFace]
+[FarRight][ClearFace]
 [MidLeft]... And Uzkalis?[CloseSpeech]
-[FarFarLeft][LoadUzkalis]
+[FarLeft][LoadUzkalis]
 Still breathing. You've doomed us all, you know. The world will die slowly now, instead of quickly.
 [MidLeft]Then we have time to save it. The honest way.
-[FarFarLeft]... There is no honest way, Xena.
+[FarLeft]... There is no honest way, Xena.
 [MidLeft]Then we'll find one. That's what scholars are for.[X]
 
 ## Mage7SearchArcanaeGoodEndingNarratorText
@@ -152,15 +152,15 @@ You fools... The engine... was never meant to wake... like this...[CloseSpeech]
 [Events]
 [MidRight][LoadXena]
 The conduits! They're all flaring at once!
-[FarFarRight][LoadLakshmi]No... No, no, no! Mother! MOTHER!
+[FarRight][LoadLakshmi]No... No, no, no! Mother! MOTHER!
 [MidRight]Lakshmi, get back! [Tact], hold onto her!
 [MidLeft]A few hundred lives... for nothing...[CloseSpeech]
 [Events]
-[FarFarRight]...
+[FarRight]...
 [MidRight]...
-[FarFarRight]They're gone. All of them. The light just... took them.
+[FarRight]They're gone. All of them. The light just... took them.
 [MidRight]Lakshmi...
-[FarFarRight]Don't. Please, Teacher. Just... don't.[X]
+[FarRight]Don't. Please, Teacher. Just... don't.[X]
 
 ## Mage7SearchArcanaeBadEndingNarratorText
 [ConversationText]

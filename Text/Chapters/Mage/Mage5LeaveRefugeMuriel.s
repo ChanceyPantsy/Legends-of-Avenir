@@ -4,15 +4,15 @@
 Lady Muriel!
 [MidRight]Clara. You found her. And you're unhurt. Thank the winds.[CloseSpeech]
 [MidRight]Xena. It's been a long time.
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 Lady Muriel. I read your letter. I'm sorry it took me so long to listen.
 [MidRight]You're here now. That's what matters. Though I'm afraid I can't offer you the city I promised. Not yet.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Yeah, about that. The harbor's crawling with men in Xavus' colors. What happened to the freest port in the world?
 [MidRight]New Arcanae happened. Xavus installed a governor, and the governor hired a Haedrician warlord named Richter to run my harbor. Prisoners from Haedric, Cesarian soldiers, anyone in the city who can't pay the new taxes... He sells them on the docks, by the head.
-[FarFarLeft]That's monstrous.
+[FarLeft]That's monstrous.
 [MidRight]It's business, to them. The captives are kept in the warehouses along the waterfront until the ships come.[CloseSpeech]
-[FarFarLeft][ClearFace][LoadPlayer]
+[FarLeft][ClearFace][LoadPlayer]
 Then let's open the warehouses.
 [MidRight]...You must be the student. Clara wrote about you. Yes. Let's open them, and then let's take my harbor back.[X]
 
@@ -99,12 +99,12 @@ I was going to... be... rich...[X]
 The harbor is ours. The warehouses are empty, and Richter's ship is burning at the pier. The Free Port is free.
 [MidRight]For now.
 [MidLeft]For now. Xavus won't forgive this. The governor will run straight to Uzkalis, and Uzkalis will send a fleet.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Already ahead of you. One of my friends on the docks spotted sails to the north this morning. New Arcanian colors. A lot of them.
 [MidLeft]Then we have days, not weeks. We'll hold the harbor from my tower.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Who's leading them?
-[FarFarRight]That's the funny part. Word is, the fleet's commander is a young Shaman from the capital's Outer Ring. Lakshmi, they call her.
+[FarRight]That's the funny part. Word is, the fleet's commander is a young Shaman from the capital's Outer Ring. Lakshmi, they call her.
 [MidRight]...Lakshmi.[CloseSpeech]
 [MidLeft]You know her?
 [MidRight]She was my student. My first student.[X]

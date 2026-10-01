@@ -10,11 +10,11 @@ Seek out Efil.[X]
 Civilization! Roofs, beds, and merchants who haven't heard my name yet.
 [MidLeft]Is that a good thing?
 [MidRight]For me? Wonderful. For them? Debatable.[CloseSpeech]
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 This is the crossroads outpost. The road east leads to the capital, and the road south runs all the way to Bacrun. We'll rest at the inn tonight and I'll send word to Lord Mistlain.
-[FarFarRight][LoadLakshmi]Send word to Mistlain, and he'll have that crystal out of [Tact]'s hands before you can unpack.
-[FarFarLeft]Lord Mistlain is my patron, Lakshmi.
-[FarFarRight]That's exactly my point.[X]
+[FarRight][LoadLakshmi]Send word to Mistlain, and he'll have that crystal out of [Tact]'s hands before you can unpack.
+[FarLeft]Lord Mistlain is my patron, Lakshmi.
+[FarRight]That's exactly my point.[X]
 
 ## Mage4SearchInnText
 [ConversationText]
@@ -28,7 +28,7 @@ Anything?
 [MidLeft]...
 [MidRight]What does it mean?
 [MidLeft]I don't know, [Tact]. But I intend to find out.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Uh, hate to interrupt the scholarly hour, but there's a whole lot of soldiers in the square. And they're asking for you by name.[X]
 
 ## Mage4SearchStandoffText
@@ -37,15 +37,15 @@ Uh, hate to interrupt the scholarly hour, but there's a whole lot of soldiers in
 Lakshmi! Thank the storms you're alive.
 [MidRight]Captain Shanley.
 [MidLeft]Lord Uzkalis sent us when you didn't return from Draterus. And you must be Xena.[CloseSpeech]
-[FarFarRight][LoadXena]
+[FarRight][LoadXena]
 I am.
 [MidLeft]Your attack on Lord Uzkalis' retainer has caused quite a stir in the capital. Hand over the artifact you took from Draterus, and I'll consider the matter closed.
-[FarFarRight]I'm afraid it isn't that simple.[CloseSpeech]
+[FarRight]I'm afraid it isn't that simple.[CloseSpeech]
 [Events]
-[FarFarLeft][LoadAjax]
+[Left][LoadAjax]
 It isn't simple at all, Captain. That artifact belongs to Lord Mistlain.
 [MidLeft]And who are you?
-[FarFarLeft]Ajax. Lord Mistlain's guard. He sent us to escort Xena home, along with whatever she found.[CloseSpeech]
+[Left]Ajax. Lord Mistlain's guard. He sent us to escort Xena home, along with whatever she found.[CloseSpeech]
 [FarLeft][LoadZaheva]
 Two of us against a company. I hope you know what you're doing, Ajax.
 [MidLeft]Mistlain has no claim here. His scholar attacked one of Lord Uzkalis' people.
@@ -53,14 +53,14 @@ Two of us against a company. I hope you know what you're doing, Ajax.
 [Events]
 [MidLeft][LoadSean]
 Captain, why are we even talking? Two bodyguards, a pirate, and a pair of bookworms. Let me take the crystal and be done with it.
-[FarFarRight][ClearFace][LoadShanley]Stand down, Sean. Lord Uzkalis wants this handled quietly.
+[FarRight][ClearFace][LoadShanley]Stand down, Sean. Lord Uzkalis wants this handled quietly.
 [MidLeft]Lord Uzkalis wants results. Men! Take the crystal. Anyone who gets in the way doesn't walk out of this square!
-[FarFarRight]Sean! That is an order!
+[FarRight]Sean! That is an order!
 [MidLeft]Then report me. I'll be holding the crystal when you do.[CloseSpeech]
 [Events]
-[FarFarRight]... Damn it. Everyone loyal to me, fall back! I won't have Arcanians cutting each other down in the streets!
+[FarRight]... Damn it. Everyone loyal to me, fall back! I won't have Arcanians cutting each other down in the streets!
 [MidRight]Captain!
-[FarFarRight]I'm sorry, Lakshmi. Survive this, and I'll make it right.[X]
+[FarRight]I'm sorry, Lakshmi. Survive this, and I'll make it right.[X]
 
 ## Mage4SearchAfterStandoffText
 [ConversationText]
@@ -68,7 +68,7 @@ Captain, why are we even talking? Two bodyguards, a pirate, and a pair of bookwo
 Sean... That fool would burn this whole town for a promotion.
 [MidRight]Will you fight your own countrymen, Lakshmi?
 [MidLeft]He's the one who drew first. If he wants the crystal, he'll have to go through me.[CloseSpeech]
-[FarFarRight][LoadPlayer]
+[FarRight][LoadPlayer]
 Teacher, Mistlain's guards are fighting Sean's men to the south!
 [MidRight]Then let's make sure they're still standing when this is over.[X]
 
@@ -161,19 +161,19 @@ Sean... I'm sorry. He was under my command, and I let him do this.
 [MidLeft][LoadXena]
 Lakshmi...
 [MidRight]The desert grows a mile every year. Every summer another well in the Outer Ring goes dry. Uzkalis is the only Grand Magus who's trying to stop it, the only one studying what happened to Vathryl so it never happens to us. If that crystal holds Vathryl's memories, he needs it.
-[MidLeft]And what about [Tact]? That crystal is doing something to [Him].
-[MidRight]Uzkalis has more scholars than every other Magus combined. If anyone can help [Him], it's him.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[MidLeft]And what about [Tact]? That crystal is doing something to [him].
+[MidRight]Uzkalis has more scholars than every other Magus combined. If anyone can help [him], it's him.[CloseSpeech]
+[FarRight][LoadKendrick]
 Or... if it's answers about that crystal you're after, I know someone who might have 'em.
 [MidLeft]Kendrick?
-[FarFarRight]Ten years back, I ran supplies for the Sateenkaari during the war. Their leader, Efil, holed himself up in the temple of Kilthel in the deep desert afterwards. Never came out. If anybody alive knows what that crystal is, it's him.
+[FarRight]Ten years back, I ran supplies for the Sateenkaari during the war. Their leader, Efil, holed himself up in the temple of Kilthel in the deep desert afterwards. Never came out. If anybody alive knows what that crystal is, it's him.
 [MidLeft]Efil... The only person who ever stood against a Guardian Spirit and won.[CloseSpeech]
-[FarFarRight][ClearFace]
-[FarFarLeft][LoadPlayer]
+[FarRight][ClearFace]
+[FarLeft][LoadPlayer]
 The voice in my visions... It called me "lost soul." Teacher, if anyone would know what that means...[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 Whatever you choose, Mistlain's tower is out. He'd sell you to Uzkalis the moment you walked through the door.
-[FarFarLeft][ClearFace][LoadZaheva]And we're coming with you. Mistlain won't exactly welcome us back after today.
+[FarLeft][ClearFace][LoadZaheva]And we're coming with you. Mistlain won't exactly welcome us back after today.
 [MidLeft]... [Tact]. That crystal speaks to you, not to me. Whatever it's showing you, you should decide where we go next.[X]
 
 ## Mage4SearchChoseLakshmiText
@@ -192,6 +192,11 @@ We're going to find Efil.
 [MidRight]Don't. I'll tell Lord Uzkalis where you went. Not that it will matter much in the deep desert.[CloseSpeech]
 [Events]
 [MidLeft]...
-[FarFarLeft][LoadPlayer]Teacher... I'm sorry.
+[FarLeft][LoadPlayer]Teacher... I'm sorry.
 [MidLeft]Don't be. She made her choice, and you made yours. Kendrick, how far is the temple of Kilthel?
-[FarFarRight][LoadKendrick]Five days, if the sand's kind to us. It never is.[X]
+[FarRight][LoadKendrick]Five days, if the sand's kind to us. It never is.[X]
+
+## Mage4SearchZahevaRetreatText
+[BattleText]
+[FarRight][LoadZaheva]
+I can't hold this line...[....] Ajax, I'm falling back! I'll catch up with you, [Tact].[X]

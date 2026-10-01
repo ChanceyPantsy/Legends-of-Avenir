@@ -10,23 +10,23 @@ And they walked with me.
 
 ## True4EfilText
 [ConversationText]
-[FarFarLeft][LoadEfil]
+[FarLeft][LoadEfil]
 [Tact]. Hold the Light up. Let me through.[CloseSpeech]
 [MidRight][LoadNarrator]
 No. No, no. Not you. You don't get to be here.
-[FarFarLeft]The Light keeps everything that passes through it. Even me, it seems.[CloseSpeech]
-[FarFarLeft]Hello, Toivo.
+[FarLeft]The Light keeps everything that passes through it. Even me, it seems.[CloseSpeech]
+[FarLeft]Hello, Toivo.
 [MidRight]...Don't.
-[FarFarLeft]Toivo. Of the Sateenkaari. The kindest of the Sateenkaari. The one who wept when we had to kill Kilthel, and then stood in his place, so that no one else would have to.[CloseSpeech]
+[FarLeft]Toivo. Of the Sateenkaari. The kindest of the Sateenkaari. The one who wept when we had to kill Kilthel, and then stood in his place, so that no one else would have to.[CloseSpeech]
 [MidLeft][LoadPlayer]
 Toivo... That's your name?
 [MidRight]It WAS my name. Then the Higher Beings needed a new guardian, and the rules came with it. Keep the balance. See everything. Touch nothing.[CloseSpeech]
 [MidRight]Do you know what that does to a person, Efil? Ten years of watching. Every war, every famine, every child in every Outer Ring, and I'm not allowed to lift a finger. The only ones I was ever allowed to touch were the lost souls. So I touched them.
-[FarFarLeft]You played with them.
+[FarLeft]You played with them.
 [MidRight]I gave them LIVES! Do you know how many souls drift out of the world and never get even one? I gave this one fifteen!
 [MidLeft]And you took every one of them back.
 [MidRight]...Because they changed things. Because when a lost soul changes the world, I have to balance it, and the only thing I'm allowed to balance is them. Those are the rules. YOUR rules, Efil.[CloseSpeech]
-[FarFarLeft]Then let them end. Here.
+[FarLeft]Then let them end. Here.
 [MidRight]...Then make me stop.[X]
 
 ## True4ObjectiveText
@@ -77,12 +77,12 @@ Enough...[....] Enough...[....] I yield...[X]
 [ConversationText]
 [MidRight][LoadNarrator]
 ...It's quiet. The echoes are still here.[CloseSpeech]
-[FarFarLeft][LoadEfil]
+[FarLeft][LoadEfil]
 They're not going anywhere, Toivo. Neither am I. Not this time.
 [MidRight]You're dead, Efil. You were killed in more of this one's lives than I can count.
-[FarFarLeft]And you remember every one of them. So do I, now. That's what the Light does.[CloseSpeech]
+[FarLeft]And you remember every one of them. So do I, now. That's what the Light does.[CloseSpeech]
 [MidRight]...I don't know how to stop. Ten years of nothing but watching. The lost souls were the only ones who ever talked back to me.
-[FarFarLeft]Then talk to them. Don't erase them.[CloseSpeech]
+[FarLeft]Then talk to them. Don't erase them.[CloseSpeech]
 [MidLeft][LoadPlayer]
 Toivo. You don't have to be alone up here.
 [MidRight]...[CloseSpeech]

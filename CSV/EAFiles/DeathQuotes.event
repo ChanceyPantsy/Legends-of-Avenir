@@ -154,6 +154,9 @@ DeathQuote(Clara,MageLeaveRefugeMuriel7,0x65,ClaraGameOverDeathText)
 DeathQuote(Muriel,MageLeaveRefugeMuriel5,0x65,MurielGameOverDeathText) // Muriel must survive while her city is at stake.
 DeathQuote(Muriel,MageLeaveRefugeMuriel6,0x65,MurielGameOverDeathText)
 DeathQuote(Mistlain,MageLeaveRefugeMistlain6,0x65,MistlainGameOverDeathText) // The prisoner must survive the rescue.
+DeathQuote(Kendrick,MageSearch3,0x00,Mage3SearchKendrickRetreatText) // NPCs who fall before joining retreat, and rejoin in the next chapter.
+DeathQuote(Kendrick,MageLeaveRefuge4,0x00,Mage4LeaveRefugeKendrickRetreatText)
+DeathQuote(Zaheva,MageSearch4,0x00,Mage4SearchZahevaRetreatText)
 DeathQuote(Xena,Mage1,0x65,XenaDeathText) // Losing Xena ends the Mage route (and her echo in the True route).
 DeathQuote(Xena,MageLeave2,0x65,XenaDeathText)
 DeathQuote(Xena,MageSearch2,0x65,XenaDeathText)

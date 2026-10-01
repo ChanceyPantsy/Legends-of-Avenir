@@ -4,14 +4,14 @@
 This is the place. The trail narrows into a pass between the peaks. Anyone hunting us from the capital has to come through here.
 [MidRight]You sound very sure they'll come this way.
 [MidLeft]Clint always sends his hunters ahead of him, like hounds. They're fast, they're vicious, and they never think to look up.[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 And how do you know so much about Clint's hounds?
 [MidLeft]...Because I used to be one of the things they hunted.[CloseSpeech]
-[FarFarLeft][LoadClara]
+[FarLeft][LoadClara]
 Um... I don't mean to complain, but are we really going to fight them all? There are only five of us.
-[FarFarRight]Six, counting the mountain. We hold the high ground and let them come to us.
+[FarRight]Six, counting the mountain. We hold the high ground and let them come to us.
 [MidRight][Tact]. Stay close to me.[CloseSpeech]
-[FarFarLeft][ClearFace][LoadPlayer]
+[FarLeft][ClearFace][LoadPlayer]
 I'll be fine, Teacher. Zaheva knows what she's doing.
 [MidLeft]...Thank you, [Tact].[X]
 
@@ -22,7 +22,7 @@ Spread out! The Duke wants the scholar and her student alive. The traitors from 
 [MidRight]Val, those are Arcanians. Mistlain's own people.
 [MidLeft]Traitors to Arcanae, Helmer. No better than the Cesarians who burned my village.
 [MidRight]...As you say.[CloseSpeech]
-[FarFarLeft][LoadZaheva]
+[FarLeft][LoadZaheva]
 They're here. Everyone, take your positions. Nobody gets through this pass.[X]
 
 ## Mage4LeaveRevengeObjectiveText
@@ -96,28 +96,28 @@ Enough. I yield. Don't hurt the girl.[X]
 Hold still. The knots aren't tight. You'll keep your hands.
 [MidRight]You should have killed me. The Duke would have killed you.
 [MidLeft]That's rather the point.[CloseSpeech]
-[FarFarLeft][LoadZaheva]
+[FarLeft][LoadZaheva]
 Let me talk to her.
 [MidLeft][ClearFace][LoadXena]
 Zaheva...
-[FarFarLeft]I'm not going to hurt her. I'm going to tell her the truth.[CloseSpeech]
-[FarFarLeft]Your Duke takes in orphans. Children with nowhere else to go. He teaches them, and feeds them, and tells them they're special.
+[FarLeft]I'm not going to hurt her. I'm going to tell her the truth.[CloseSpeech]
+[FarLeft]Your Duke takes in orphans. Children with nowhere else to go. He teaches them, and feeds them, and tells them they're special.
 [MidRight]He saved me! The Cesarians burned my village to the ground. They killed my family. Duke Clint found me in the ashes!
-[FarFarLeft]And then he started his experiments. He found a way to turn a person's Inge into Vene. I was one of the first. Subject Seven, he called me. You heard him.
+[FarLeft]And then he started his experiments. He found a way to turn a person's Inge into Vene. I was one of the first. Subject Seven, he called me. You heard him.
 [MidRight]...You're lying.
-[FarFarLeft]I couldn't walk for a year. The boy in the cell next to mine stopped knowing my name. Then one day his cell was empty. He has a laboratory beneath the capital, and he's still filling it.
+[FarLeft]I couldn't walk for a year. The boy in the cell next to mine stopped knowing my name. Then one day his cell was empty. He has a laboratory beneath the capital, and he's still filling it.
 [MidRight]You're LYING! He's never done anything but protect me![CloseSpeech]
-[FarFarRight][LoadHelmer]
+[FarRight][LoadHelmer]
 Val.
 [MidRight]Helmer, you can't possibly believe her!
-[FarFarRight]...The soldiers who burned your village wore Cesarian colors, Val. I know those colors well. Better than you'd think. Cesaria never sent a single company that far north.
+[FarRight]...The soldiers who burned your village wore Cesarian colors, Val. I know those colors well. Better than you'd think. Cesaria never sent a single company that far north.
 [MidRight]What are you saying?
-[FarFarRight]I'm saying I've wondered. For a long time.[CloseSpeech]
+[FarRight]I'm saying I've wondered. For a long time.[CloseSpeech]
 [MidLeft][Tact], what do we do with them?[CloseSpeech]
-[FarFarLeft][ClearFace][LoadPlayer]
+[FarLeft][ClearFace][LoadPlayer]
 If Clint keeps records of his work, they'd be in his manor, wouldn't they? If we can find them, Val can see the truth for herself.
-[FarFarRight]...The Duke keeps a study in his manor in the hills. He never lets anyone inside.
+[FarRight]...The Duke keeps a study in his manor in the hills. He never lets anyone inside.
 [MidRight]Helmer!
-[FarFarRight]If she's lying, Val, then there's nothing in that study to find. And we'll have lost nothing.[CloseSpeech]
-[FarFarLeft][ClearFace][LoadZaheva]
+[FarRight]If she's lying, Val, then there's nothing in that study to find. And we'll have lost nothing.[CloseSpeech]
+[FarLeft][ClearFace][LoadZaheva]
 There's a cellar entrance behind the manor's kitchens. I know it well. I crawled out of it once.[X]

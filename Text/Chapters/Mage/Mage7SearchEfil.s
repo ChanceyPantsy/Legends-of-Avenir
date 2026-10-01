@@ -4,10 +4,10 @@
 This is the inner sanctum. Kilthel's own chamber, once. The Sateenkaari brought the Light here to read it, the night before we hid it in Draterus.
 [MidRight]What are you going to show me?
 [MidLeft]The one memory the Guardian Spirit can never fully take from a lost soul. The place where every one of your lives began.[CloseSpeech]
-[FarFarLeft][LoadXena]
-And you're certain this won't hurt [Him]?
-[MidLeft]No. But I'm certain that not knowing will hurt [Him] more.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarLeft][LoadXena]
+And you're certain this won't hurt [him]?
+[MidLeft]No. But I'm certain that not knowing will hurt [him] more.[CloseSpeech]
+[FarRight][LoadKendrick]
 Uh, Efil? Hate to interrupt the profound moment, but somebody's coming up the main hall. Lots of somebodies. In nice robes.[X]
 
 ## Mage7SearchEfilMistlainText
@@ -19,10 +19,10 @@ Lord Mistlain...? What are you doing here?
 [MidLeft]Following the light, of course. That crystal has been blazing like a bonfire ever since you woke it. Every Wanderer in the desert could feel it. So could I.
 [MidRight]You sent me to that vault. You knew what was inside.
 [MidLeft]I suspected. The Sateenkaari were careless with their records, and I am very good at reading. I couldn't very well walk into a Vathrylian vault myself. Not at my age.[CloseSpeech]
-[FarFarRight][LoadEfil]
+[FarRight][LoadEfil]
 What do you want with the Light, Mistlain?
 [MidLeft]Efil. Still alive, still sulking. I want what the Orden had. Kilthel's companions lived a thousand years, because their light was kept. That crystal keeps light. Mine is guttering, Efil. I am two hundred years old, and I am not finished reading.
-[FarFarRight]It doesn't work that way. The Light keeps memories, not lives.
+[FarRight]It doesn't work that way. The Light keeps memories, not lives.
 [MidLeft]Then I'll learn how to make it work. I always do. Guards! Bring me the crystal, and the bearer, if you must. Xena, I'm sorry. I truly am. You were my finest scholar.
 [MidRight]And you were the patron I defended to everyone who called you selfish.[X]
 
@@ -78,7 +78,7 @@ Lakshmi! Wait!
 ## Mage7SearchEfilXenaEfilText
 [ConversationText]
 [MidLeft][LoadXena][MidRight][LoadEfil]
-Efil. Back in the hall, you knew exactly whose voice [Tact] hears at the end of [His] dreams. Didn't you?
+Efil. Back in the hall, you knew exactly whose voice [Tact] hears at the end of [his2] dreams. Didn't you?
 [MidRight]...
 [MidLeft]You don't have to say the name. Just tell me if [Tact] is going to be alright.
 [MidRight]No one who meets the Guardian Spirit is alright, Xena. But [Tact] is carrying the Light. That's more than any lost soul has ever had before.[X]
@@ -121,9 +121,9 @@ It's over. Mistlain is gone.
 [MidRight]Home. You don't even know where that is anymore, Teacher.
 [MidLeft]... No. But I'd like to find out with you.
 [MidRight]...[CloseSpeech]
-[FarFarRight][LoadEfil]
+[FarRight][LoadEfil]
 [Tact]. Are you ready?
-[FarFarLeft][LoadPlayer]Yes. Show me.[X]
+[FarLeft][LoadPlayer]Yes. Show me.[X]
 
 ## Mage7SearchEfilBadEndingText
 [ConversationText]
@@ -133,7 +133,7 @@ It's over. Mistlain is gone.
 [MidLeft]... She chose her side. And I wasn't there when it mattered. Again.
 [MidRight]Teacher...
 [MidLeft]Don't. Not now.[CloseSpeech]
-[FarFarRight][LoadEfil]
+[FarRight][LoadEfil]
 [Tact]. I'm sorry for your teacher's loss. But we may not have long. Are you ready?
 [MidRight]... Yes. Show me.[X]
 
@@ -153,16 +153,16 @@ Well, well, well. Who do we have here in my realm? A lost soul...
 [ConversationText]
 [MidRight][LoadNarrator][MidLeft][LoadPlayer]
 Well! That's enough sightseeing, I think.[CloseSpeech]
-[FarFarRight][LoadEfil]
+[FarRight][LoadEfil]
 ... You.
 [MidRight]Hello, Efil. Don't.
-[FarFarRight]It's you. All this time, it's been-
+[FarRight]It's you. All this time, it's been-
 [MidRight]Don't say it. You know the rules better than anyone. You wrote half of them.
-[FarFarRight]I never wrote this. Toying with lost souls, wiping them clean, again and again-
+[FarRight]I never wrote this. Toying with lost souls, wiping them clean, again and again-
 [MidRight]No. You just handed me the pen.[CloseSpeech]
 [MidLeft]You're the voice. The one who laughs at the end.
 [MidRight]And you're the lost soul who keeps peeking behind the curtain. With the Sateenkaari's little lantern, no less. Clever. Far too clever.
-[FarFarRight]Leave [Him] be!
+[FarRight]Leave [him] be!
 [MidRight]You know I can't, Efil. Neither of us is allowed to interfere, remember? Except with lost souls. Hold still, [Tact]. I'll be quick.[X]
 
 ## Mage7SearchEfilGoodEndingPlayerDeathText
@@ -179,4 +179,4 @@ I'll... remember...[CloseEyes][A][X]
 [ConversationText]
 [MidLeft][LoadEfil]
 ...[....] The Light is still glowing.
-[MidLeft]It kept [Him]. Every word, every face, every road [He] walked. Whatever you take from [Him]... it keeps.[X]
+[MidLeft]It kept [him]. Every word, every face, every road [he] walked. Whatever you take from [him]... it keeps.[X]

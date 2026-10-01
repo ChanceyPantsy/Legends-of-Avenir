@@ -23,3 +23,26 @@ DISA Muriel
 DISA Mistlain
 DISA Alexis
 ENDA
+
+// Background 0x35 ("Black") is broken in this ROM: the spell animation engine (Graphics/Spells/MasterSpellInstaller.event)
+// is installed at 0x95D780, in the middle of that background's tile map, so showing it draws garbage. The Mage and True
+// routes use it for their dark scenes, so point the table entry at a fresh all-black background instead.
+PUSH
+ORG 0x95DD1C + 12 * 0x35 // gConvoBackgroundData[0x35]: tiles, tile map, palette.
+POIN BlackBackgroundTiles BlackBackgroundMap BlackBackgroundPalette
+POP
+
+ALIGN 4
+BlackBackgroundTiles: // One 4bpp tile filled with colour 1, LZ77-compressed as four runs of 8 literal bytes.
+BYTE 0x10 0x20 0x00 0x00
+BYTE 0x00 0x11 0x11 0x11 0x11 0x11 0x11 0x11 0x11
+BYTE 0x00 0x11 0x11 0x11 0x11 0x11 0x11 0x11 0x11
+BYTE 0x00 0x11 0x11 0x11 0x11 0x11 0x11 0x11 0x11
+BYTE 0x00 0x11 0x11 0x11 0x11 0x11 0x11 0x11 0x11
+ALIGN 4
+BlackBackgroundMap: // A 30x20 tile map (width-1, height-1, then one entry per tile), every entry tile 0.
+BYTE 0x1D 0x13
+FILL 30 * 20 * 2
+ALIGN 4
+BlackBackgroundPalette: // Every colour black.
+FILL 0x100

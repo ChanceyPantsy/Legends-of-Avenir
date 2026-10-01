@@ -69,6 +69,17 @@ EndUnit
 //Label BeginingScene
 BeginningScene:
 CAM1 [4,7]
+// Check before LOAD2: for anyone missing from the party it loads a stand-in that vanishes when the turn starts.
+CHECK_ALIVE Zaheva
+BNE 0x20 0x0 0xC
+	LOAD1 0x1 ZahevaRejoins // She fell back in the village, and catches up here.
+	ENUN
+LABEL 0x20
+CHECK_ALIVE Ajax
+BNE 0x21 0x0 0xC
+	LOAD1 0x1 AjaxRejoins // He fell back in the village, and catches up here.
+	ENUN
+LABEL 0x21
 LOAD3 0x1 PlayerLoading1
 LOAD2 0x1 ChapterFriends
 ENUN
@@ -219,3 +230,14 @@ Turn8Units:
 UNIT Wanderer Ranger Daniel Level(11,Enemy,True) [0,4] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
 UNIT Wanderer Ranger Daniel Level(11,Enemy,True) [0,10] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
 EndUnit
+
+// Fresh copies for party members who fell back in an earlier chapter before they could join.
+ALIGN 4
+ZahevaRejoins:
+UNIT Zaheva SpellswordF 0x00 Level(5,Ally,True) [0,7] 0x00 0x00 0x00 0x00 [SteelSword,Fire] NoAI
+UNIT
+
+AjaxRejoins:
+UNIT Ajax Shaman 0x00 Level(5,Ally,True) [1,7] 0x00 0x00 0x00 0x00 [Luna,Flux,Vulnerary] NoAI
+UNIT
+

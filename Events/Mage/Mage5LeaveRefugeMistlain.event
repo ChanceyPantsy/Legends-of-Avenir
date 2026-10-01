@@ -28,7 +28,7 @@ END_MAIN
 
 //Label LocationBasedEvents
 LocationBasedEvents:
-Seize(0x3,EndingScene,9,0)
+LOCA 0x3 EndingScene [9,0] 0x19 // "Arrive" (EscapeArrive hack): any unit can end the chapter here. Vanilla Seize only works for the lord character IDs 0x01/0x0F, which is not every Tact.
 House(0x11,NorthHouse,7,11)
 House(0x12,MiddleHouse,6,17)
 House(0x13,SWHouse,2,21)
@@ -66,6 +66,12 @@ Text(Mage5LeaveRefugeMistlainStartingText)
 EndConvo
 STAL 0x10
 CAM1 [15,19]
+// Check before LOAD2: for anyone missing from the party it loads a stand-in that vanishes when the turn starts.
+CHECK_ALIVE Kendrick
+BNE 0x20 0x0 0xC
+	LOAD1 0x1 KendrickRejoins // He fell back at the market, and catches up here.
+	ENUN
+LABEL 0x20
 LOAD3 0x1 PlayerLoading1
 LOAD2 0x1 ChapterFriends
 ENUN
@@ -218,3 +224,10 @@ Turn7Units:
 UNIT Arcanian Paladin 0x00 Level(4,Enemy,True) [0,9] 0x00 0x00 0x00 0x00 [SteelLance] NoAI
 UNIT Arcanian Sage 0x00 Level(4,Enemy,True) [18,7] 0x00 0x00 0x00 0x00 [Elfire] NoAI
 UNIT
+
+// Fresh copies for party members who fell back in an earlier chapter before they could join.
+ALIGN 4
+KendrickRejoins:
+UNIT Kendrick Pirate Kendrick Level(8,Ally,True) [13,21] 0x00 0x00 0x00 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT
+

@@ -278,6 +278,15 @@ setMugEntry(ZaliusMug,ZaliusPortrait,3,5,3,3)
 setMugEntry(0x14,UzkalisPortrait,2,6,2,3)
 setMugEntry(0x02,MaximusPortrait,2,5,2,3) // Set Eirika and Ephraim to be Maximus and Uzkalis (Debug screen)
 
+// Alexis has no portrait art yet (AlexisMug was an empty entry), so she borrows the vanilla face in entry 0x11
+// until custom art exists. These are entry 0x11's values from VanillaPortraitTable.dmp.
+PUSH
+ORG PortraitTable+AlexisMug*0x1C
+WORD 0x08898684 0x08898498 0x08897E78 0x08897E98 0x00000000
+BYTE 2 6 3 4
+WORD 0x01
+POP
+
 /*
 MercMAvatarPortrait:
 #incext PortraitFormatter "Male Merc Avatar.png"

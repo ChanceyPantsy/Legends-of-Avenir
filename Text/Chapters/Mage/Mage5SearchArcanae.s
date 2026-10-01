@@ -4,17 +4,17 @@
 Lord Uzkalis' compound. His scholars work here, away from the politics of the capital.
 [MidRight]Away from the politics. In the private fortress of the man who started a civil war.
 [MidLeft]... You'll find Lord Uzkalis isn't what the other towers say he is.[CloseSpeech]
-[FarFarRight][LoadUzkalis]
+[FarRight][LoadUzkalis]
 Captain Shanley. And Lakshmi, safe and whole. You have no idea how relieved I am.
-[FarFarLeft][LoadLakshmi]Lord Uzkalis. I'm sorry I was gone so long.
-[FarFarRight]You brought me back far more than an apology, by the look of it. Xena, I presume? Mistlain's finest researcher.
+[FarLeft][LoadLakshmi]Lord Uzkalis. I'm sorry I was gone so long.
+[FarRight]You brought me back far more than an apology, by the look of it. Xena, I presume? Mistlain's finest researcher.
 [MidRight]Lord Uzkalis.
-[FarFarRight]Your reputation precedes you. Mostly for ignoring politics entirely.
+[FarRight]Your reputation precedes you. Mostly for ignoring politics entirely.
 [MidRight]And yours precedes you for embracing them.
-[FarFarRight]Ha! Fair enough. And this must be [Tact]. The bearer.[CloseSpeech]
+[FarRight]Ha! Fair enough. And this must be [Tact]. The bearer.[CloseSpeech]
 [MidLeft][ClearFace][LoadPlayer]
 You know about the crystal?
-[FarFarRight]Lakshmi's letters were very thorough. An artifact of the Sateenkaari, dormant for ten years, that woke the moment you touched it. May I see it?
+[FarRight]Lakshmi's letters were very thorough. An artifact of the Sateenkaari, dormant for ten years, that woke the moment you touched it. May I see it?
 [MidLeft]...Teacher?
 [MidRight]Go ahead, [Tact]. We came this far.[X]
 
@@ -28,7 +28,7 @@ The Grand Sorcerer of Vathryl. Every text I own says he drew on Vene, the same w
 [MidLeft]Pura?
 [MidRight]The source of both. Inge and Vene are two faces of the same coin, [Tact]. Spend one, and you must return it in the other, or the scales tip. Vathryl spent and spent and never paid it back. And then the scales broke.[CloseSpeech]
 [MidLeft][ClearFace]
-[FarFarRight][LoadXena]
+[FarRight][LoadXena]
 And Vathryl became Draterus.
 [MidRight]Yes. And here we are, about to repeat it. Every Magus in Arcanae draws on the land to fuel their spells, and none of us ever pay it back. Draterus grows a mile every year. The wells in the Outer Ring are drying up. We are walking the Sorcerer's road with our eyes closed.[X]
 
@@ -37,7 +37,7 @@ And Vathryl became Draterus.
 [MidLeft][LoadShanley][MidRight][LoadUzkalis]
 Lord Uzkalis! Riders at the north wall, bearing Cesarian colors! It's the Lion Brigade!
 [MidRight]Blaine. Jurgen's hound. So the rumors of my work finally reached Cesaria.[CloseSpeech]
-[FarFarLeft][LoadLakshmi]
+[FarLeft][LoadLakshmi]
 They'll burn everything here, my lord. The archives, the workshops, the scholars...
 [MidRight]Not if we stop them. Shanley, take the guards to the east wall. My scholars and I must secure the archives below.[CloseSpeech]
 [MidLeft][ClearFace][LoadXena]
@@ -104,11 +104,11 @@ This is why I needed your crystal, [Tact].
 [MidRight]An engine. When it's finished, it will do what the Grand Sorcerer did, in reverse. It will make Pura and pour it back into the land. Inge for the fields, Vene for the towers, in balance, the way it should have been all along.
 [MidLeft]You can do that?
 [MidRight]I was missing one piece. How the Sorcerer made Pura in the first place. Your crystal just showed me.[CloseSpeech]
-[FarFarLeft][LoadLakshmi]
+[FarLeft][LoadLakshmi]
 Wells that never run dry. Fields where there was only sand. The Outer Ring... green again.
 [MidRight]That is the promise I made the Outer Ring, Lakshmi. I intend to keep it.[CloseSpeech]
-[FarFarRight][LoadXena]
+[FarRight][LoadXena]
 ...
 [MidLeft]Teacher?
-[FarFarRight]... Where will you get the Pura to start it, Lord Uzkalis?
+[FarRight]... Where will you get the Pura to start it, Lord Uzkalis?
 [MidRight]From volunteers. People who believe in what we're building here, and are willing to lend a little of their strength to it. Rest now, all of you. Tomorrow, Lakshmi will show you the Outer Ring she's so proud of.[X]

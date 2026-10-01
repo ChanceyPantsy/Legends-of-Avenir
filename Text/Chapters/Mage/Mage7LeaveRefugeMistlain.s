@@ -4,10 +4,10 @@
 Look back, Xena. Just once.[CloseSpeech]
 [MidRight]...Your tower. It's burning.
 [MidLeft]I set the fire myself, on the way down. Two hundred years of books. I've read every one of them. It's about time somebody else had a turn at the world.[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 The smoke will draw every soldier in the city. We need to reach the south bridge before they close it.
 [MidLeft]Then lead on, Ajax. I'll keep up. Probably.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher, the south bridge is on the far side of the old district. We'll have to go straight through.
 [MidRight]Then we go straight through. Together. All of us, [Tact].[X]
 
@@ -86,7 +86,7 @@ We made it. We're out. All of us.
 [MidLeft]Where will you go now, Mistlain?
 [MidRight]Wherever you go, I suppose. If you'll have me. I have two hundred years of reading about the world, and not one day of living in it. I'd like to start.
 [MidLeft]...I'd like that too.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher. Lord Mistlain. Thank you. Both of you.
 [MidRight]Thank you, child. You were the one who decided to come back for a foolish old man.[X]
 
@@ -98,7 +98,7 @@ Where is he? Ajax, where's Mistlain?
 [MidLeft]No...[CloseSpeech]
 [MidLeft]Look. The bridge. It's burning.
 [MidRight]He set it alight himself. Nobody's following us out of the city tonight.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher...
 [MidLeft]Two hundred years. He had two hundred years to be brave, and he waited until tonight.[CloseSpeech]
 [MidLeft]...Thank you, my lord. I'm sorry I didn't get to say it to your face.[X]

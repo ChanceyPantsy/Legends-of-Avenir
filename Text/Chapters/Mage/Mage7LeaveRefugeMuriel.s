@@ -4,10 +4,10 @@
 There. The castle on the far side of the river. Xavus has made it his command post. His Guardians hold both bridges.
 [MidRight]Then we take a bridge, and then we take the castle. The Guardians fight without fear, but without thought, too. Break their lines and they'll scatter.
 [MidLeft]The Tiger Brigade will hold the south. My lancers are yours to command, Lady Muriel.[CloseSpeech]
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 Muriel. You should stay back. If you fall, the Free Port falls with you.
 [MidRight]If I stay back, Xena, then I'm asking other people to die for my city while I watch. I've seen enough Grand Magi do that.[CloseSpeech]
-[FarFarRight][LoadClara]
+[FarRight][LoadClara]
 Then I'll stay with you, Lady Muriel. The whole time.
 [MidRight]...Very well. Stay close, Clara.[X]
 
@@ -82,7 +82,7 @@ It's over. Xavus is dead, and his Guardians have fallen still.
 [MidRight]That's... a dangerous idea.
 [MidLeft]The best ones usually are. Will you help me?
 [MidRight]...Yes. I will.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher...
 [MidRight][Tact]. We have a home now. Both of us.[X]
 
@@ -95,7 +95,7 @@ Lady Muriel... Lady Muriel, please wake up...
 [MidRight]Xavus is dead. His Guardians have fallen still. The port is safe.[CloseSpeech]
 [MidLeft]What happens now? Without her?
 [MidRight]...Now we keep her city free. The way she would have. That's what she gave me, Clara. A reason to stop hiding.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Teacher...
 [MidRight]It isn't enough, [Tact]. It's never enough. But it's what we have.[X]
 

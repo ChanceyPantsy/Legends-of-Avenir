@@ -29,7 +29,7 @@ END_MAIN
 
 //Label LocationBasedEvents
 LocationBasedEvents:
-Seize(0x3,EndingScene,5,5)
+LOCA 0x3 EndingScene [5,5] 0x19 // "Arrive" (EscapeArrive hack): any unit can end the chapter here. Vanilla Seize only works for the lord character IDs 0x01/0x0F, which is not every Tact.
 Chest(Nosferatu,12,13)
 Chest(Elixir,12,16)
 END_MAIN
@@ -194,5 +194,5 @@ UNIT Guardian Archer Guardian Level(5,Enemy,True) [7,0] 0x00 0x00 0x00 0x00 [Iro
 UNIT
 
 Turn6Guardians:
-UNIT Guardian Fighter Guardian Level(6,Enemy,True) [6,0] 0x00 0x00 0x00 0x00 [HandAxe] AttackInRangeAI
+UNIT Guardian Fighter Guardian Level(6,Enemy,True) [5,0] 0x00 0x00 0x00 0x00 [HandAxe] AttackInRangeAI // Not (6,0): the turn 4 soldier holds that tile, and a reinforcement on an occupied tile never appears.
 EndUnit

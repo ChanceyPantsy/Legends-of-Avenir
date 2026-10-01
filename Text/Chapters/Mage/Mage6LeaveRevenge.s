@@ -4,12 +4,12 @@
 Mind your step. These passages run under the whole Old City. Mistlain used them to move his books without the other Magi seeing.
 [MidRight]Only his books?
 [MidLeft]...And the occasional guest he didn't want announced. I never asked.[CloseSpeech]
-[FarFarRight][LoadZaheva]
+[FarRight][LoadZaheva]
 Stop. This wall. The mortar's newer than the rest.
 [MidLeft]Clint must have broken into Mistlain's tunnels from his side. Which means we're right underneath him.[CloseSpeech]
-[FarFarLeft][LoadClara]
+[FarLeft][LoadClara]
 I can hear something on the other side. Footsteps... and someone crying.
-[FarFarRight]Then we go through.[X]
+[FarRight]Then we go through.[X]
 
 ## Mage6LeaveRevengeCellsText
 [ConversationText]
@@ -17,7 +17,7 @@ I can hear something on the other side. Footsteps... and someone crying.
 These cells...
 [MidRight]They're empty. All of them.
 [MidLeft]They weren't, when I was here. This is where he kept us before the procedure. You could hear the others through the walls.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Where did everyone go?
 [MidLeft]Deeper. He's moved them deeper, to the inner laboratory. He always kept the ones he was about to use closest to him.[X]
 
@@ -27,10 +27,10 @@ Where did everyone go?
 Intruders in the Duke's prison. Lord Xavus' order is not complete. I will not allow it to be delayed further.[CloseSpeech]
 [MidRight][LoadZaheva]
 ...
-[FarFarLeft][LoadXena]
+[FarLeft][LoadXena]
 Zaheva? What's wrong?
 [MidRight]That face. I know that face.
-[FarFarLeft]Who is he?
+[FarLeft]Who is he?
 [MidRight]Subject Eleven. The boy in the cell next to mine.[CloseSpeech]
 [MidLeft]Kill them. Leave nothing that can speak of this place.[X]
 
@@ -101,6 +101,6 @@ Zaheva.
 [MidLeft]He was ten years old, Xena. Clint took everything he was and poured it out, and filled him back up with orders.
 [MidRight]I know.
 [MidLeft]I spent years telling myself I wanted Clint dead. I still do. But I think what I wanted most was for this to never happen to anyone again.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Then let's make sure it doesn't. The inner laboratory is down those stairs.
 [MidLeft]...Yes. Let's finish it.[X]

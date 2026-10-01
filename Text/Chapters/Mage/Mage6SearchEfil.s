@@ -4,10 +4,10 @@
 Well, this is it. The temple of Kilthel, home of the most stubborn hermit in Avenir.
 [MidRight]The doors are sealed. There's no handle, no lock, nothing.
 [MidLeft]Ten years ago, the Sateenkaari came and went through here like it was a tavern. Efil must have shut it behind him for good.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 It's not a door. It's a wall with a hollow in it. The hollow is shaped like... this.
 [MidRight][Tact]... You're sure?
-[FarFarLeft]I've never been surer of anything. That's what scares me.[X]
+[FarLeft]I've never been surer of anything. That's what scares me.[X]
 
 ## Mage6SearchEfilSlotText
 [ConversationText]
@@ -16,9 +16,9 @@ Here goes...[X]
 
 ## Mage6SearchEfilWallOpensText
 [ConversationText]
-[FarFarLeft][LoadZaheva]
+[FarLeft][LoadZaheva]
 It worked. The whole wall just... moved.
-[FarFarRight][LoadAjax]And something moved with it. Listen. Footsteps, deeper inside. Lots of them.[X]
+[FarRight][LoadAjax]And something moved with it. Listen. Footsteps, deeper inside. Lots of them.[X]
 
 ## Mage6SearchEfilGuardiansText
 [ConversationText]
@@ -80,21 +80,21 @@ Halleck... I couldn't... bring it home...[X]
 The halls are clear. The Guardians are sleeping again, and the Faithful have scattered back into the sand.
 [MidLeft]Efil... You knew we were coming. You said, "so it begins again."
 [MidRight]I said that because I've seen that crystal wake before. Once.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 What is it? What is the Prism?
 [MidRight]The Vathrylians called it the Light. It records the memories of anyone whose light passes through it. The last memories of Vathryl are inside it, and the Sateenkaari swore to protect it. That's what we were, before we were heroes. Guardians of a memory.
-[FarFarLeft]And the visions? The people I see in my dreams, who know my name?
+[FarLeft]And the visions? The people I see in my dreams, who know my name?
 [MidRight]... Tell me about them.
-[FarFarLeft]A mercenary in Haedric. A soldier swearing an oath in Cesaria. Each time, the same faces, but I'm someone else. And at the very end, a voice laughing at me.
+[FarLeft]A mercenary in Haedric. A soldier swearing an oath in Cesaria. Each time, the same faces, but I'm someone else. And at the very end, a voice laughing at me.
 [MidRight]...[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Efil? You've gone pale.
 [MidRight]There is a kind of soul, [Tact], that doesn't stay where it belongs. A lost soul. The Guardian Spirit of Avenir takes them in and gives them new lives, here, in our world.
-[FarFarLeft]A new life...?
+[FarLeft]A new life...?
 [MidRight]And when a lost soul changes the world too much, the Guardian Spirit takes that life away again. It turns back the clock, and wipes the soul clean, and lets it begin again. You have lived in Avenir before, [Tact]. More than once. The Light is reflecting what the Guardian Spirit tried to erase.
 [MidLeft]That's... monstrous.
 [MidRight]It is the rule. The Guardian Spirit keeps the balance, and may never interfere directly. Lost souls are the one thing it's allowed to correct.[CloseSpeech]
-[FarFarRight][ClearFace][LoadZaheva]
+[FarRight][ClearFace][LoadZaheva]
 And this Guardian Spirit. Who is it? Kilthel's dead.
 [MidRight]... Some names are heavier than swords. I won't say that one here.
 [MidLeft]Efil, please. If [Tact] is in danger-

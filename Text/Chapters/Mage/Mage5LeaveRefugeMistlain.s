@@ -4,13 +4,13 @@
 The Outer Ring. If we follow the old wall north, we'll reach the old gate into the inner city. From there, the Fire Tower is a short walk.
 [MidRight]It's so quiet.
 [MidLeft]Curfew. Uzkalis declared it a month ago. Anyone found in the streets after dark is taken for the "great work," whatever that is this week.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Charming. Remind me why we're breaking into the capital again?
-[FarFarLeft][LoadZaheva]
+[FarLeft][LoadZaheva]
 To rescue the man who tried to have us executed.
-[FarFarRight]Right. Just checking.[CloseSpeech]
+[FarRight]Right. Just checking.[CloseSpeech]
 [MidRight]...Twenty years, I lived in this city. Twenty years in Mistlain's tower, and I never once walked these streets.[CloseSpeech]
-[FarFarLeft][ClearFace][LoadClara]
+[FarLeft][ClearFace][LoadClara]
 Lady Muriel used to say the Magi build their towers tall so they don't have to see the ground.
 [MidRight]She was right. I didn't want to see it. Neutrality, Mistlain called it. It kept us safe.
 [MidLeft]It kept you comfortable. That's not the same thing.
@@ -74,7 +74,7 @@ Excuse me...[CloseSpeech]
 The gate is ours. From here it's a straight road to the Fire Tower.
 [MidRight]Ajax, you were part of Mistlain's guard for years. How do we get in?
 [MidLeft]There's a servants' stair on the east side. The lock's older than I am. But the warden will be waiting at the top, with her own guard.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Lakshmi.
 [MidRight]...Her mother lives right here. In the Ring. And she guards a Grand Magus for the man who's emptying these streets.
 [MidLeft]People do strange things to get out of the Ring.

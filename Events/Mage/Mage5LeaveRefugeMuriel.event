@@ -66,6 +66,12 @@ Text(Mage5LeaveRefugeMurielStartingText)
 EndConvo
 STAL 0x10
 CAM1 [5,15]
+// Check before LOAD2: for anyone missing from the party it loads a stand-in that vanishes when the turn starts.
+CHECK_ALIVE Kendrick
+BNE 0x20 0x0 0xC
+	LOAD1 0x1 KendrickRejoins // He fell back at the market, and catches up here.
+	ENUN
+LABEL 0x20
 LOAD3 0x1 PlayerLoading1
 LOAD2 0x1 ChapterFriends
 LOAD1 0x1 MurielUnit
@@ -216,3 +222,10 @@ Turn6Units:
 UNIT Haedrican Warrior Richter Level(7,Enemy,True) [23,6] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
 UNIT Arcanian Sage Richter Level(6,Enemy,True) [23,7] 0x00 0x00 0x00 0x00 [Elthunder] NoAI
 UNIT
+
+// Fresh copies for party members who fell back in an earlier chapter before they could join.
+ALIGN 4
+KendrickRejoins:
+UNIT Kendrick Pirate Kendrick Level(8,Ally,True) [6,17] 0x00 0x00 0x00 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT
+

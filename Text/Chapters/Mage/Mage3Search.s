@@ -4,13 +4,13 @@
 You should eat something.
 [MidRight]I'm not hungry.
 [MidLeft]You haven't eaten since the ruin. Neither has [Tact], for that matter.
-[MidRight]Your student has been staring at that crystal for three hours. I don't think food is on [His] mind.[CloseSpeech]
-[FarFarRight][LoadPlayer]
+[MidRight]Your student has been staring at that crystal for three hours. I don't think food is on [his2] mind.[CloseSpeech]
+[FarRight][LoadPlayer]
 I can hear you, you know.
 [MidRight]Good. Then you can hear it, too. It hums when you hold it.
-[FarFarRight]It hums when I don't hold it, too. Every time I close my eyes, it gets louder.
+[FarRight]It hums when I don't hold it, too. Every time I close my eyes, it gets louder.
 [MidLeft]Then keep your eyes open tonight and stay close to the fire.[CloseSpeech]
-[FarFarRight][ClearFace]
+[FarRight][ClearFace]
 [MidLeft]... Lakshmi. Back in the ruin, you said the children in the Outer Ring never learn their letters.
 [MidRight]Did that bother you, Teacher?
 [MidLeft]It did. I've lived in the capital for twenty years, and I've never once set foot in the Outer Ring.
@@ -28,18 +28,18 @@ I can hear you, you know.
 [MidLeft][LoadPlayer][MidRight][LoadXena]
 Teacher! There are people out in the dunes. Lots of them.
 [MidRight]Wanderers... They've surrounded the oasis.[CloseSpeech]
-[FarFarLeft][LoadHalleck]
+[FarLeft][LoadHalleck]
 Children of the towers. You carry something that does not belong to you.
 [MidRight]Who are you?
-[FarFarLeft]My name is Halleck. I speak for the Faithful. Our fathers' fathers walked out of the ashes of Vathryl, and we have kept watch over its bones ever since.
+[FarLeft]My name is Halleck. I speak for the Faithful. Our fathers' fathers walked out of the ashes of Vathryl, and we have kept watch over its bones ever since.
 [MidLeft]The Faithful...?
-[FarFarLeft]You entered the vault of the Sateenkaari and took the Light of Vathryl from its rest. Return it to its people, and you may go in peace.
+[FarLeft]You entered the vault of the Sateenkaari and took the Light of Vathryl from its rest. Return it to its people, and you may go in peace.
 [MidRight]I'm a scholar. If this crystal is Vathrylian, it belongs in Arcanae, where it can be studied and kept safe.
-[FarFarLeft]Kept safe. The Sateenkaari said the very same thing, the day they stole it from us.[CloseSpeech]
-[FarFarRight][LoadLakshmi]
+[FarLeft]Kept safe. The Sateenkaari said the very same thing, the day they stole it from us.[CloseSpeech]
+[FarRight][LoadLakshmi]
 Wanderers with a religion. Lovely. They won't let us walk away, Teacher.
 [MidRight]No. They won't.
-[FarFarLeft]Then we will take the Light from your cold hands. Faithful! Bring it home![X]
+[FarLeft]Then we will take the Light from your cold hands. Faithful! Bring it home![X]
 
 ## Mage3SearchKendrickArrivesText
 [ConversationText]
@@ -110,18 +110,23 @@ Kilthel promised... he would give us back... our homeland...[....] Efil... took 
 [MidLeft][LoadXena][MidRight][LoadPlayer]
 The edge of the desert. We made it.
 [MidRight]Finally... I never want to see sand again.[CloseSpeech]
-[FarFarRight][LoadKendrick]
+[FarRight][LoadKendrick]
 Ha! You get used to it. Then you get sick of it, and then you get used to it again. Desert life.
-[FarFarLeft][LoadLakshmi]Spoken like a man who's never lived anywhere for longer than a week.
-[FarFarRight]A week? You flatter me.
+[FarLeft][LoadLakshmi]Spoken like a man who's never lived anywhere for longer than a week.
+[FarRight]A week? You flatter me.
 [MidLeft]... Halleck said something before he died. That Kilthel promised to give them back their homeland, and Efil took it away.
 [MidRight]Kilthel... the Guardian Spirit Efil defeated ten years ago?
 [MidLeft]The very same. If the Wanderers are truly the children of Vathryl's survivors, then Kilthel wasn't trying to destroy the world. He was trying to bring theirs back.
-[FarFarLeft]Ancient history. What matters is what the crystal does now.
+[FarLeft]Ancient history. What matters is what the crystal does now.
 [MidRight]It's still humming... Teacher, I had another dream last night. I was sitting at a campfire with a group of mercenaries. One of them was teaching me how to sharpen an axe.
 [MidLeft]A dream?
 [MidRight]It didn't feel like a dream. Before that, I was standing in a courtyard in a soldier's uniform, taking some kind of oath. I knew everyone's name.
-[FarFarRight]Sounds like a nice life. Either one of 'em.
+[FarRight]Sounds like a nice life. Either one of 'em.
 [MidLeft]... We need to get you somewhere I can study that crystal properly. There's an Arcanian outpost at the crossroads east of here. We'll rest there, and decide what comes next.
-[FarFarLeft]What comes next is that crystal going to Uzkalis.
+[FarLeft]What comes next is that crystal going to Uzkalis.
 [MidLeft]We'll discuss it at the outpost, Lakshmi.[X]
+
+## Mage3SearchKendrickRetreatText
+[BattleText]
+[FarRight][LoadKendrick]
+Bah...[....] Not today. I know these dunes better than any Wanderer. I'll catch up with you, scholars.[X]

@@ -4,14 +4,14 @@
 The wine cellar. It hasn't changed at all. Same barrels, same smell.
 [MidRight]Zaheva, are you alright?
 [MidLeft]I walked out of here on two legs. That's more than he planned for.[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 Where are we going, exactly?
 [MidLeft]The Duke's study is at the top of the west stairs. His letters, his plans, everything he wants kept close is there.
 [MidLeft]The library is behind the iron doors to the north. That's where he keeps his notes on us. His subjects.[CloseSpeech]
-[FarFarLeft][LoadVal]
+[FarLeft][LoadVal]
 You're wasting your time. There's nothing in this house but books and paintings.
 [MidRight]Then you won't mind coming along to see for yourself.
-[FarFarLeft]...[X]
+[FarLeft]...[X]
 
 ## Mage5LeaveRevengeGuardsText
 [ConversationText]
@@ -19,7 +19,7 @@ You're wasting your time. There's nothing in this house but books and paintings.
 Footsteps! Lots of them, coming from upstairs!
 [MidRight][LoadZaheva]
 The house guard. Clint must have warned them I might come home.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Then we fight our way to the study. Clara, stay with Val and Helmer.
 [MidLeft]R-right![X]
 
@@ -55,12 +55,12 @@ Val. Read this.
 [MidRight]That's my village. That's my... my mother was... I was nine years old.
 [MidLeft]I'm sorry, Val.
 [MidRight]He found me in the ashes. He held my hand. He told me the Cesarians did it, and I believed him for ten years.[CloseSpeech]
-[FarFarRight][LoadHelmer]
+[FarRight][LoadHelmer]
 Val...
 [MidRight]Untie me. Untie me, Zaheva.
 [MidLeft]What are you going to do?
 [MidRight]I'm going to find him. And I'm going to make him read this to my face.[CloseSpeech]
-[FarFarRight]Where she goes, I go. I've followed worse people for worse reasons.[X]
+[FarRight]Where she goes, I go. I've followed worse people for worse reasons.[X]
 
 ## Mage5LeaveRevengeXenaValText
 [ConversationText]
@@ -70,12 +70,12 @@ Val. I found these in the Duke's library. You should see them.
 [MidLeft]You shouldn't believe me. Believe his seal, and his handwriting.[CloseSpeech]
 [MidRight]...[....] "The village of Thornwick. Uniforms: Cesarian..."
 [MidRight]No. No, no, no...[CloseSpeech]
-[FarFarRight][LoadHelmer]
+[FarRight][LoadHelmer]
 Val. I'm here.
 [MidRight]Helmer. He... He did it. He burned it all. And then he held my hand.
 [MidLeft]I'm so sorry.
 [MidRight]Cut these ropes. I'm not his hunter anymore.
-[FarFarRight]Then neither am I.[X]
+[FarRight]Then neither am I.[X]
 
 ## Mage5LeaveRevengeNotYetText
 [ConversationText]
@@ -89,10 +89,10 @@ The study's clear. And look at this. Letters from Lord Uzkalis, dozens of them.
 [MidRight]What do they say?
 [MidLeft]"The Guardian order for Lord Xavus is overdue. Move your work to the laboratory beneath the capital, where I can keep an eye on it." This one is only a week old.
 [MidRight]So that's where he's gone. Back under the city, with his cells.[CloseSpeech]
-[FarFarLeft][LoadPlayer]
+[FarLeft][LoadPlayer]
 Under the capital? Teacher, can we even get in there?
 [MidLeft]Not through the gates. Not with our faces on every wall.[CloseSpeech]
-[FarFarRight][LoadAjax]
+[FarRight][LoadAjax]
 Not through the gates, no. But Mistlain didn't build his tower on top of the old city without digging a few tunnels. Half the capital has his passages running underneath it. I used to patrol them.
 [MidRight]Then that's how we go in.
 [MidLeft]Zaheva, we'd be walking into the heart of Uzkalis' city.

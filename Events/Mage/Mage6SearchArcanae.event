@@ -93,7 +93,10 @@ GotoPrepScreen
 EndingScene:
 FADI 0x5
 CLEE 0x0
-TurnAlly(Shanley)
+CHECK_ALIVE Shanley
+BEQ 0x20 0x0 0xC // He fell back; he catches up with the party in the next chapter.
+	TurnAlly(Shanley)
+LABEL 0x20
 MUSC A_Tragic_Decision
 SetBackground(0x05)
 TEXTSTART
