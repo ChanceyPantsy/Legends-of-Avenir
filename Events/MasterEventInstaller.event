@@ -164,6 +164,12 @@ ENDB
 	{
 	#include "Mage/Mage2Search.event"
 	}
+	{
+	#include "Mage/Mage3Search.event"
+	}
+	{
+	#include "Mage/Mage4Search.event"
+	}
 #endif
 
 #include "Sassy.event"

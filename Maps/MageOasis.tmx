@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="15" height="20" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="42004344" tilewidth="16" tileheight="16">
+  <image source="Tilesets/42004344.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="15" height="20">
+  <properties>
+   <property name="Anims" value="_42Anims"/>
+   <property name="ChapterID" value="MageSearch3"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="MageOasisMap"/>
+   <property name="ObjectType" value="0x42"/>
+   <property name="PaletteID" value="0x43"/>
+   <property name="TileConfig" value="0x44"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJyNkqtOBDEUhtuOQxHCOywQEPAW2FEYMLs8AAIwJIidbJBknoGAbxj8CMLFbQgQHoBwUwgCOP7S0/SfplzEl9Oe9j+3tlJKvWulStBiXWuP2z9ivwDbA1PgHPsK9MEB2TvSWPCh43kl51b0A/LfwvcJXk3Me6P9+Qhc0/mkxBxIzjfJVxON6F3cE+pnTnvdiOJa0pdCI7pn3FnUnnlwBZZNjFuT3uruzCaozu8+jLdONzbdenOEGTnuwbrp9mmT+5ZsbsZp/FTfqnz+fkZ7Ci7Fsp/nEPR/9cl1bBTd/Lkax7izD47Ed6jjmln6pde01hQ3r4d/1J7W4tiWd3b6lnoI+dK/ekHrXeP1If+M/L0n9XMv4Q1WoVsT7ZDe/UX+cC8zk1L0m9DtUO4Axwk1hfzTRZyVY0X0Q9lvFVHr1s7OJv/sGP6m6Or5Psc5E92e5P0C58qqMA==
+  </data>
+ </layer>
+</map>

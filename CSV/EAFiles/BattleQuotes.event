@@ -87,6 +87,11 @@ UnspecifiedBattleConvo(BossXavus,MilitaryAcceptHold7,0x13,Military7AcceptHoldXav
 
 SpecifiedBattleConvo(Xena,Lakshmi,Mage1,0x10,Mage1XenaLakshmiBattleText)
 SpecifiedBattleConvo(0x00,Lakshmi,Mage1,0x11,Mage1TactLakshmiBattleText)
+SpecifiedBattleConvo(Xena,Halleck,MageSearch3,0x13,Mage3SearchXenaHalleckBattleText)
+SpecifiedBattleConvo(0x00,Halleck,MageSearch3,0x14,Mage3SearchTactHalleckBattleText)
+UnspecifiedBattleConvo(Halleck,MageSearch3,0x15,Mage3SearchHalleckBattleText)
+SpecifiedBattleConvo(Lakshmi,Sean,MageSearch4,0x15,Mage4SearchLakshmiSeanBattleText)
+UnspecifiedBattleConvo(Sean,MageSearch4,0x16,Mage4SearchSeanBattleText)
 
 // This terminator deviates from vanilla because I changed the battle quote getter function.
 BYTE 0xF0 0xF0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

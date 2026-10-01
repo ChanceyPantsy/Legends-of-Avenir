@@ -97,6 +97,8 @@ DeathQuote(BossUzkalis,MilitaryAcceptHold7,0x14,Military7AcceptHoldUzkalisDeathT
 DeathQuote(BossXavus,MilitaryAcceptHold7,0x15,Military7AcceptHoldXavusDeathText)
 
 DeathQuote(Lakshmi,Mage1,0x02,Mage1LakshmiDeathText)
+DeathQuote(Halleck,MageSearch3,0x02,Mage3SearchHalleckDeathText)
+DeathQuote(Sean,MageSearch4,0x02,Mage4SearchSeanDeathText)
 DeathQuote(Lakshmi,MageSearch2,0x65,LakshmiGameOverDeathText) // Losing Lakshmi ends the Investigate route.
 DeathQuote(Lakshmi,MageSearch3,0x65,LakshmiGameOverDeathText)
 DeathQuote(Lakshmi,MageSearch4,0x65,LakshmiGameOverDeathText)

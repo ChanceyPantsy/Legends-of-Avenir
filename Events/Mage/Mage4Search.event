@@ -1,0 +1,272 @@
+ChapterEvents(Mage4SearchEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventEnemy(0x0,Turn3,3)
+TurnEventEnemy(0x0,Turn5,5)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x10,TXenaAjax,Xena,Ajax)
+CharacterEvent(0x10,TTactAjax,0x00,Ajax)
+CharacterEvent(0x11,TTactZaheva,0x00,Zaheva)
+CharacterEvent(0x11,TXenaZaheva,Xena,Zaheva)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+Vendor(ShopList,11,2)
+House(0x12,WestHouse,3,1)
+House(0x13,SouthHouse,6,10)
+House(0x14,EastHouse,13,12)
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [6,7] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [5,7] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [6,8] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [4,7] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+CAM1 [6,6]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+ENUN
+MUSC Town_of_Winds_and_Ruins
+SetBackground(0x05) // The crossroads outpost.
+Text(Mage4SearchStartingText)
+MUSC Rest_of_the_Heart
+SetBackground(0x09) // The inn.
+Text(Mage4SearchInnText)
+EndConvo
+STAL 0x10
+MUSC Tension
+LOAD1 0x1 ShanleyCutscene
+ENUN
+CAM1 [8,3]
+STAL 0x20
+TEXTSTART
+TEXTSHOW Mage4SearchStandoffText
+TEXTEND
+	// Mistlain's guards arrive from the south road.
+	CAM1 [6,13]
+	LOAD1 0x1 MistlainGuards
+	ENUN
+	STAL 0x10
+TEXTCONT
+TEXTEND
+	// Sean steps forward.
+	CAM1 [8,3]
+	STAL 0x10
+TEXTCONT
+TEXTEND
+	// Sean takes his men across the square.
+	MUSC Emergency
+	MOVE 0x00 Sean [17,9]
+	ENUN
+	LOAD1 0x1 SeanSquad
+	ENUN
+	CAM1 [8,3]
+	STAL 0x10
+TEXTCONT
+TEXTEND
+REMA
+STAL 0x10
+MOVE 0x00 Shanley [8,0]
+ENUN
+DISA Shanley
+STAL 0x20
+CAM1 [6,6]
+Text(Mage4SearchAfterStandoffText)
+STAL 0x10
+GotoPrepScreen
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+TurnAlly(Zaheva) // They stay with the party whichever road is chosen.
+TurnAlly(Ajax)
+MUSC Rest_of_the_Heart
+SetBackground(0x05)
+Text(Mage4SearchEndingText)
+STAL 0x20
+ASMC CallMage4SearchMenu|1
+STAL 0x20
+BNE 0x0 0x0 0xC
+	// Go with Lakshmi to Uzkalis.
+	Text(Mage4SearchChoseLakshmiText)
+	MoveToChapter(MageSearchArcanae5)
+	GOTO 0x1
+LABEL 0x0
+	// Seek out Efil. Lakshmi leaves with Shanley.
+	TEXTSTART
+	TEXTSHOW Mage4SearchChoseEfilText
+	TEXTEND
+	DISA Lakshmi
+	TEXTCONT
+	TEXTEND
+	REMA
+	MoveToChapter(MageSearchEfil5)
+LABEL 0x1
+NoFade
+ENDA
+
+//Label Turn events
+Turn3:
+CamON
+LOAD1 0x1 Turn3Units
+ENUN
+CamOFF
+NoFade
+EndA2
+
+Turn5:
+CamON
+LOAD1 0x1 Turn5Units
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TXenaAjax:
+MUSI
+Text(Mage4SearchXenaAjaxText)
+MUNO
+TurnAlly(Ajax)
+NoFade
+EndA2
+
+TTactAjax:
+MUSI
+Text(Mage4SearchTactAjaxText)
+MUNO
+TurnAlly(Ajax)
+NoFade
+EndA2
+
+TTactZaheva:
+MUSI
+Text(Mage4SearchTactZahevaText)
+MUNO
+TurnAlly(Zaheva)
+NoFade
+EndA2
+
+TXenaZaheva:
+MUSI
+Text(Mage4SearchXenaZahevaText)
+MUNO
+TurnAlly(Zaheva)
+NoFade
+ENDA
+
+//Label Location events
+ShopList:
+SHLI Vulnerary Fire Thunder Wind Flux Lightning IronSword IronAxe HandAxe
+ALIGN 4
+
+WestHouse:
+MUSI
+Text(0x01,Mage4SearchHouse1Text)
+GiveItem(SteelSword,0xFFFF)
+TileChange(3,1)
+MUNO
+NoFade
+EndA2
+
+SouthHouse:
+MUSI
+Text(0x01,Mage4SearchHouse2Text)
+GiveItem(Elthunder,0xFFFF)
+TileChange(6,10)
+MUNO
+NoFade
+EndA2
+
+EastHouse:
+MUSI
+Text(0x01,Mage4SearchHouse3Text)
+GiveItem(PureWater,0xFFFF)
+TileChange(13,12)
+MUNO
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [6,7] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [5,7] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [6,8] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Kendrick 0x00 0x00 Level(1,Ally,True) [4,7] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+ShanleyCutscene:
+UNIT Shanley Sage Shanley Level(6,NPC,True) [8,1] 0x00 0x00 0x00 0x00 [Thunder] NoAI
+UNIT Sean Sentinel Sean Level(4,Enemy,True) [8,2] Drop 0x00 0x00 0x00 [IronBlade,ShortAxe,WhiteGem] GuardAI
+UNIT
+
+MistlainGuards:
+UNIT Zaheva SpellswordF 0x00 Level(5,NPC,True) [6,15] 0x00 0x00 0x00 0x00 [SteelSword,Fire] AttackInRangeAI
+UNIT Ajax Shaman 0x00 Level(5,NPC,True) [5,16] 0x00 0x00 0x00 0x00 [Luna,Flux,Vulnerary] AttackInRangeAI
+UNIT
+
+SeanSquad:
+UNIT Arcanian Soldier Sean Level(6,Enemy,True) [14,8] 0x00 0x00 0x00 0x00 [IronLance] NoAI
+UNIT Arcanian Fighter Sean Level(6,Enemy,True) [12,9] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Arcanian Mage Sean Level(6,Enemy,True) [16,4] 0x00 0x00 0x00 0x00 [Fire] AttackInRangeAI
+UNIT Arcanian Archer Sean Level(6,Enemy,True) [18,6] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
+UNIT Arcanian Knight Sean Level(6,Enemy,True) [15,10] 0x00 0x00 0x00 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT Arcanian Mercenary Sean Level(6,Enemy,True) [11,13] Drop 0x00 0x00 0x00 [IronSword,Vulnerary] NoAI
+UNIT Arcanian Shaman Sean Level(5,Enemy,True) [12,14] 0x00 0x00 0x00 0x00 [Flux] AttackInRangeAI
+UNIT Arcanian Myrmidon Sean Level(6,Enemy,True) [9,11] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Arcanian Monk Sean Level(5,Enemy,True) [17,3] 0x00 0x00 0x00 0x00 [Lightning] AttackInRangeAI
+UNIT Arcanian Cavalier Sean Level(6,Enemy,True) [19,8] 0x00 0x00 0x00 0x00 [IronLance,Javelin] ChaseOnceApproachedAI
+UNIT
+
+Turn3Units:
+UNIT Arcanian Cavalier Sean Level(6,Enemy,True) [19,5] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Arcanian Cavalier Sean Level(7,Enemy,True) [19,9] 0x00 0x00 0x00 0x00 [IronLance] NoAI
+UNIT
+
+Turn5Units:
+UNIT Arcanian Fighter Sean Level(7,Enemy,True) [19,9] 0x00 0x00 0x00 0x00 [SteelAxe] NoAI
+UNIT Arcanian Archer Sean Level(6,Enemy,True) [19,5] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
+EndUnit

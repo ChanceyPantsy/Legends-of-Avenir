@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="17" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="0E000F10" tilewidth="16" tileheight="16">
+  <image source="Tilesets/0E000F10.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="17">
+  <properties>
+   <property name="Anims" value="_0EAnims"/>
+   <property name="ChapterID" value="MageSearch4"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="MageCrossroadsChanges"/>
+   <property name="MapID" value="MageCrossroadsMap"/>
+   <property name="ObjectType" value="0x0E"/>
+   <property name="PaletteID" value="0x0F"/>
+   <property name="TileConfig" value="0x10"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJx9k79OAkEQxveW0IiF1hgTSqWwNIZOiInyANoq/nsNRFATC18BjCY+xmFMAEn0FYhiFC3stfAbd4YdNqfFL7c7t/PdNzN7N9aYKbCQMqYFLsEwciyBC2PMFbgGVbCKWASKyGlxrGTdk/ZdrDfAOnTa4BaMWC9jXS6dbVI+qICnyOfLe3o+g4FxkEfSKVu/13ox1m1QAznW/PWKtbVOK8e5i5xLeVQH7YdKu8i6Y6/kA3Sx7nHNMfatyOcSPUZqrePco/FxIo/4PWIPYA37kfF9jDl3Fz3bA/tqFjIPIm0dst7GuR1QAedqRqRJszhGvA4aCXpaR/SrOHcEaqDD/ZD5lHi+NAvhP38hn9BocL0yZ4H60ufZDhPq1NppniF5m4l83eKVei/fbKq7rfNDPaLHsQ57O8PzzkzWEKu7naQV1ixeydc8crKp5N6EXih2gLOHIA/eEfvgOPX9DWQt84dmqH+Cc6egDDJgGryqWYz1EjTnsN9i5F1Y74txd1rmoPU2A70V7L8iT/i92cj9u1V1Xyb8BR6/LWtZty4EXomG+t8GYb2BR6p3OeXXBUWoKf37AfHpgX8=
+  </data>
+ </layer>
+ <layer name="WestHouse" width="20" height="17">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="3"/>
+   <property name="Y" value="1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYKAdUKSh2aNgFIyCUTDYAACoxAAi
+  </data>
+ </layer>
+ <layer name="SouthHouse" width="20" height="17">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="1"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="6"/>
+   <property name="Y" value="10"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUkAoUB9oBo2BQAgBKaAAi
+  </data>
+ </layer>
+ <layer name="EastHouse" width="20" height="17">
+  <properties>
+   <property name="Height" value="1"/>
+   <property name="ID" value="2"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="13"/>
+   <property name="Y" value="12"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjCSgONAOGMYAADIsACI=
+  </data>
+ </layer>
+</map>

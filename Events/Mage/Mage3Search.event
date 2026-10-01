@@ -1,0 +1,189 @@
+ChapterEvents(Mage3SearchEvents,ThisChapter)
+
+//Label ThisChapter
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN EndMainPointer EndMainPointer EndMainPointer
+POIN EndMainPointer
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+//LabelEnd
+
+//Label TurnBasedEvents
+TurnBasedEvents:
+TurnEventPlayer(0x0,KendrickArrives,2)
+TurnEventEnemy(0x0,Turn4,4)
+END_MAIN
+
+//Label CharacterBasedEvents
+ALIGN 32
+CharacterBasedEvents:
+CharacterEvent(0x10,TTactKendrick,0x00,Kendrick)
+CharacterEvent(0x10,TXenaKendrick,Xena,Kendrick)
+CharacterEvent(0x10,TLakshmiKendrick,Lakshmi,Kendrick)
+END_MAIN
+
+//Label LocationBasedEvents
+LocationBasedEvents:
+END_MAIN
+
+//Label MiscBasedEvents
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+AREA 0x11 TalismanPickup [1,9] [3,11]
+AREA 0x12 SpeedwingsPickup [10,12] [12,14]
+END_MAIN
+
+//Label TrapData
+TrapData:
+ENDTRAP
+ALIGN 4
+
+//Label Units
+Units:
+EndUnit
+
+//Label BeginingScene
+BeginningScene:
+CAM1 [5,14]
+LOAD3 0x1 PlayerLoading1
+LOAD2 0x1 ChapterFriends
+ENUN
+MUSC Rest_of_the_Heart
+SetBackground(0x30) // Desert at night.
+Text(Mage3SearchStartingText)
+EndConvo
+STAL 0x20
+MUSC Darker
+LOAD1 0x1 Wanderers
+ENUN
+STAL 0x10
+CAM1 [8,2]
+STAL 0x20
+Text(Mage3SearchAmbushText)
+STAL 0x10
+CAM1 [5,14]
+STAL 0x10
+MUSC Dry_Trail
+NoFade
+ENDA
+
+//Label EndingScene
+EndingScene:
+FADI 0x5
+CLEE 0x0
+TurnAlly(Kendrick) // In case he was never recruited, he still leaves the desert with the party.
+MUSC Treasured_Memories
+SetBackground(0x1B) // The desert's edge at dawn.
+Text(Mage3SearchEndingText)
+MoveToChapter(MageSearch4)
+NoFade
+ENDA
+
+//Label Turn events
+KendrickArrives:
+CAM1 [12,17]
+LOAD1 0x1 KendrickUnit
+ENUN
+STAL 0x10
+TEXTSTART
+TEXTSHOW Mage3SearchKendrickArrivesText
+TEXTEND
+LOAD1 0x1 KendrickChasers
+ENUN
+STAL 0x10
+TEXTCONT
+TEXTEND
+REMA
+NoFade
+EndA2
+
+Turn4:
+CamON
+LOAD1 0x1 Turn4Wanderers
+ENUN
+CamOFF
+NoFade
+ENDA
+
+//Label Character events
+TTactKendrick:
+MUSI
+Text(Mage3SearchTactKendrickText)
+MUNO
+TurnAlly(Kendrick)
+NoFade
+EndA2
+
+TXenaKendrick:
+MUSI
+Text(Mage3SearchXenaKendrickText)
+MUNO
+TurnAlly(Kendrick)
+NoFade
+EndA2
+
+TLakshmiKendrick:
+MUSI
+Text(Mage3SearchLakshmiKendrickText)
+MUNO
+TurnAlly(Kendrick)
+NoFade
+ENDA
+
+//Label Sand pickups
+TalismanPickup:
+SandPickup(0x11,Talisman)
+NoFade
+EndA2
+
+SpeedwingsPickup:
+SandPickup(0x12,Speedwings)
+NoFade
+ENDA
+
+	/*UNIT DATA*/
+
+//Label PlayerLoading
+PlayerLoading1:
+UNIT PlayerMMage 0x00 0x00 Level(1,Ally,True) [5,15] 0x00 0x00 0x00 0x00 [0] NoAI
+EndUnit
+
+//Label Chapter units
+ChapterFriends:
+UNIT Xena 0x00 0x00 Level(1,Ally,True) [6,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT Lakshmi 0x00 0x00 Level(1,Ally,True) [4,16] 0x00 0x00 0x00 0x00 [0] NoAI
+UNIT
+
+Wanderers:
+UNIT Halleck Bishop Halleck Level(3,Enemy,True) [8,1] 0x00 0x00 0x00 0x00 [Lightning,Vulnerary] GuardAI
+UNIT Wanderer Archer Halleck Level(5,Enemy,True) [7,1] 0x00 0x00 0x00 0x00 [IronBow] AttackInRangeAI
+UNIT Wanderer Mage Halleck Level(5,Enemy,True) [9,1] 0x00 0x00 0x00 0x00 [Fire] AttackInRangeAI
+UNIT Wanderer Myrmidon Halleck Level(5,Enemy,True) [0,3] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Wanderer Mercenary Halleck Level(6,Enemy,True) [3,5] Drop 0x00 0x00 0x00 [IronSword,Vulnerary] NoAI
+UNIT Wanderer Shaman Halleck Level(5,Enemy,True) [13,4] 0x00 0x00 0x00 0x00 [Flux] AttackInRangeAI
+UNIT Wanderer Fighter Halleck Level(6,Enemy,True) [12,6] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT Wanderer Mercenary Halleck Level(5,Enemy,True) [11,8] 0x00 0x00 0x00 0x00 [IronSword] ChaseOnceApproachedAI
+UNIT Wanderer Myrmidon Halleck Level(5,Enemy,True) [8,10] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Wanderer Fighter Halleck Level(5,Enemy,True) [2,9] 0x00 0x00 0x00 0x00 [HandAxe] ChaseOnceApproachedAI
+UNIT
+
+KendrickUnit:
+UNIT Kendrick Pirate Kendrick Level(7,NPC,True) [13,18] 0x00 0x00 0x00 0x00 [IronAxe,HandAxe,Vulnerary] AttackInRangeAI
+UNIT
+
+KendrickChasers:
+UNIT Wanderer Myrmidon Halleck Level(5,Enemy,True) [14,17] 0x00 0x00 0x00 0x00 [IronSword] NoAI
+UNIT Wanderer Fighter Halleck Level(5,Enemy,True) [14,19] 0x00 0x00 0x00 0x00 [IronAxe] NoAI
+UNIT
+
+Turn4Wanderers:
+UNIT Wanderer Mercenary Halleck Level(6,Enemy,True) [14,0] 0x00 0x00 0x00 0x00 [SteelSword] NoAI
+UNIT Wanderer Mage Halleck Level(5,Enemy,True) [13,0] 0x00 0x00 0x00 0x00 [Fire] AttackInRangeAI
+EndUnit
