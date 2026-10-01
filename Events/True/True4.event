@@ -124,6 +124,7 @@ STAL 0x20
 SetBackground(0x35)
 Text(True4TheEndText)
 STAL 0x40
+FADI 0x10 // Fade out on the last line. Without this, the chapter change briefly drops the black background and shows the map (garbled by the epilogue art) behind the text box.
 ENUT 0xDF // The cycle is broken. (The Prologue remembers this.)
 ENUF 0x67
 ENUF 0x68
