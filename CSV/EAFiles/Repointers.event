@@ -392,8 +392,8 @@ ORG $34680
 POIN EventPointerListOffset
 ORG $346AC
 POIN EventPointerListOffset
-ORG $346DC
-POIN EventPointerListOffset
+ORG $346DC // GetChapterEventDataPointer reads its own table so chapter events get a full byte of IDs.
+POIN ChapterEventTable
 
 ORG $99E64
 POIN PrepScreenShopList

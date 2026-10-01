@@ -150,3 +150,79 @@ Prologue[X]
 
 ## Mage2LeaveNameText
 2: The Grand Magi[X]
+
+## Mage2SearchNameText
+2: The Sealed Archive[X]
+
+## Mage3SearchNameText
+3: The Faithful[X]
+
+## Mage4SearchNameText
+4: Crossroads[X]
+
+## Mage5SearchArcanaeNameText
+5: The Thunder's Court[X]
+
+## Mage6SearchArcanaeNameText
+6: The Outer Ring[X]
+
+## Mage7SearchArcanaeNameText
+7: The Pura Engine[X]
+
+## Mage5SearchEfilNameText
+5: Deep Desert[X]
+
+## Mage6SearchEfilNameText
+6: Temple of Kilthel[X]
+
+## Mage7SearchEfilNameText
+7: What the Light Remembers[X]
+
+## Mage3LeaveNameText
+3: Fugitives[X]
+
+## Mage4LeaveRevengeNameText
+4: The Hunter's Trail[X]
+
+## Mage5LeaveRevengeNameText
+5: The Duke's Manor[X]
+
+## Mage6LeaveRevengeNameText
+6: Beneath the Capital[X]
+
+## Mage7LeaveRevengeNameText
+7: What Remains[X]
+
+## Mage4LeaveRefugeNameText
+4: City of Coin[X]
+
+## Mage5LeaveRefugeMurielNameText
+5: The Free Port[X]
+
+## Mage6LeaveRefugeMurielNameText
+6: Wind and Flame[X]
+
+## Mage7LeaveRefugeMurielNameText
+7: Eye of the Storm[X]
+
+## Mage5LeaveRefugeMistlainNameText
+5: Ashes of the Old City[X]
+
+## Mage6LeaveRefugeMistlainNameText
+6: The Fire Tower[X]
+
+## Mage7LeaveRefugeMistlainNameText
+7: Embers[X]
+
+
+## True1NameText
+I: Echoes of Haedric[X]
+
+## True2NameText
+II: Echoes of Cesaria[X]
+
+## True3NameText
+III: Echoes of Arcanae[X]
+
+## True4NameText
+Final: The Guardian Spirit[X]

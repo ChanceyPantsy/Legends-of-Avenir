@@ -216,3 +216,91 @@ Defeat Lakshmi.[X]
 ## Mage2LeaveStatusText
 Escape[NL]
 Mistlain's tower.[X]
+
+## SeizeText
+Seize[X]
+
+## Mage2SearchStatusText
+Seize the[NL]
+inner sanctum.[X]
+
+## Mage3SearchStatusText
+Defeat Halleck.[X]
+
+## Mage4SearchStatusText
+Defeat Sean.[X]
+
+## Mage5SearchArcanaeStatusText
+Defend the compound[NL]
+for 10 turns.[X]
+
+## Mage6SearchArcanaeStatusText
+Defeat Gerald.[X]
+
+## Mage7SearchArcanaeStatusText
+Defeat Uzkalis.[X]
+
+## Mage5SearchEfilStatusText
+Cross the desert.[X]
+
+## Mage6SearchEfilStatusText
+Reach Efil.[X]
+
+## Mage7SearchEfilStatusText
+Defeat Mistlain.[X]
+
+## Mage3LeaveStatusText
+Defeat Lakshmi.[X]
+
+## Mage4LeaveRevengeStatusText
+Rout the enemy.[X]
+
+## Mage5LeaveRevengeStatusText
+Seize Clint's study.[X]
+
+## Mage6LeaveRevengeStatusText
+Defeat Dunlas.[X]
+
+## Mage7LeaveRevengeStatusText
+Defeat Clint.[X]
+
+## Mage4LeaveRefugeStatusText
+Defeat Mason.[X]
+
+## Mage5LeaveRefugeMurielStatusText
+Defeat Richter.[X]
+
+## Mage6LeaveRefugeMurielStatusText
+Hold the harbor[NL]
+for 11 turns.[X]
+
+## Mage7LeaveRefugeMurielStatusText
+Defeat Xavus.[NL]
+Muriel must survive.[X]
+
+## Mage5LeaveRefugeMistlainStatusText
+Seize the old gate.[X]
+
+## Mage6LeaveRefugeMistlainStatusText
+Defeat Lakshmi.[X]
+
+## Mage7LeaveRefugeMistlainStatusText
+Escape across[NL]
+the bridge.[X]
+
+
+## True1StatusText
+Defeat the echo[NL]
+of Henning.[X]
+
+## True2StatusText
+Defeat all[NL]
+echoes.[X]
+
+## True3StatusText
+Defeat the echo[NL]
+of Clint.[X]
+
+## True4StatusText
+Defeat the[NL]
+Guardian Spirit.[X]

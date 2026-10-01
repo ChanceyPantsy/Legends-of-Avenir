@@ -40,3 +40,7 @@ ALIGN 4
 EventPointerListOffset:
 #incbin "EventPointerTable.dmp"
 FILL 4*0x20 // Fill missing entries beyond 0xFF. This is a band-aid until we get the event pointer split.
+
+ALIGN 4
+ChapterEventTable: // Chapter event data only. EventPointerTable() mirrors every shared entry here, and ChapterEvents() writes here alone.
+FILL 4*0x110

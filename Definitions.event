@@ -1702,6 +1702,12 @@
 
 #define MoveToChapter(Chapter) "MNC2 Chapter"
 
+// Chapter events have their own pointer table (ChapterEventTable, see CSV/EAFiles/Repointers.event).
+// Shared entries are mirrored into it so older chapters keep working; IDs from Definitions/ChapterEvents.s go in with ChapterEvents().
+#undef EventPointerTable
+#define EventPointerTable(id,offset) "PUSH; ORG EventPointerListOffset+(4*(id)); POIN offset; ORG ChapterEventTable+(4*(id)); POIN offset; POP"
+#define ChapterEvents(id,offset) "PUSH; ORG ChapterEventTable+(4*(id)); POIN offset; POP"
+
 #define InfiniteTurnEventPlayer(EventID,Pointer,StartTurn) "TURN EventID Pointer [StartTurn, 0xFF] 0"
 #define InfiniteTurnEventEnemy(EventID,Pointer,StartTurn) "TURN EventID Pointer [StartTurn 0xFF] 8"
 #define InfiniteTurnEventNPC(EventID,Pointer,StartTurn) "TURN EventID Pointer [StartTurn, 0xFF] 0x24 0x00"

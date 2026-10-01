@@ -2,6 +2,7 @@
 .include BattleAnimations.s
 .include BattlePalettes.s
 .include Chapters.s
+.include ChapterEvents.s
 .include Characters.s
 .include Classes.s
 .include EventPointers.s

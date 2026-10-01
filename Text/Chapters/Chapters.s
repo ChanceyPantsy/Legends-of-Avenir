@@ -115,3 +115,54 @@
 #include "Mage/Mage1.s"
 
 #include "Mage/Mage2Leave.s"
+
+#include "Mage/Mage2Search.s"
+
+#include "Mage/Mage3Search.s"
+
+#include "Mage/Mage4Search.s"
+
+#include "Mage/Mage5SearchArcanae.s"
+
+#include "Mage/Mage6SearchArcanae.s"
+
+#include "Mage/Mage7SearchArcanae.s"
+
+#include "Mage/Mage5SearchEfil.s"
+
+#include "Mage/Mage6SearchEfil.s"
+
+#include "Mage/Mage7SearchEfil.s"
+
+#include "Mage/Mage3Leave.s"
+
+#include "Mage/Mage4LeaveRevenge.s"
+
+#include "Mage/Mage5LeaveRevenge.s"
+
+#include "Mage/Mage6LeaveRevenge.s"
+
+#include "Mage/Mage7LeaveRevenge.s"
+
+#include "Mage/Mage4LeaveRefuge.s"
+
+#include "Mage/Mage5LeaveRefugeMuriel.s"
+
+#include "Mage/Mage6LeaveRefugeMuriel.s"
+
+#include "Mage/Mage7LeaveRefugeMuriel.s"
+
+#include "Mage/Mage5LeaveRefugeMistlain.s"
+
+#include "Mage/Mage6LeaveRefugeMistlain.s"
+
+#include "Mage/Mage7LeaveRefugeMistlain.s"
+
+
+#include "True/True1.s"
+
+#include "True/True2.s"
+
+#include "True/True3.s"
+
+#include "True/True4.s"
